@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>AUTOCRYPT on DH.J</title>
+    <link>https://blog.jhyeon.dev/tags/autocrypt/</link>
+    <description>Recent content in AUTOCRYPT on DH.J</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 12 Dec 2021 00:00:00 +0900</lastBuildDate><atom:link href="https://blog.jhyeon.dev/tags/autocrypt/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2021 사이버보안챌린지 자동차 해킹&amp;방어 대회 우승 후기</title>
+      <link>https://blog.jhyeon.dev/posts/20211212_secchallenge/</link>
+      <pubDate>Sun, 12 Dec 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/posts/20211212_secchallenge/</guid>
+      <description>Summary 이번 하반기에 진행된 사이버보안챌린지 2021 차량 해킹&amp;amp;방어 대회에서,
+회사 소속으로 출전해서 최우수상 을 수상하게 되었다!
+대회 환경이 AGL (Automotive Grade Linux) 라고 하는 차량 인포테인먼트 시스템 이미지를 주고,
+그 시스템 안에서 취약점을 분석하고 찾아서 공격하는 것이 공격(예선전) 이였다.
+처음엔 막연하게 Low 단까지 접근해서 라이브러리 취약점도 분석하고
+각 서비스들 Daemon 분석하면서 취약점을 찾았었는데 원하는 결과가 잘 나오지 않았다.
+실제로 라이브러리 RCE 취약점이 존재했지만 해당 시스템 상에서 트리거가 안되서 무용지물 이였다.</description>
+    </item>
+    
+  </channel>
+</rss>

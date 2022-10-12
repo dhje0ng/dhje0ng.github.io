@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>amd64 on DH.J</title>
+    <link>https://blog.jhyeon.dev/tags/amd64/</link>
+    <description>Recent content in amd64 on DH.J</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 26 Jun 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://blog.jhyeon.dev/tags/amd64/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>M1 맥북에서 Docker amd64 환경으로 빌드하기</title>
+      <link>https://blog.jhyeon.dev/posts/20220626_m1-docker-architecture/</link>
+      <pubDate>Sun, 26 Jun 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/posts/20220626_m1-docker-architecture/</guid>
+      <description>Summary 최근에 M1 Chip (ARM)이 장착된 노트북으로 바꾸면서 여러가지 환경을 구성하다가
+좋은 팁들이 많아서 기록을 남겨두고자 글을 적어본다.
+보통 CTF 할 때나 다른 도커 작업을 할 때 x86_64(amd64) 환경에 최적화 되어있기도 한데
+M1에서는 기본이 arm64로 빌드되기 때문에 빌드할 때 아키텍처를 바꿔줘야 가능하다.
+$ docker build --tag test-container:latest --platform linux/amd64 위와 같이 도커 빌드 명령을 줄 때 --platform 이라는 옵션을 추가해서 아키텍처를 바꿔줄 수 있다.
+docker-compose.yml 을 통한 빌드를 할 때에도 platform: linux/amd64 이라는</description>
+    </item>
+    
+  </channel>
+</rss>

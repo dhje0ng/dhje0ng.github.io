@@ -25,5 +25,77 @@
       <description></description>
     </item>
     
+    <item>
+      <title>amd64</title>
+      <link>https://blog.jhyeon.dev/tags/amd64/</link>
+      <pubDate>Sun, 26 Jun 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/tags/amd64/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://blog.jhyeon.dev/tags/docker/</link>
+      <pubDate>Sun, 26 Jun 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>M1</title>
+      <link>https://blog.jhyeon.dev/tags/m1/</link>
+      <pubDate>Sun, 26 Jun 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/tags/m1/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AGL</title>
+      <link>https://blog.jhyeon.dev/tags/agl/</link>
+      <pubDate>Sun, 12 Dec 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/tags/agl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AUTOCRYPT</title>
+      <link>https://blog.jhyeon.dev/tags/autocrypt/</link>
+      <pubDate>Sun, 12 Dec 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/tags/autocrypt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Car Hacking</title>
+      <link>https://blog.jhyeon.dev/tags/car-hacking/</link>
+      <pubDate>Sun, 12 Dec 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/tags/car-hacking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>사이버보안챌린지2021</title>
+      <link>https://blog.jhyeon.dev/tags/%EC%82%AC%EC%9D%B4%EB%B2%84%EB%B3%B4%EC%95%88%EC%B1%8C%EB%A6%B0%EC%A7%802021/</link>
+      <pubDate>Sun, 12 Dec 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/tags/%EC%82%AC%EC%9D%B4%EB%B2%84%EB%B3%B4%EC%95%88%EC%B1%8C%EB%A6%B0%EC%A7%802021/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>자동차 해킹</title>
+      <link>https://blog.jhyeon.dev/tags/%EC%9E%90%EB%8F%99%EC%B0%A8-%ED%95%B4%ED%82%B9/</link>
+      <pubDate>Sun, 12 Dec 2021 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/tags/%EC%9E%90%EB%8F%99%EC%B0%A8-%ED%95%B4%ED%82%B9/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
