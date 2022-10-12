@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on DH.j</title>
+    <title>Posts on DH.J</title>
     <link>https://blog.jhyeon.dev/posts/</link>
-    <description>Recent content in Posts on DH.j</description>
+    <description>Recent content in Posts on DH.J</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 12 Oct 2022 16:36:20 +0900</lastBuildDate><atom:link href="https://blog.jhyeon.dev/posts/index.xml" rel="self" type="application/rss+xml" />
