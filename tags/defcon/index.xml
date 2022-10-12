@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>DH.j</title>
-    <link>https://blog.jhyeon.dev/</link>
-    <description>Recent content on DH.j</description>
+    <title>DEFCON on DH.j</title>
+    <link>https://blog.jhyeon.dev/tags/defcon/</link>
+    <description>Recent content in DEFCON on DH.j</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 12 Oct 2022 16:36:20 +0900</lastBuildDate><atom:link href="https://blog.jhyeon.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 12 Oct 2022 16:36:20 +0900</lastBuildDate><atom:link href="https://blog.jhyeon.dev/tags/defcon/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>DEFCON 30th Car Hacking Village 참가 후기 SSUL</title>
       <link>https://blog.jhyeon.dev/posts/defcon30/</link>

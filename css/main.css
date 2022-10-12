@@ -118,7 +118,8 @@ main#content > .container {
 }
 
 img {
-  height: auto;
+  width: 550px;
+  height: 350px;
   max-width: 100%;
 }
 
