@@ -118,9 +118,10 @@ main#content > .container {
 }
 
 img {
-  width: 550px;
-  height: 350px;
+  width: auto;
+  height: auto;
   max-width: 100%;
+  max-height: 100%;
 }
 
 /* HEADER */
