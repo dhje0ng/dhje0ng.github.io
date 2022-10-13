@@ -75,6 +75,17 @@ Web nosqlforyou NOSQL Injection, Authentication Bypass Exploit username=admin pa
     </item>
     
     <item>
+      <title>2022 FoobarCTF Write up</title>
+      <link>https://blog.jhyeon.dev/posts/20220321_foobarctf/</link>
+      <pubDate>Mon, 21 Mar 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/posts/20220321_foobarctf/</guid>
+      <description>Summary TEAM : DEMON
+Rank : 13th
+Web Find My Location Node.JS Prototype Pollution const express = require(&amp;#39;express&amp;#39;); const bodyParser = require(&amp;#39;body-parser&amp;#39;); const cors = require(&amp;#39;cors&amp;#39;); const app = express(); const cookieParser = require(&amp;#39;cookie-parser&amp;#39;); app.use(cookieParser()); app.use(express.json()) app.set(&amp;#39;view engine&amp;#39;, &amp;#39;ejs&amp;#39;); const port = process.env.PORT || 3000 app.use(express.static(__dirname + &amp;#39;/public&amp;#39;)); app.use(cors()) const users = [ { name: &amp;#39;user&amp;#39;, password: &amp;#39;pwd&amp;#39; }, { name: &amp;#39;admin&amp;#39;, password: Math.random().toString(32), isAdmin: true }, ]; const myLoaction = [ { flag: &amp;#34;GLUG{f4k3_fl4g_f0r_t3st1ng}&amp;#34; } ] function findUser(auth) { return users.</description>
+    </item>
+    
+    <item>
       <title>2021 사이버보안챌린지 자동차 해킹&amp;방어 대회 우승 후기</title>
       <link>https://blog.jhyeon.dev/posts/20211212_secchallenge/</link>
       <pubDate>Sun, 12 Dec 2021 00:00:00 +0900</pubDate>
