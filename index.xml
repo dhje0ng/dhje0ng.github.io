@@ -86,6 +86,19 @@ Web Find My Location Node.JS Prototype Pollution const express = require(&amp;#3
     </item>
     
     <item>
+      <title>2022 CODEGATE Qual Write up</title>
+      <link>https://blog.jhyeon.dev/posts/20220227_codegatequals/</link>
+      <pubDate>Sun, 27 Feb 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/posts/20220227_codegatequals/</guid>
+      <description>Summary 코드게이트 2022 예선 대회이다. 이번 대회에서 좀 특이한 점이 있었다면 언인텐으로 풀이 가능한 문제가
+2문제나 있었다는 점이다..
+WEB CAFE 문제 페이지에 들어가보면 글쓰기, 검색을 할 수 있는 게시판 기능이 존재한다.
+XSS 인가하고 접근을 해봤었는데 안되서 다른 유형일거라고 판단하고 소스코드 분석을 진행했다.
+&amp;lt;?php if( isset($data[&amp;#39;title&amp;#39;]) &amp;amp;&amp;amp; isset($data[&amp;#39;content&amp;#39;]) ){ $title = htmlspecialchars($data[&amp;#39;title&amp;#39;]); $content = $data[&amp;#39;content&amp;#39;]; if (strpos($content, &amp;#39;&amp;lt;&amp;#39;) !== false) $result = filterHtml($content); else $result = $content; $res = insertPost($title, $result, $_SESSION[&amp;#39;id&amp;#39;]); if( $res == 0 ){ die(&amp;#39;{&amp;#34;success&amp;#34;:0}&amp;#39;); }else{ die(&amp;#39;{&amp;#34;success&amp;#34;:1}&amp;#39;); } }else{ die(&amp;#39;{&amp;#34;success&amp;#34;:0}&amp;#39;); } ?</description>
+    </item>
+    
+    <item>
       <title>2021 사이버보안챌린지 자동차 해킹&amp;방어 대회 우승 후기</title>
       <link>https://blog.jhyeon.dev/posts/20211212_secchallenge/</link>
       <pubDate>Sun, 12 Dec 2021 00:00:00 +0900</pubDate>
