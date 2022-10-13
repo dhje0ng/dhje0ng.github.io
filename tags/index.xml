@@ -106,5 +106,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>CTF</title>
+      <link>https://blog.jhyeon.dev/tags/ctf/</link>
+      <pubDate>Thu, 06 Feb 2020 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/tags/ctf/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DIMICTF</title>
+      <link>https://blog.jhyeon.dev/tags/dimictf/</link>
+      <pubDate>Thu, 06 Feb 2020 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/tags/dimictf/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
