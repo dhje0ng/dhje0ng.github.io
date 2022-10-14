@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ChristmasCTF on DH.J</title>
+    <link>https://blog.jhyeon.dev/tags/christmasctf/</link>
+    <description>Recent content in ChristmasCTF on DH.J</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 25 Dec 2019 00:00:00 +0900</lastBuildDate><atom:link href="https://blog.jhyeon.dev/tags/christmasctf/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2019 ChristmasCTF Write Up</title>
+      <link>https://blog.jhyeon.dev/posts/20191225_christmasctf/</link>
+      <pubDate>Wed, 25 Dec 2019 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/posts/20191225_christmasctf/</guid>
+      <description>Web Watermelon (unintended) 이 문제는 언인텐으로 풀 수 있었던 문제인데, 관리자 계정이 admin/admin 으로 설정되어있다는 점을
+활용해서 그냥 로그인하고 공짜로 플래그를 얻었다.
+JWT PHP JWT TOKEN 사용하는 문제이다. 문제에서 제공되는 config.js 파일에서 소스코드를 볼 수 있는데
+다음과 같이 구성되어 있다.
+jwt: { bruth: { key: &amp;#39;********&amp;#39;, // 0~9, 8 length options: { issuer: &amp;#39;c2w2m2&amp;#39;, expiresIn: &amp;#39;1d&amp;#39;, algorithm: &amp;#39;HS256&amp;#39;, } }; JWT 토큰 생성 시 사용되는 secret key 를 찾아서 무차별 대입 공격해서 찾아내야 할 것 같다.</description>
+    </item>
+    
+  </channel>
+</rss>

