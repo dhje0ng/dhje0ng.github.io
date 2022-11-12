@@ -6,7 +6,19 @@
     <description>Recent content in Posts on DH.J</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 13 Oct 2022 11:36:24 +0900</lastBuildDate><atom:link href="https://blog.jhyeon.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Nov 2022 11:36:24 +0900</lastBuildDate><atom:link href="https://blog.jhyeon.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>2022 POWER OF XX 예/본선 대회 운영기</title>
+      <link>https://blog.jhyeon.dev/posts/20221112_poxx/</link>
+      <pubDate>Sat, 12 Nov 2022 11:36:24 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/posts/20221112_poxx/</guid>
+      <description>Summary 지난 10월 8일 그리고 이틀 전인 11월 10일 두 번에 걸쳐서 2022 POWER OF XX 대회를 운영하였다.
+예/본선 모두 CTF 플랫폼과 문제 인스턴스 등 인프라 전체 관리를 맡았고 약간의 문제(?)를 제외하면 성공적으로 대회를 운영한 것 같다.
+이번에 운영했을 때 인프라를 어떻게 구성했는지를 간단하게 썰로 풀어보려고 한다.
+Server Instance Name Description Spec Main-Server CTFd(v3.5.0) c5.2xlarge(8CPU, 16RAM, SSD 8GIB) Challenge-Server Ubuntu 22.04 AMD64 c5.4xlarge(16CPU, 32RAM, SSD 32GIB) 우선 서버 인스턴스는 총 2개로 메인 서버 - 문제 서버를 생성해서 사용하였다.</description>
+    </item>
+    
     <item>
       <title>Car Instrument Cluster Simulator</title>
       <link>https://blog.jhyeon.dev/posts/20221013_icsim/</link>
