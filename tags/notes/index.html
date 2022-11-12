@@ -17,25 +17,25 @@
     
 
     
-    <title>M1 맥북에서 Docker amd64 환경으로 빌드하기</title>
-    <meta name="description" content="M1 맥북에서 Docker amd64 환경으로 빌드하기">
-    <meta name="keywords" content='blog, gokarna, hugo, Tech Notes'>
+    <title>Notes</title>
+    <meta name="description" content="Security Research Engineer">
+    <meta name="keywords" content='blog, gokarna, hugo'>
 
-    <meta property="og:url" content="https://blog.jhyeon.dev/posts/20220626_m1-docker-architecture/">
+    <meta property="og:url" content="https://blog.jhyeon.dev/tags/notes/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="M1 맥북에서 Docker amd64 환경으로 빌드하기">
-    <meta property="og:description" content="M1 맥북에서 Docker amd64 환경으로 빌드하기">
+    <meta property="og:title" content="Notes">
+    <meta property="og:description" content="Security Research Engineer">
     <meta property="og:image" content="/images/profile.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="M1 맥북에서 Docker amd64 환경으로 빌드하기">
-    <meta name="twitter:description" content="M1 맥북에서 Docker amd64 환경으로 빌드하기">
-    <meta property="twitter:domain" content="https://blog.jhyeon.dev/posts/20220626_m1-docker-architecture/">
-    <meta property="twitter:url" content="https://blog.jhyeon.dev/posts/20220626_m1-docker-architecture/">
+    <meta name="twitter:title" content="Notes">
+    <meta name="twitter:description" content="Security Research Engineer">
+    <meta property="twitter:domain" content="https://blog.jhyeon.dev/tags/notes/">
+    <meta property="twitter:url" content="https://blog.jhyeon.dev/tags/notes/">
     <meta name="twitter:image" content="/images/profile.jpg">
 
     
-    <link rel="canonical" href="https://blog.jhyeon.dev/posts/20220626_m1-docker-architecture/" />
+    <link rel="canonical" href="https://blog.jhyeon.dev/tags/notes/" />
 
     <link rel="stylesheet" type="text/css" href="https://blog.jhyeon.dev/css/normalize.min.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" type="text/css" href="https://blog.jhyeon.dev/css/main.css">
@@ -160,50 +160,22 @@
     </nav>
 </header>
 <main id="content">
-    <div class="post container">
-    <div class="post-header-section">
-        <h1>M1 맥북에서 Docker amd64 환경으로 빌드하기</h1>
-        <small role="doc-subtitle">M1 맥북에서 Docker amd64 환경으로 빌드하기</small>
-        <p class="post-date">
-            June 26, 2022
-        </p>
+    <div class="container list-posts">
 
-        <ul class="post-tags">
-        
-            <li class="post-tag"><a href="https://blog.jhyeon.dev/tags/tech-notes">Tech Notes</a></li>
-        
-        </ul>
-    </div>
-
-    <div class="post-content">
-        <p>
-            <h1 id="summary">Summary</h1>
-<p>최근에 M1 Chip (ARM)이 장착된 노트북으로 바꾸면서 여러가지 환경을 구성하다가</p>
-<p>좋은 팁들이 많아서 기록을 남겨두고자 글을 적어본다.</p>
-<p>보통 CTF 할 때나 다른 도커 작업을 할 때 x86_64(amd64) 환경에 최적화 되어있기도 한데</p>
-<p>M1에서는 기본이 arm64로 빌드되기 때문에 빌드할 때 아키텍처를 바꿔줘야 가능하다.</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ docker build --tag test-container:latest --platform linux/amd64
-</span></span></code></pre></div><p>위와 같이 도커 빌드 명령을 줄 때 <code>--platform</code> 이라는 옵션을 추가해서 아키텍처를 바꿔줄 수 있다.</p>
-<p><code>docker-compose.yml</code> 을 통한 빌드를 할 때에도 <code>platform: linux/amd64</code> 이라는</p>
-<p>옵션을 명시해주면 정상적으로 <code>amd64</code> 환경으로 빌드가 가능하다.</p>
-
-        </p>
-    </div>
-</div>
-
-<aside class="post-toc">
-    <nav id="toc">
-        <nav id="TableOfContents">
-  <ul>
-    <li><a href="#summary">Summary</a></li>
-  </ul>
-</nav>
-    </nav>
-</aside>
-
-
+    <h1 class="list-title">Notes</h2>
 
     
+
+    <h2 class="posts-year">2022</h2><article class="post-title">
+    <a href="https://blog.jhyeon.dev/posts/20221012_defcon30/" class="post-link">DEFCON 30th Car Hacking Village 참가 후기 SSUL</a>
+    <div class="flex-break"></div>
+    <span class="post-date">October 12, 2022</span>
+</article>
+
+    
+
+</div>
+
 
         </main><footer class="footer">
     <span>&copy; 2022 DH.J</span>

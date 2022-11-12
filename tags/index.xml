@@ -8,74 +8,29 @@
     <language>en</language>
     <lastBuildDate>Thu, 13 Oct 2022 11:36:24 +0900</lastBuildDate><atom:link href="https://blog.jhyeon.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Car Hacking</title>
-      <link>https://blog.jhyeon.dev/tags/car-hacking/</link>
+      <title>Automotive Security</title>
+      <link>https://blog.jhyeon.dev/tags/automotive-security/</link>
       <pubDate>Thu, 13 Oct 2022 11:36:24 +0900</pubDate>
       
-      <guid>https://blog.jhyeon.dev/tags/car-hacking/</guid>
+      <guid>https://blog.jhyeon.dev/tags/automotive-security/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Instrument Cluster Simulator</title>
-      <link>https://blog.jhyeon.dev/tags/instrument-cluster-simulator/</link>
-      <pubDate>Thu, 13 Oct 2022 11:36:24 +0900</pubDate>
-      
-      <guid>https://blog.jhyeon.dev/tags/instrument-cluster-simulator/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>자동차 해킹</title>
-      <link>https://blog.jhyeon.dev/tags/%EC%9E%90%EB%8F%99%EC%B0%A8-%ED%95%B4%ED%82%B9/</link>
-      <pubDate>Thu, 13 Oct 2022 11:36:24 +0900</pubDate>
-      
-      <guid>https://blog.jhyeon.dev/tags/%EC%9E%90%EB%8F%99%EC%B0%A8-%ED%95%B4%ED%82%B9/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DEFCON</title>
-      <link>https://blog.jhyeon.dev/tags/defcon/</link>
+      <title>Notes</title>
+      <link>https://blog.jhyeon.dev/tags/notes/</link>
       <pubDate>Wed, 12 Oct 2022 16:36:20 +0900</pubDate>
       
-      <guid>https://blog.jhyeon.dev/tags/defcon/</guid>
+      <guid>https://blog.jhyeon.dev/tags/notes/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>LAS VEGAS</title>
-      <link>https://blog.jhyeon.dev/tags/las-vegas/</link>
-      <pubDate>Wed, 12 Oct 2022 16:36:20 +0900</pubDate>
-      
-      <guid>https://blog.jhyeon.dev/tags/las-vegas/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>amd64</title>
-      <link>https://blog.jhyeon.dev/tags/amd64/</link>
+      <title>Tech Notes</title>
+      <link>https://blog.jhyeon.dev/tags/tech-notes/</link>
       <pubDate>Sun, 26 Jun 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://blog.jhyeon.dev/tags/amd64/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Docker</title>
-      <link>https://blog.jhyeon.dev/tags/docker/</link>
-      <pubDate>Sun, 26 Jun 2022 00:00:00 +0900</pubDate>
-      
-      <guid>https://blog.jhyeon.dev/tags/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>M1</title>
-      <link>https://blog.jhyeon.dev/tags/m1/</link>
-      <pubDate>Sun, 26 Jun 2022 00:00:00 +0900</pubDate>
-      
-      <guid>https://blog.jhyeon.dev/tags/m1/</guid>
+      <guid>https://blog.jhyeon.dev/tags/tech-notes/</guid>
       <description></description>
     </item>
     
@@ -89,92 +44,11 @@
     </item>
     
     <item>
-      <title>CTFtime</title>
-      <link>https://blog.jhyeon.dev/tags/ctftime/</link>
-      <pubDate>Mon, 06 Jun 2022 00:00:00 +0900</pubDate>
-      
-      <guid>https://blog.jhyeon.dev/tags/ctftime/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>n00bzctf</title>
-      <link>https://blog.jhyeon.dev/tags/n00bzctf/</link>
-      <pubDate>Mon, 06 Jun 2022 00:00:00 +0900</pubDate>
-      
-      <guid>https://blog.jhyeon.dev/tags/n00bzctf/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>foobarctf</title>
-      <link>https://blog.jhyeon.dev/tags/foobarctf/</link>
-      <pubDate>Mon, 21 Mar 2022 00:00:00 +0900</pubDate>
-      
-      <guid>https://blog.jhyeon.dev/tags/foobarctf/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CODEGATE 2022</title>
-      <link>https://blog.jhyeon.dev/tags/codegate-2022/</link>
-      <pubDate>Sun, 27 Feb 2022 00:00:00 +0900</pubDate>
-      
-      <guid>https://blog.jhyeon.dev/tags/codegate-2022/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AGL</title>
-      <link>https://blog.jhyeon.dev/tags/agl/</link>
+      <title>차량 보안</title>
+      <link>https://blog.jhyeon.dev/tags/%EC%B0%A8%EB%9F%89-%EB%B3%B4%EC%95%88/</link>
       <pubDate>Sun, 12 Dec 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://blog.jhyeon.dev/tags/agl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>AUTOCRYPT</title>
-      <link>https://blog.jhyeon.dev/tags/autocrypt/</link>
-      <pubDate>Sun, 12 Dec 2021 00:00:00 +0900</pubDate>
-      
-      <guid>https://blog.jhyeon.dev/tags/autocrypt/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>사이버보안챌린지2021</title>
-      <link>https://blog.jhyeon.dev/tags/%EC%82%AC%EC%9D%B4%EB%B2%84%EB%B3%B4%EC%95%88%EC%B1%8C%EB%A6%B0%EC%A7%802021/</link>
-      <pubDate>Sun, 12 Dec 2021 00:00:00 +0900</pubDate>
-      
-      <guid>https://blog.jhyeon.dev/tags/%EC%82%AC%EC%9D%B4%EB%B2%84%EB%B3%B4%EC%95%88%EC%B1%8C%EB%A6%B0%EC%A7%802021/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>CSAWCTF</title>
-      <link>https://blog.jhyeon.dev/tags/csawctf/</link>
-      <pubDate>Mon, 14 Sep 2020 00:00:00 +0900</pubDate>
-      
-      <guid>https://blog.jhyeon.dev/tags/csawctf/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>DIMICTF</title>
-      <link>https://blog.jhyeon.dev/tags/dimictf/</link>
-      <pubDate>Thu, 06 Feb 2020 00:00:00 +0900</pubDate>
-      
-      <guid>https://blog.jhyeon.dev/tags/dimictf/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ChristmasCTF</title>
-      <link>https://blog.jhyeon.dev/tags/christmasctf/</link>
-      <pubDate>Wed, 25 Dec 2019 00:00:00 +0900</pubDate>
-      
-      <guid>https://blog.jhyeon.dev/tags/christmasctf/</guid>
+      <guid>https://blog.jhyeon.dev/tags/%EC%B0%A8%EB%9F%89-%EB%B3%B4%EC%95%88/</guid>
       <description></description>
     </item>
     

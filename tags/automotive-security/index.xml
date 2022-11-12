@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Automotive Security on DH.J</title>
+    <link>https://blog.jhyeon.dev/tags/automotive-security/</link>
+    <description>Recent content in Automotive Security on DH.J</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 13 Oct 2022 11:36:24 +0900</lastBuildDate><atom:link href="https://blog.jhyeon.dev/tags/automotive-security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Car Instrument Cluster Simulator</title>
+      <link>https://blog.jhyeon.dev/posts/20221013_icsim/</link>
+      <pubDate>Thu, 13 Oct 2022 11:36:24 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/posts/20221013_icsim/</guid>
+      <description>Summary 최근 자동차 해킹에 대한 소재가 많이 떠오르고 있다. 때문에 자동차 보안에 대해서도 관심을
+가지시는 분들이 많을 것 같다고 생각을 하고 있다.
+이번 글에서는 자동차에 들어가는 주요 통신 프로토콜 중 하나인 CAN 프로토콜이 어떤건지, 그리고
+자동차의 계기판을 시뮬레이터로 만들어둔 도구를 하나 소개할 것이다.
+(이 도구를 통해서 CAN 통신이 어떻게 이루어지는지를 간단하게 공부해볼 수 있다)
+CAN Protocol Controller Area Network 의 약자로,
+차량 내에서 Host PC 없이 Controller 또는 Device간 통신을 주고 받기 위해 사용하는 자동차 표준 통신 규격이다.</description>
+    </item>
+    
+  </channel>
+</rss>
