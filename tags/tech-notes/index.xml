@@ -6,7 +6,22 @@
     <description>Recent content in Tech Notes on DH.J</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 26 Jun 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://blog.jhyeon.dev/tags/tech-notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Dec 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://blog.jhyeon.dev/tags/tech-notes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>M1 ARM 환경에서 Pwntools 설치하기</title>
+      <link>https://blog.jhyeon.dev/posts/20221204_pwntools-m1/</link>
+      <pubDate>Sun, 04 Dec 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/posts/20221204_pwntools-m1/</guid>
+      <description>Summary Mac OS M1 (ARM) 환경에서 Pwntools 설치하는 방법이다.
+Intel 계열에서 해당 라이브러리를 쓰고 있던 사용자라면 ARM 에서 왜 설치가 안되지?? 하는
+고충을 겪어본 적이 있을 것이다. 하지만 생각보다 간단한 코드 한줄 수정으로도 설치가 가능하니..
+임시 대처 방안으로 알아두면 좋을 듯 하다.
+Pwntools - Git https://github.com/Gallopsled/pwntools/blob/dev/setup.py 64번째 라인에 &#39;unicorn&amp;gt;=1.0.2rc1&#39;, 이 부분을 주석 처리해주고
+sudo python3 setup.py install 명령어를 해보자 정상적으로 설치될 것이다.
+[사진 1] All Done </description>
+    </item>
+    
     <item>
       <title>M1 맥북에서 Docker amd64 환경으로 빌드하기</title>
       <link>https://blog.jhyeon.dev/posts/20220626_m1-docker-architecture/</link>

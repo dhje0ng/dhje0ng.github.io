@@ -17,25 +17,25 @@
     
 
     
-    <title>Tags</title>
-    <meta name="description" content="Security Research Engineer">
-    <meta name="keywords" content='blog, gokarna, hugo'>
+    <title>M1 ARM 환경에서 Pwntools 설치하기</title>
+    <meta name="description" content="M1 ARM 환경에서 Pwntools 설치하기">
+    <meta name="keywords" content='blog, gokarna, hugo, tech-notes'>
 
-    <meta property="og:url" content="https://blog.jhyeon.dev/tags/">
+    <meta property="og:url" content="https://blog.jhyeon.dev/posts/20221204_pwntools-m1/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="Tags">
-    <meta property="og:description" content="Security Research Engineer">
+    <meta property="og:title" content="M1 ARM 환경에서 Pwntools 설치하기">
+    <meta property="og:description" content="M1 ARM 환경에서 Pwntools 설치하기">
     <meta property="og:image" content="/images/profile.jpg">
 
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Tags">
-    <meta name="twitter:description" content="Security Research Engineer">
-    <meta property="twitter:domain" content="https://blog.jhyeon.dev/tags/">
-    <meta property="twitter:url" content="https://blog.jhyeon.dev/tags/">
+    <meta name="twitter:title" content="M1 ARM 환경에서 Pwntools 설치하기">
+    <meta name="twitter:description" content="M1 ARM 환경에서 Pwntools 설치하기">
+    <meta property="twitter:domain" content="https://blog.jhyeon.dev/posts/20221204_pwntools-m1/">
+    <meta property="twitter:url" content="https://blog.jhyeon.dev/posts/20221204_pwntools-m1/">
     <meta name="twitter:image" content="/images/profile.jpg">
 
     
-    <link rel="canonical" href="https://blog.jhyeon.dev/tags/" />
+    <link rel="canonical" href="https://blog.jhyeon.dev/posts/20221204_pwntools-m1/" />
 
     <link rel="stylesheet" type="text/css" href="https://blog.jhyeon.dev/css/normalize.min.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" type="text/css" href="https://blog.jhyeon.dev/css/main.css">
@@ -160,44 +160,78 @@
     </nav>
 </header>
 <main id="content">
-<div class="container tags-list">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>M1 ARM 환경에서 Pwntools 설치하기</h1>
+        <small role="doc-subtitle">M1 ARM 환경에서 Pwntools 설치하기</small>
+        <p class="post-date">
+            December 4, 2022
+        </p>
 
-    <h1 class="list-title">Tags</h1>
-    
-    <ul class="post-tags">
+        <ul class="post-tags">
         
-        <li class="post-tag">
-            <a href="https://blog.jhyeon.dev/tags/ctf/">
-                <div class="tag-name">ctf</div>
-                <div class="tag-posts-count">4</div>
-            </a>
-        </li>
+            <li class="post-tag"><a href="https://blog.jhyeon.dev/tags/tech-notes">tech-notes</a></li>
         
-        <li class="post-tag">
-            <a href="https://blog.jhyeon.dev/tags/automotive-security/">
-                <div class="tag-name">automotive-security</div>
-                <div class="tag-posts-count">3</div>
-            </a>
-        </li>
-        
-        <li class="post-tag">
-            <a href="https://blog.jhyeon.dev/tags/notes/">
-                <div class="tag-name">notes</div>
-                <div class="tag-posts-count">2</div>
-            </a>
-        </li>
-        
-        <li class="post-tag">
-            <a href="https://blog.jhyeon.dev/tags/tech-notes/">
-                <div class="tag-name">tech-notes</div>
-                <div class="tag-posts-count">2</div>
-            </a>
-        </li>
-        
-    </ul>
-    
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h1 id="summary">Summary</h1>
+<p>Mac OS M1 (ARM) 환경에서 Pwntools 설치하는 방법이다.</p>
+<p>Intel 계열에서 해당 라이브러리를 쓰고 있던 사용자라면 ARM 에서 왜 설치가 안되지?? 하는</p>
+<p>고충을 겪어본 적이 있을 것이다. 하지만 생각보다 간단한 코드 한줄 수정으로도 설치가 가능하니..</p>
+<p>임시 대처 방안으로 알아두면 좋을 듯 하다.</p>
+<h2 id="pwntools---git">Pwntools - Git</h2>
+<ul>
+<li><a href="https://github.com/Gallopsled/pwntools/blob/dev/setup.py">https://github.com/Gallopsled/pwntools/blob/dev/setup.py</a></li>
+</ul>
+<p>64번째 라인에 <code>'unicorn&gt;=1.0.2rc1',</code> 이 부분을 주석 처리해주고</p>
+<p><code>sudo python3 setup.py install</code> 명령어를 해보자 정상적으로 설치될 것이다.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/posts/tech-notes/20221204_pwntools-m1/image.png" alt="img"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>[사진 1] All Done</em></td>
+</tr>
+</tbody>
+</table>
+
+        </p>
+    </div>
+
+    <script src="https://utteranc.es/client.js"
+    repo="dhje0ng/dhje0ng.github.io"
+    issue-term="title"
+    label="Comment"
+    theme="github-dark"
+    crossorigin="anonymous"
+    async>
+    </script>
 
 </div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#summary">Summary</a>
+      <ul>
+        <li><a href="#pwntools---git">Pwntools - Git</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
 
         </main><footer class="footer">
     <span>&copy; 2022 DH.J</span>
