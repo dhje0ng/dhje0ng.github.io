@@ -200,7 +200,7 @@
 <p>수신되고 있기 때문에 정확히 필요로 하는 데이터만 Receive 하기 위해서 우선 순위를 정해주고 있다.</p>
 <p>여기서 식별자라는 것이 사용되는데 이 식별자 값이 낮을 수록 우선 순위가 높고 높을 수록 우선 순위가 낮다고 보면 된다.</p>
 <p>(예를 들면, 100번대, 200번대 식별자가 있으면 100번대가 우선적으로 처리된다는 의미이다.)</p>
-<p><img src="/images/posts/icsim/canprotocol.png" alt="img"></p>
+<p><img src="/images/posts/automotive-security/20221013_icsim/canprotocol.png" alt="img"></p>
 <p>이외에도 CAN 프로토콜에 대해서 메시지 프레임 구조는 어떻게 되어 있는지, High CAN, Low CAN 의 개념은 무엇인지,</p>
 <p>CAN, CAN-FD 의 차이점 등 알아가야 할 것이 많지만 이 글의 주제가 아니기 때문에 살짝 생략을 하도록 할 것이다.</p>
 <p>CAN 프로토콜에 대해서 공부할 수 있는 자료들은 매우 많기 때문에 몇 개 정도 추려서 아래 #References 에 링크를</p>
@@ -219,8 +219,8 @@
 </span></span></code></pre></div><h2 id="run">Run</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ./icsim vcan0
 </span></span><span style="display:flex;"><span>$ ./controls vcan0
-</span></span></code></pre></div><p><img src="/images/posts/icsim/icsim-main.png" alt="img"></p>
-<p><img src="/images/posts/icsim/icsim-control.png" alt="img"></p>
+</span></span></code></pre></div><p><img src="/images/posts/automotive-security/20221013_icsim/icsim-main.png" alt="img"></p>
+<p><img src="/images/posts/automotive-security/20221013_icsim/icsim-control.png" alt="img"></p>
 <h2 id="can-message-monitoring">CAN Message Monitoring</h2>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ candump vcan0 <span style="color:#75715e"># candump &lt;can-interface&gt;</span>
 </span></span><span style="display:flex;"><span>$ cansniffer -c vcan0 <span style="color:#75715e"># cansniffer &lt;can-interface&gt;</span>
