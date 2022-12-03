@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>AGL (Automotive Grade Linux) Platform</title>
+    <meta name="description" content="자동차 인포테인먼트 가상 시뮬레이션 OS">
+    <meta name="keywords" content='blog, gokarna, hugo, Automotive Security'>
+
+    <meta property="og:url" content="https://blog.jhyeon.dev/posts/20221204_agl/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AGL (Automotive Grade Linux) Platform">
+    <meta property="og:description" content="자동차 인포테인먼트 가상 시뮬레이션 OS">
+    <meta property="og:image" content="/images/profile.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AGL (Automotive Grade Linux) Platform">
+    <meta name="twitter:description" content="자동차 인포테인먼트 가상 시뮬레이션 OS">
+    <meta property="twitter:domain" content="https://blog.jhyeon.dev/posts/20221204_agl/">
+    <meta property="twitter:url" content="https://blog.jhyeon.dev/posts/20221204_agl/">
+    <meta name="twitter:image" content="/images/profile.jpg">
+
+    
+    <link rel="canonical" href="https://blog.jhyeon.dev/posts/20221204_agl/" />
+
+    <link rel="stylesheet" type="text/css" href="https://blog.jhyeon.dev/css/normalize.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" type="text/css" href="https://blog.jhyeon.dev/css/main.css">
+    <link disabled id="dark-theme" rel="stylesheet" href="https://blog.jhyeon.dev/css/dark.css">
+
+    <script src="https://blog.jhyeon.dev/js/svg-injector.min.js"></script>
+    <script src="https://blog.jhyeon.dev/js/feather-icons.min.js"></script>
+    <script src="https://blog.jhyeon.dev/js/main.js"></script>
+
+    
+    
+        <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+      });
+    </script>
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://blog.jhyeon.dev">
+                <img src="https://blog.jhyeon.dev/images/profile.jpg" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://blog.jhyeon.dev">DH.J</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://blog.jhyeon.dev/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://blog.jhyeon.dev/posts/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://blog.jhyeon.dev/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/dhje0ng"><span data-feather='github'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://blog.jhyeon.dev/index.xml"><span data-feather='rss'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://blog.jhyeon.dev/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://blog.jhyeon.dev/posts/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://blog.jhyeon.dev/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/dhje0ng"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://blog.jhyeon.dev/index.xml"><span data-feather='rss'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>AGL (Automotive Grade Linux) Platform</h1>
+        <small role="doc-subtitle">자동차 인포테인먼트 가상 시뮬레이션 OS</small>
+        <p class="post-date">
+            December 4, 2022
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://blog.jhyeon.dev/tags/automotive-security">Automotive Security</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h1 id="summary">Summary</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/posts/automotive-security/20221204_agl/image.png" alt="img"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>[사진 1] AGL Overview</em></td>
+</tr>
+</tbody>
+</table>
+<p>AGL (Automotive Grade Linux) OS란?</p>
+<p><a href="https://www.automotivelinux.org/about/members/">https://www.automotivelinux.org/about/members/</a></p>
+<p>전 세계 차량 OEM 들과 협력하에 개발되고 있는 인포테인먼트 시스템이다.</p>
+<p>AGL은 IVI(In Vehicle Infortainment) 시장을 목표로 하고 있다.</p>
+<p>AGL 개발 자체는 오픈소스 프로젝트로 진행되며 AGL 이외에도 대표적으로 GENIVI 라는</p>
+<p>플랫폼도 존재하는데 두 회사 모두 IVI S/W 개발 환경을 제공하여 다른 차량 OEM 회사들이</p>
+<p>IVI 시스템을 쉽게 개발할 수 있도록 하는 목적을 가진다.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/posts/automotive-security/20221204_agl/image2.png" alt="img"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>[사진 2] AGL/GENIVI</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="overview">Overview</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/posts/automotive-security/20221204_agl/image3.png" alt="img"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>[사진 3] AGL Core</em></td>
+</tr>
+</tbody>
+</table>
+<p>AGL OS 에 올라가는 코어 부분의 구성도이다.</p>
+<ul>
+<li>QT/QML : QT 모델링 언어</li>
+<li>HTML5 : Web 퍼블리싱 마크업 언어</li>
+<li>GStreamer : 스트리밍 미디어 어플리케이션 프레임워크</li>
+<li>Weston : 디스플레이 서버(Wayland Compositor)와 클라이언트 간 통신하는 언어(X11 프로토콜 대체)</li>
+<li>Wayland : Wayland Compositer == Weston</li>
+<li>SOTA Client &amp; OSTree : 소프트웨어 무선 업데이트(Software Updates Over The Air)</li>
+<li>DBus : 프로세스 간 통신(IPC)을 위한 시스템, 리눅스 내 프로세스 통신을 위한 수단 (KDE, Gnome)</li>
+<li>systemd : 부팅, 서비스 관리, 로그 관리</li>
+<li>Linux Kernel : OS의 주요 요소, 컴퓨터 하드웨어와 프로세스를 연결하는 핵심 인터페이스</li>
+<li>AppFW : 어플리케이션 단 방화벽</li>
+<li>SMACK : 데이터 영역/프로세스 데이터를 상호 보호하는 소프트웨어</li>
+<li>Cynara : 사용자 및 어플리케이션 별 API 접근 권한 관리 보안 모듈</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/posts/automotive-security/20221204_agl/image5.png" alt="img"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>[사진 4] AGL Platform Overview</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="agl-layers">AGL Layers</h2>
+<ul>
+<li>poky</li>
+<li>meta-agl</li>
+<li>meta-agl-demo</li>
+<li>meta-agl-devel</li>
+<li>meta-agl-extra</li>
+<li>meta-intel-iot-security</li>
+<li>meta-oic</li>
+<li>meta-qt5</li>
+<li>&hellip;</li>
+</ul>
+<h2 id="agl-architecture">AGL Architecture</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/posts/automotive-security/20221204_agl/image4.png" alt="img"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>[사진 5] AGL Architecture</em></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>HVAC : 실내 차량 공조 시스템 (난방, 냉방 등)</li>
+<li>Media : 블루투스 미디어, USB 미디어 등</li>
+<li>Vehicle Cloud : 차랑용 클라우드 시스템</li>
+<li>HMI : 프로그램 또는 시스템과 통신 가능하게 해주는 대시보드 화면</li>
+<li>&hellip;</li>
+</ul>
+<h2 id="binderbinding">Binder/Binding</h2>
+<ul>
+<li>afb-daemon(application freamwork binder daemon)</li>
+<li>afb-daemon 어플리케이션 또는 서비스의 한 인스턴스를 나머지 시스템 어플리케이션 및 서비스에 바인딩(Binding)하는 역할을 하고 AGL 내에서 서비스 및 어플리케이션 간 연결은 AGL 프레임워크 및 시스템에 의해 조정된다.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/posts/automotive-security/20221204_agl/image6.png" alt="img"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>[사진 6] Binder/Binding</em></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>
+<p>Security Context : 모든 어플리케이션 보안 환경에 제공하는 것으로 어플리케이션 또는 서비스 보안 컨택스트인 SMACK 에 의해서 보장된다.</p>
+</li>
+<li>
+<p>Binder : HTML5 어플리케이션을 실행할 수 있고 바인딩(Bindng)이 제공하는 API 에 대한 통합 액세스를 제공한다.</p>
+</li>
+<li>
+<p>Binding : 바인딩(Binding)은 하나의 API 를 추가로 받는 바인더(Binder)를 의미한다. API 는 HTTP 를 통해 REST API 또는 JSON RPC 등을 사용하여 호출할 수 있다.</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/posts/automotive-security/20221204_agl/image7.png" alt="img"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>[사진 7] Binder/Binding #2</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="installation">Installation</h2>
+<ul>
+<li>
+<p><a href="https://download.automotivelinux.org/AGL/release/needlefish/14.0.2/">https://download.automotivelinux.org/AGL/release/needlefish/14.0.2/</a></p>
+</li>
+<li>
+<p>Supported Platform (QEMU X86/64, ARM, RPI4 &hellip;)</p>
+</li>
+</ul>
+<h1 id="references">References</h1>
+<p><a href="https://www.slideshare.net/leonanavi/contributing-to-agl-and-gdp?ref=http://www.yocto.co.kr/">1. AGL(Automotive Grade Linux) and GENIVI Development Platform</a></p>
+<p><a href="http://old-docs.automotivelinux.org/docs/en/guppy/apis_services/reference/af-binder/afb-overview.html">2. AGL Binder, Binding 개념</a></p>
+<p><a href="https://wiki.automotivelinux.org/start/getting-started">3. AGL Document</a></p>
+<p><a href="http://docs.automotivelinux.org/">3.1 AGL Document #2</a></p>
+
+        </p>
+    </div>
+
+    <script src="https://utteranc.es/client.js"
+    repo="dhje0ng/dhje0ng.github.io"
+    issue-term="title"
+    label="Comment"
+    theme="github-dark"
+    crossorigin="anonymous"
+    async>
+    </script>
+
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#summary">Summary</a>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#agl-layers">AGL Layers</a></li>
+        <li><a href="#agl-architecture">AGL Architecture</a></li>
+        <li><a href="#binderbinding">Binder/Binding</a></li>
+        <li><a href="#installation">Installation</a></li>
+      </ul>
+    </li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    <span>&copy; 2022 DH.J</span>
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>

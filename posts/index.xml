@@ -6,7 +6,23 @@
     <description>Recent content in Posts on DH.J</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 12 Nov 2022 11:36:24 +0900</lastBuildDate><atom:link href="https://blog.jhyeon.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 04 Dec 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://blog.jhyeon.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>AGL (Automotive Grade Linux) Platform</title>
+      <link>https://blog.jhyeon.dev/posts/20221204_agl/</link>
+      <pubDate>Sun, 04 Dec 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/posts/20221204_agl/</guid>
+      <description>Summary [사진 1] AGL Overview AGL (Automotive Grade Linux) OS란?
+https://www.automotivelinux.org/about/members/
+전 세계 차량 OEM 들과 협력하에 개발되고 있는 인포테인먼트 시스템이다.
+AGL은 IVI(In Vehicle Infortainment) 시장을 목표로 하고 있다.
+AGL 개발 자체는 오픈소스 프로젝트로 진행되며 AGL 이외에도 대표적으로 GENIVI 라는
+플랫폼도 존재하는데 두 회사 모두 IVI S/W 개발 환경을 제공하여 다른 차량 OEM 회사들이
+IVI 시스템을 쉽게 개발할 수 있도록 하는 목적을 가진다.
+[사진 2] AGL/GENIVI Overview [사진 3] AGL Core AGL OS 에 올라가는 코어 부분의 구성도이다.</description>
+    </item>
+    
     <item>
       <title>2022 POWER OF XX 예/본선 대회 운영기</title>
       <link>https://blog.jhyeon.dev/posts/20221112_poxx/</link>
