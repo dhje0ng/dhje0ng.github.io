@@ -6,7 +6,20 @@
     <description>Recent content on DH.J</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 04 Dec 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://blog.jhyeon.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 22 Jan 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://blog.jhyeon.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Awarded a bounty of $500 for BMW Automotive</title>
+      <link>https://blog.jhyeon.dev/posts/20230122_bmwbugbounty/</link>
+      <pubDate>Sun, 22 Jan 2023 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/posts/20230122_bmwbugbounty/</guid>
+      <description>Summary 글 내용은 별거 없지만 회고 겸 생존 신고를 하기 위해서 블로그에 글을 써본다.
+회사에서 연구하는 내용 중 일부이지만 보통 신규 취약점 연구나 모의해킹 등의 일을 하고 있는데
+그 중 하나인 BMW Automotive 에 대해서 이번에 버그 바운티를 하게되면서 바운티가 확정되었기 때문에
+자랑(?) 겸 올려본다.
+[사진 1] BMW Automotive Awarded a bounty of 500$ </description>
+    </item>
+    
     <item>
       <title>AGL (Automotive Grade Linux) Platform</title>
       <link>https://blog.jhyeon.dev/posts/20221204_agl/</link>
