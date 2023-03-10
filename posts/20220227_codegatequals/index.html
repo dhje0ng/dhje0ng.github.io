@@ -19,7 +19,7 @@
     
     <title>2022 CODEGATE Qual Write up</title>
     <meta name="description" content="2022 CODEGATE Qual Write up">
-    <meta name="keywords" content='Penetration Testing, Automotive Research, Bugbounty, Hackerone, CTF'>
+    <meta name="keywords" content='Penetration Testing, Automotive, Bugbounty, Hackerone, Automotive Penetration Testing, Autocrypt, Escrypt, Argus Cyber Securty, BMW Automotive, Volkswagen, ISO 21434, TARA, CTF'>
 
     <meta property="og:url" content="https://blog.jhyeon.dev/posts/20220227_codegatequals/">
     <meta property="og:type" content="website">
@@ -94,6 +94,10 @@
             </div>
             
             <div class="nav-link">
+                <a href="https://blog.jhyeon.dev/about/"><span data-feather='user'></span> About </a>
+            </div>
+            
+            <div class="nav-link">
                 <a href="https://blog.jhyeon.dev/posts/"><span data-feather='book'></span> Posts </a>
             </div>
             
@@ -130,6 +134,10 @@
                 
                 <li class="nav-item">
                     <a href="https://blog.jhyeon.dev/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://blog.jhyeon.dev/about/"><span data-feather='user'></span> About </a>
                 </li>
                 
                 <li class="nav-item">
@@ -281,7 +289,7 @@
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;&#34;</span><span style="color:#f92672">;</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#f92672">}</span>
 </span></span><span style="display:flex;"><span>    img <span style="color:#f92672">=</span> matcher<span style="color:#f92672">.</span><span style="color:#a6e22e">group</span><span style="color:#f92672">();</span>
-</span></span><span style="display:flex;"><span>    String tmp <span style="color:#f92672">=</span> img<span style="color:#f92672">.</span><span style="color:#a6e22e">substring</span><span style="color:#f92672">(</span>1<span style="color:#f92672">,</span> img<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> 1<span style="color:#f92672">);</span>
+</span></span><span style="display:flex;"><span>    String tmp <span style="color:#f92672">=</span> img<span style="color:#f92672">.</span><span style="color:#a6e22e">substring</span><span style="color:#f92672">(</span><span style="color:#ae81ff">1</span><span style="color:#f92672">,</span> img<span style="color:#f92672">.</span><span style="color:#a6e22e">length</span><span style="color:#f92672">()</span> <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span><span style="color:#f92672">);</span>
 </span></span><span style="display:flex;"><span>    tmp <span style="color:#f92672">=</span> tmp<span style="color:#f92672">.</span><span style="color:#a6e22e">trim</span><span style="color:#f92672">().</span><span style="color:#a6e22e">toLowerCase</span><span style="color:#f92672">();</span>
 </span></span><span style="display:flex;"><span>    pattern <span style="color:#f92672">=</span> Pattern<span style="color:#f92672">.</span><span style="color:#a6e22e">compile</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;^[a-z]+:&#34;</span><span style="color:#f92672">);</span>
 </span></span><span style="display:flex;"><span>    matcher <span style="color:#f92672">=</span> pattern<span style="color:#f92672">.</span><span style="color:#a6e22e">matcher</span><span style="color:#f92672">(</span>tmp<span style="color:#f92672">);</span>
@@ -319,8 +327,8 @@
 </span></span></code></pre></div><p>그러나 <code>file://</code> 으로 시작하면 정규식 패턴에 의해서 입구컷 당한다.</p>
 <p>이 문제는 개념만 알면 좀 쉬웠던 건데 헷갈려서 못 풀었었다. 출제자분이 공개한 풀이에 의하면</p>
 <p><a href="https://github.com/openjdk/jdk11/blob/master/src/java.base/share/classes/java/net/URL.java#L575">https://github.com/openjdk/jdk11/blob/master/src/java.base/share/classes/java/net/URL.java#L575</a></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>spec<span style="color:#f92672">.</span><span style="color:#a6e22e">regionMatches</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">,</span> start<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;url:&#34;</span><span style="color:#f92672">,</span> 0<span style="color:#f92672">,</span> 4<span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
-</span></span><span style="display:flex;"><span>    start <span style="color:#f92672">+=</span> 4<span style="color:#f92672">;</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-java" data-lang="java"><span style="display:flex;"><span><span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>spec<span style="color:#f92672">.</span><span style="color:#a6e22e">regionMatches</span><span style="color:#f92672">(</span><span style="color:#66d9ef">true</span><span style="color:#f92672">,</span> start<span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;url:&#34;</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">,</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">))</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    start <span style="color:#f92672">+=</span> <span style="color:#ae81ff">4</span><span style="color:#f92672">;</span>
 </span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
 </span></span></code></pre></div><p>이 코드를 보면 <code>url:</code> 로 시작하면 실제로 URL로 인식하게 된다 즉 <code>url:file:///etc/passwd</code> 이런식의</p>
 <p>문법으로 사용이 가능하다는 의미이다. 즉 필터링을 피해서 file schema 를 사용할 수 있다.</p>
@@ -390,47 +398,41 @@
         </p>
     </div>
 
-    <script src="https://utteranc.es/client.js"
-    repo="dhje0ng/dhje0ng.github.io"
-    issue-term="title"
-    label="Comment"
-    theme="github-dark"
-    crossorigin="anonymous"
-    async>
-    </script>
-
+    <div class="prev-next">
+        
+    </div>
 </div>
 
 <aside class="post-toc">
     <nav id="toc">
         <nav id="TableOfContents">
-  <ul>
+  <ol>
     <li><a href="#summary">Summary</a></li>
     <li><a href="#web">WEB</a>
-      <ul>
+      <ol>
         <li><a href="#cafe">CAFE</a>
-          <ul>
+          <ol>
             <li><a href="#exploit">Exploit</a></li>
-          </ul>
+          </ol>
         </li>
         <li><a href="#superbee-unintened">superbee (unintened)</a>
-          <ul>
+          <ol>
             <li><a href="#exploit-1">Exploit</a></li>
-          </ul>
+          </ol>
         </li>
         <li><a href="#babyfirst">babyfirst</a>
-          <ul>
+          <ol>
             <li><a href="#exploit-2">Exploit</a></li>
-          </ul>
+          </ol>
         </li>
         <li><a href="#myblog">myblog</a>
-          <ul>
+          <ol>
             <li><a href="#exploit-3">Exploit</a></li>
-          </ul>
+          </ol>
         </li>
-      </ul>
+      </ol>
     </li>
-  </ul>
+  </ol>
 </nav>
     </nav>
 </aside>
@@ -440,7 +442,7 @@
     
 
         </main><footer class="footer">
-    <span>&copy; 2022 - 2023 DH.J</span>
+    <span>&copy; 2023 DH.J</span>
     <span>
         Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
     </span>
