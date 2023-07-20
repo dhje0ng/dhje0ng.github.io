@@ -18,7 +18,7 @@ Software version : 283C35202R
 Summary We analyzed the vulnerabilities in the infotainment system of Renault&amp;rsquo;s ZOE EV vehicle and found a USB memory vulnerability that caused the infotainment to crash.
 Analysis TBD (No plans to go public yet.)
 Impact This attack could allow an attacker to abnormally shut down the vehicle&amp;rsquo;s infotainment system (resulting in an internal crash).
-DEMO </description>
+DEMO Copyright Donghyeon Jeong / stjhyeon(at)kakao.</description>
     </item>
     
     <item>
