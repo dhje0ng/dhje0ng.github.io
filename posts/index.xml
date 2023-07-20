@@ -8,6 +8,20 @@
     <language>en</language>
     <lastBuildDate>Thu, 20 Jul 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://blog.jhyeon.dev/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>GM Equinox Automotive Infotainment Vulnerability</title>
+      <link>https://blog.jhyeon.dev/posts/vuln/202307/gm-chevrolet/</link>
+      <pubDate>Thu, 20 Jul 2023 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/posts/vuln/202307/gm-chevrolet/</guid>
+      <description>Information Vehicle model : GM Chevrolet Equinox 2021
+Software version : 2021.03.26 build ver.
+Summary We analyzed the vulnerabilities in the infotainment system of Volkswagen Jetta vehicle and found a USB memory vulnerability that caused the infotainment to crash.
+Analysis TBD (No plans to go public yet.)
+Impact This attack could allow an attacker to abnormally shut down the vehicle&amp;rsquo;s infotainment system (resulting in an internal crash).
+DEMO Copyright Donghyeon Jeong / dhje0ng(at)naver.</description>
+    </item>
+    
+    <item>
       <title>Renault ZOE Automotive Infotainment Vulnerability</title>
       <link>https://blog.jhyeon.dev/posts/vuln/202307/renault-zoe/</link>
       <pubDate>Thu, 20 Jul 2023 00:00:00 +0900</pubDate>
@@ -16,9 +30,8 @@
       <description>Information Vehicle model : Renault ZOE EV 2021
 Software version : 283C35202R
 Summary We analyzed the vulnerabilities in the infotainment system of Renault&amp;rsquo;s ZOE EV vehicle and found a USB memory vulnerability that caused the infotainment to crash.
-Analysis TBD (No plans to go public yet.)
-Impact This attack could allow an attacker to abnormally shut down the vehicle&amp;rsquo;s infotainment system (resulting in an internal crash).
-DEMO Copyright Donghyeon Jeong / stjhyeon(at)kakao.</description>
+[Figure 1]] Vendor Reply E-mail Analysis TBD (No plans to go public yet.)
+Impact This attack could allow an attacker to abnormally shut down the vehicle&amp;rsquo;s infotainment system (resulting in an internal crash).</description>
     </item>
     
     <item>
@@ -33,7 +46,7 @@ Software version : 0876
 Summary We analyzed the vulnerabilities in the infotainment system of Volkswagen Jetta vehicle and found a USB memory vulnerability that caused the infotainment to crash.
 Analysis TBD (No plans to go public yet.)
 Impact This attack could allow an attacker to abnormally shut down the vehicle&amp;rsquo;s infotainment system (resulting in an internal crash).
-DEMO Copyright Donghyeon Jeong / stjhyeon(at)kakao.</description>
+DEMO Copyright Donghyeon Jeong / dhje0ng(at)naver.</description>
     </item>
     
     <item>
