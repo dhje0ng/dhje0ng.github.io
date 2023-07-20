@@ -22,6 +22,20 @@ DEMO Copyright Donghyeon Jeong / stjhyeon(at)kakao.</description>
     </item>
     
     <item>
+      <title>Volkswagen Jetta Automotive Infotainment Vulnerability</title>
+      <link>https://blog.jhyeon.dev/posts/vuln/202307/volkswagen-jetta/</link>
+      <pubDate>Thu, 20 Jul 2023 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/posts/vuln/202307/volkswagen-jetta/</guid>
+      <description>Information Vehicle model : Volkswagen Jetta 2021
+Hardware version : 724 Software version : 0876
+Summary We analyzed the vulnerabilities in the infotainment system of Volkswagen Jetta vehicle and found a USB memory vulnerability that caused the infotainment to crash.
+Analysis TBD (No plans to go public yet.)
+Impact This attack could allow an attacker to abnormally shut down the vehicle&amp;rsquo;s infotainment system (resulting in an internal crash).
+DEMO Copyright Donghyeon Jeong / stjhyeon(at)kakao.</description>
+    </item>
+    
+    <item>
       <title>Awarded a bounty of $500 for BMW Automotive</title>
       <link>https://blog.jhyeon.dev/posts/vuln/202303/bmw_automotive_cve/</link>
       <pubDate>Wed, 22 Mar 2023 00:00:00 +0900</pubDate>
