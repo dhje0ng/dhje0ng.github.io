@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>2021 사이버보안챌린지 자동차 해킹&amp;방어 대회 우승 후기</title>
+    <meta name="description" content="2021 사이버보안챌린지 자동차 해킹&amp;방어 대회 우승 후기">
+    <meta name="keywords" content='Penetration Testing, Automotive, Bugbounty, Hackerone, Automotive Penetration Testing, Autocrypt, Escrypt, Argus Cyber Securty, BMW Automotive, Volkswagen, ISO 21434, TARA, Automotive Security'>
+
+    <meta property="og:url" content="https://blog.jhyeon.dev/posts/automotive/202112/csc2021/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="2021 사이버보안챌린지 자동차 해킹&amp;방어 대회 우승 후기">
+    <meta property="og:description" content="2021 사이버보안챌린지 자동차 해킹&amp;방어 대회 우승 후기">
+    <meta property="og:image" content="https://blog.jhyeon.dev/images/p_new.jpg">
+    <meta property="og:image:secure_url" content="https://blog.jhyeon.dev/images/p_new.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="2021 사이버보안챌린지 자동차 해킹&amp;방어 대회 우승 후기">
+    <meta name="twitter:description" content="2021 사이버보안챌린지 자동차 해킹&amp;방어 대회 우승 후기">
+    <meta property="twitter:domain" content="https://blog.jhyeon.dev/posts/automotive/202112/csc2021/">
+    <meta property="twitter:url" content="https://blog.jhyeon.dev/posts/automotive/202112/csc2021/">
+    <meta name="twitter:image" content="https://blog.jhyeon.dev/images/p_new.jpg">
+
+    
+    <link rel="canonical" href="https://blog.jhyeon.dev/posts/automotive/202112/csc2021/" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.edd985581bf860dfb4507e5885197f1680160c7fe19f23b31e183126d99dd596.js" integrity="sha256-7dmFWBv4YN&#43;0UH5YhRl/FoAWDH/hnyOzHhgxJtmd1ZY="></script>
+
+    
+    
+        <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+      });
+    </script>
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://blog.jhyeon.dev">
+                <img src="https://blog.jhyeon.dev/images/p_new.jpg" alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://blog.jhyeon.dev">DH.J</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://blog.jhyeon.dev/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://blog.jhyeon.dev/about/"><span data-feather='user'></span> About </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://blog.jhyeon.dev/posts/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://blog.jhyeon.dev/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://github.com/dhje0ng"><span data-feather='github'></span>  </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://blog.jhyeon.dev/index.xml"><span data-feather='rss'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://blog.jhyeon.dev/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://blog.jhyeon.dev/about/"><span data-feather='user'></span> About </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://blog.jhyeon.dev/posts/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://blog.jhyeon.dev/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://github.com/dhje0ng"><span data-feather='github'></span>  </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://blog.jhyeon.dev/index.xml"><span data-feather='rss'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>2021 사이버보안챌린지 자동차 해킹&amp;방어 대회 우승 후기</h1>
+        <small role="doc-subtitle">2021 사이버보안챌린지 자동차 해킹&amp;방어 대회 우승 후기</small>
+        <p class="post-date">
+            December 12, 2021
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://blog.jhyeon.dev/tags/automotive-security">Automotive Security</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h1 id="summary">Summary</h1>
+<p><img src="/images/posts/automotive-security/20211212_secchallenge/result.png" alt="img"></p>
+<p>이번 하반기에 진행된 <code>사이버보안챌린지 2021 차량 해킹&amp;방어</code> 대회에서,</p>
+<p>회사 소속으로 출전해서 <code>최우수상</code> 을 수상하게 되었다!</p>
+<p>대회 환경이 <strong>AGL (Automotive Grade Linux)</strong> 라고 하는 차량 인포테인먼트 시스템 이미지를 주고,</p>
+<p>그 시스템 안에서 취약점을 분석하고 찾아서 공격하는 것이 공격(예선전) 이였다.</p>
+<p>처음엔 막연하게 Low 단까지 접근해서 라이브러리 취약점도 분석하고</p>
+<p>각 서비스들 Daemon 분석하면서 취약점을 찾았었는데 원하는 결과가 잘 나오지 않았다.</p>
+<p>실제로 라이브러리 RCE 취약점이 존재했지만 해당 시스템 상에서 트리거가 안되서 무용지물 이였다.</p>
+<p>뭐 이것저것해서 API 단 취약점을 찾아서 시나리오를 잘 만들어서 예선 결과를 냈는데 왠걸 1등을 했다.</p>
+<p>(물론 저희팀에서 열심히 연구하고 예선 2달가량 AGL만 죽어라 분석했기 때문에 좋은 결과가 나왔을 거라고 생각한다)</p>
+<hr>
+<p>무튼 예선전에서 좋은 결과를 내고 본선 행사장에 가서 방어를 진행했는데 방어 주제가 다른팀에서도,</p>
+<p>예선을 참여했을거고 다른팀에서 한 공격들의 로그를 줄테니 IDS 개발 해서 탐지해라.. 뭐 이런 주제였다.</p>
+<p>머신러닝을 해야하나?? 싶었는데 팀원분들과 상의끝에 <code>case by case</code> 별로 탐지룰을 만들어서 가자! 였다.</p>
+<p>그래서 우리팀에서 한 공격은 물론이고 AGL 에서 동작하는 거의 모든 서비스들에서 공격을 하고 로그를 자체적으로</p>
+<p>수집해서 탐지룰을 개발해서 테스트하고를 반복하면서 최대한 정교하게 탐지할 수 있도록 IDS 개발을 했다.</p>
+<p>그랬더니 본선전에서도 활약을 할 수 있었다. 공격으로는 다른팀과 점수차가 얼마 안나서 불안불안 했는데</p>
+<p>방어에서 무려 20점이상 격차를 내면서 압도적으로 1등을 한 것이다.</p>
+<hr>
+<p>그래서 내심 기분은 좋았다. 회사 들어와서 첫 업무로 대회를 나갔었고 좋은 결과가 나왔기 때문이다.</p>
+<p>무튼 쉽지는 않았지만 은근 신박한 대회라서 재미있었다. 좋은 경험이 되었다.</p>
+<p><a href="https://www.autocrypt.co.kr/news-post/cybersecuritychallenge-2021">https://www.autocrypt.co.kr/news-post/cybersecuritychallenge-2021</a></p>
+<p><a href="https://www.youtube.com/watch?v=E-ZTuWSg-JU">https://www.youtube.com/watch?v=E-ZTuWSg-JU</a></p>
+<p>위 링크는 본선전 대회 당일에 라이브로 촬영된 유튜브 영상이다.</p>
+<p><a href="https://nvd.nist.gov/vuln/detail/CVE-2022-24595">https://nvd.nist.gov/vuln/detail/CVE-2022-24595</a></p>
+<p>위 링크는 대회 종료 이후 주최 측에서 등록한 것으로 보이는 CVE다.. 공공의 CVE&hellip;</p>
+
+        </p>
+        
+    </div>
+
+    <div class="prev-next">
+        
+    </div>
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#summary">Summary</a></li>
+  </ol>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+    <span>&copy; 2023 DH.J</span>
+    
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>
