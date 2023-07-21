@@ -131,10 +131,10 @@ CAN Protocol Controller Area Network 의 약자로,
     
     <item>
       <title>2021 사이버보안챌린지 자동차 해킹&amp;방어 대회 우승 후기</title>
-      <link>https://blog.jhyeon.dev/posts/automotive/202112/csc2021/</link>
+      <link>https://blog.jhyeon.dev/posts/notes/202112/csc2021/</link>
       <pubDate>Sun, 12 Dec 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://blog.jhyeon.dev/posts/automotive/202112/csc2021/</guid>
+      <guid>https://blog.jhyeon.dev/posts/notes/202112/csc2021/</guid>
       <description>Summary 이번 하반기에 진행된 사이버보안챌린지 2021 차량 해킹&amp;amp;방어 대회에서,
 회사 소속으로 출전해서 최우수상 을 수상하게 되었다!
 대회 환경이 AGL (Automotive Grade Linux) 라고 하는 차량 인포테인먼트 시스템 이미지를 주고,

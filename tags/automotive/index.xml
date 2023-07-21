@@ -48,5 +48,36 @@ Impact This attack could allow an attacker to abnormally shut down the vehicle&a
 DEMO Copyright Donghyeon Jeong / dhje0ng(at)naver.</description>
     </item>
     
+    <item>
+      <title>AGL (Automotive Grade Linux) Platform</title>
+      <link>https://blog.jhyeon.dev/posts/automotive/202212/agl/</link>
+      <pubDate>Sun, 04 Dec 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/posts/automotive/202212/agl/</guid>
+      <description>Summary [사진 1] AGL Overview AGL (Automotive Grade Linux) OS란?
+https://www.automotivelinux.org/about/members/
+전 세계 차량 OEM 들과 협력하에 개발되고 있는 인포테인먼트 시스템이다.
+AGL은 IVI(In Vehicle Infortainment) 시장을 목표로 하고 있다.
+AGL 개발 자체는 오픈소스 프로젝트로 진행되며 AGL 이외에도 대표적으로 GENIVI 라는
+플랫폼도 존재하는데 두 회사 모두 IVI S/W 개발 환경을 제공하여 다른 차량 OEM 회사들이
+IVI 시스템을 쉽게 개발할 수 있도록 하는 목적을 가진다.
+[사진 2] AGL/GENIVI Overview [사진 3] AGL Core AGL OS 에 올라가는 코어 부분의 구성도이다.</description>
+    </item>
+    
+    <item>
+      <title>Car Instrument Cluster Simulator</title>
+      <link>https://blog.jhyeon.dev/posts/automotive/202210/icsim_simulator/</link>
+      <pubDate>Thu, 13 Oct 2022 11:36:24 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/posts/automotive/202210/icsim_simulator/</guid>
+      <description>Summary 최근 자동차 해킹에 대한 소재가 많이 떠오르고 있다. 때문에 자동차 보안에 대해서도 관심을
+가지시는 분들이 많을 것 같다고 생각을 하고 있다.
+이번 글에서는 자동차에 들어가는 주요 통신 프로토콜 중 하나인 CAN 프로토콜이 어떤건지, 그리고
+자동차의 계기판을 시뮬레이터로 만들어둔 도구를 하나 소개할 것이다.
+(이 도구를 통해서 CAN 통신이 어떻게 이루어지는지를 간단하게 공부해볼 수 있다)
+CAN Protocol Controller Area Network 의 약자로,
+차량 내에서 Host PC 없이 Controller 또는 Device간 통신을 주고 받기 위해 사용하는 자동차 표준 통신 규격이다.</description>
+    </item>
+    
   </channel>
 </rss>
