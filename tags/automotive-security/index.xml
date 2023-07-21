@@ -50,12 +50,11 @@ DEMO Copyright Donghyeon Jeong / dhje0ng(at)naver.</description>
     
     <item>
       <title>Awarded a bounty of $500 for BMW Automotive</title>
-      <link>https://blog.jhyeon.dev/posts/vuln/202303/bmw_automotive_cve/</link>
+      <link>https://blog.jhyeon.dev/posts/vuln/202303/bmw_automotive/</link>
       <pubDate>Wed, 22 Mar 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://blog.jhyeon.dev/posts/vuln/202303/bmw_automotive_cve/</guid>
-      <description>Summary BMW Automotive 취약점 제보 및 명예의 전당 등재.
-아마 올 해도 취약점 찾으면 올라갈 것 같다.
+      <guid>https://blog.jhyeon.dev/posts/vuln/202303/bmw_automotive/</guid>
+      <description>Summary In recent months, we previously conducted a vehicle vulnerability analysis for BMW Automotive. This vulnerability is a service crash vulnerability, which could result in a potential denial of service.
 [사진 1] BMW Automotive Awarded a bounty of 500$ [사진 2] BMW GROUP HALL OF FAME </description>
     </item>
     
