@@ -15,10 +15,9 @@
       <guid>https://blog.jhyeon.dev/posts/vuln/202307/gm-chevrolet/</guid>
       <description>Information Vehicle model : GM Chevrolet Equinox 2021
 Software version : 2021.03.26 build ver.
-Summary We analyzed the vulnerabilities in the infotainment system of Volkswagen Jetta vehicle and found a USB memory vulnerability that caused the infotainment to crash.
+Summary We analyzed the vulnerabilities in the infotainment system of General Motors (GM) Chevrolet Equinox 2021 vehicle and found a USB memory vulnerability that caused the infotainment to crash.
 Analysis TBD (No plans to go public yet.)
-Impact This attack could allow an attacker to abnormally shut down the vehicle&amp;rsquo;s infotainment system (resulting in an internal crash).
-DEMO Copyright Donghyeon Jeong / dhje0ng(at)naver.</description>
+Impact This attack could allow an attacker to abnormally shut down the vehicle&amp;rsquo;s infotainment system (resulting in an internal crash).</description>
     </item>
     
     <item>
