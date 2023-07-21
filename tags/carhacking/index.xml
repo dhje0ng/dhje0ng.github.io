@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>carhacking on DH.J</title>
+    <link>https://blog.jhyeon.dev/tags/carhacking/</link>
+    <description>Recent content in carhacking on DH.J</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 20 Jul 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://blog.jhyeon.dev/tags/carhacking/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GM Equinox Automotive Infotainment Vulnerability</title>
+      <link>https://blog.jhyeon.dev/posts/vuln/202307/gm-chevrolet/</link>
+      <pubDate>Thu, 20 Jul 2023 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/posts/vuln/202307/gm-chevrolet/</guid>
+      <description>Information Vehicle model : GM Chevrolet Equinox 2021
+Software version : 2021.03.26 build ver.
+Summary We analyzed the vulnerabilities in the infotainment system of General Motors (GM) Chevrolet Equinox 2021 vehicle and found a USB memory vulnerability that caused the infotainment to crash.
+Analysis TBD (No plans to go public yet.)
+Impact This attack could allow an attacker to abnormally shut down the vehicle&amp;rsquo;s infotainment system (resulting in an internal crash).</description>
+    </item>
+    
+    <item>
+      <title>Renault ZOE Automotive Infotainment Vulnerability</title>
+      <link>https://blog.jhyeon.dev/posts/vuln/202307/renault-zoe/</link>
+      <pubDate>Thu, 20 Jul 2023 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/posts/vuln/202307/renault-zoe/</guid>
+      <description>Information Vehicle model : Renault ZOE EV 2021
+Software version : 283C35202R
+Summary We analyzed the vulnerabilities in the infotainment system of Renault&amp;rsquo;s ZOE EV vehicle and found a USB memory vulnerability that caused the infotainment to crash.
+[Figure 1]] Vendor Reply E-mail Analysis TBD (No plans to go public yet.)
+Impact This attack could allow an attacker to abnormally shut down the vehicle&amp;rsquo;s infotainment system (resulting in an internal crash).</description>
+    </item>
+    
+    <item>
+      <title>Volkswagen Jetta Automotive Infotainment Vulnerability</title>
+      <link>https://blog.jhyeon.dev/posts/vuln/202307/volkswagen-jetta/</link>
+      <pubDate>Thu, 20 Jul 2023 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/posts/vuln/202307/volkswagen-jetta/</guid>
+      <description>Information Vehicle model : Volkswagen Jetta 2021
+Hardware version : 724
+Software version : 0876
+Summary We analyzed the vulnerabilities in the infotainment system of Volkswagen Jetta vehicle and found a USB memory vulnerability that caused the infotainment to crash.
+Analysis TBD (No plans to go public yet.)
+Impact This attack could allow an attacker to abnormally shut down the vehicle&amp;rsquo;s infotainment system (resulting in an internal crash).
+DEMO Copyright Donghyeon Jeong / dhje0ng(at)naver.</description>
+    </item>
+    
+  </channel>
+</rss>
