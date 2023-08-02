@@ -15,6 +15,7 @@
       <guid>https://blog.jhyeon.dev/posts/vuln/202307/gm-chevrolet/</guid>
       <description>Information Vehicle model : GM Chevrolet Equinox 2021
 Software version : 2021.03.26 build ver.
+CVE Assignment : CVE-2023-39076
 Summary We analyzed the vulnerabilities in the infotainment system of General Motors (GM) Chevrolet Equinox 2021 vehicle and found a USB memory vulnerability that caused the infotainment to crash.
 Analysis TBD (No plans to go public yet.)
 Impact This attack could allow an attacker to abnormally shut down the vehicle&amp;rsquo;s infotainment system (resulting in an internal crash).</description>
@@ -28,6 +29,7 @@ Impact This attack could allow an attacker to abnormally shut down the vehicle&a
       <guid>https://blog.jhyeon.dev/posts/vuln/202307/renault-zoe/</guid>
       <description>Information Vehicle model : Renault ZOE EV 2021
 Software version : 283C35202R
+CVE Assignment : CVE-2023-39075
 Summary We analyzed the vulnerabilities in the infotainment system of Renault&amp;rsquo;s ZOE EV vehicle and found a USB memory vulnerability that caused the infotainment to crash.
 [Figure 1]] Vendor Reply E-mail Analysis TBD (No plans to go public yet.)
 Impact This attack could allow an attacker to abnormally shut down the vehicle&amp;rsquo;s infotainment system (resulting in an internal crash).</description>
