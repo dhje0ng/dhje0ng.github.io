@@ -6,7 +6,19 @@
     <description>Recent content in automotive-security on DH.J</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 20 Jul 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://blog.jhyeon.dev/tags/automotive-security/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Aug 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://blog.jhyeon.dev/tags/automotive-security/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Car Hacking Village DC31</title>
+      <link>https://blog.jhyeon.dev/posts/automotive/202308/chvctf-dc31/</link>
+      <pubDate>Wed, 16 Aug 2023 00:00:00 +0900</pubDate>
+      
+      <guid>https://blog.jhyeon.dev/posts/automotive/202308/chvctf-dc31/</guid>
+      <description>Summary I attended the Car Hacking Village CTF at the DEFCON hacking conference in Las Vegas on the 10th.
+I participated as a member of Autocrypt with a total of 13 people and we finished in 4th place at the end of the competition.
+We would like to thank @uberwoozle for organizing this competition.
+[사진 1] CHV31 Scoreboard Write up TBD, The challenge will be made public once the solution is finalized.</description>
+    </item>
+    
     <item>
       <title>GM Equinox Automotive Infotainment Vulnerability</title>
       <link>https://blog.jhyeon.dev/posts/vuln/202307/gm-chevrolet/</link>
