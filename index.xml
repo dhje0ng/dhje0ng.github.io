@@ -13,10 +13,8 @@
       <pubDate>Wed, 16 Aug 2023 00:00:00 +0900</pubDate>
       
       <guid>https://blog.jhyeon.dev/posts/automotive/202308/chvctf-dc31/</guid>
-      <description>Summary I attended the Car Hacking Village CTF at the DEFCON hacking conference in Las Vegas on the 10th.
-I participated as a member of Autocrypt with a total of 13 people and we finished in 4th place at the end of the competition.
-We would like to thank @uberwoozle for organizing this competition.
-[사진 1] CHV31 Scoreboard Write up TBD, The challenge will be made public once the solution is finalized.</description>
+      <description>Summary On the 10th, I participated in the Car Hacking Village CTF at the DEFCON hacking conference in Las Vegas as a member of Autocrypt, which consisted of a total of 13 people. We secured a commendable 4th place finish in the competition. Special thanks to @uberwoozle for organizing this event.
+We also had a presentation at this year&amp;rsquo;s Car Hacking Village on &amp;ldquo;AUTOMOTIVE USB FUZZING: HOW TO FUZZING USB IN VEHICLES TO DISCOVER THE REAL-WORLD VULNERABILITIES&amp;rdquo;.</description>
     </item>
     
     <item>
