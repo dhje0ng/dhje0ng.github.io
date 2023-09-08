@@ -8,7 +8,7 @@
     <language>en</language>
     <lastBuildDate>Wed, 16 Aug 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://blog.jhyeon.dev/tags/automotive-security/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Car Hacking Village DC31</title>
+      <title>Car Hacking Village at DEFCON31</title>
       <link>https://blog.jhyeon.dev/posts/automotive/202308/chvctf-dc31/</link>
       <pubDate>Wed, 16 Aug 2023 00:00:00 +0900</pubDate>
       
@@ -23,12 +23,9 @@ We also had a presentation at this year&amp;rsquo;s Car Hacking Village on &amp;
       <pubDate>Thu, 20 Jul 2023 00:00:00 +0900</pubDate>
       
       <guid>https://blog.jhyeon.dev/posts/vuln/202307/gm-chevrolet/</guid>
-      <description>Information Vehicle model : GM Chevrolet Equinox 2021
-Software version : 2021.03.26 build ver.
-CVE Assignment : CVE-2023-39076
-Summary We analyzed the vulnerabilities in the infotainment system of General Motors (GM) Chevrolet Equinox 2021 vehicle and found a USB memory vulnerability that caused the infotainment to crash.
-Analysis TBD (No plans to go public yet.)
-Impact This attack could allow an attacker to abnormally shut down the vehicle&amp;rsquo;s infotainment system (resulting in an internal crash).</description>
+      <description>CVE-2023-39076 PoC for vulnerability in General Motors Automotive Infortainment System
+Summary This is a proof of concept for CVE-2023-39076, which allows a USB attack on the infotainment system in General Motors vehicles. This could allow an attacker to crash the infotainment system.
+Affected GM Chevrolet Equinox 2021 (at version, 2021.03.26 build ver) DEMO Copyright Donghyeon Jeong / dhje0ng(at)naver.com</description>
     </item>
     
     <item>
@@ -37,12 +34,9 @@ Impact This attack could allow an attacker to abnormally shut down the vehicle&a
       <pubDate>Thu, 20 Jul 2023 00:00:00 +0900</pubDate>
       
       <guid>https://blog.jhyeon.dev/posts/vuln/202307/renault-zoe/</guid>
-      <description>Information Vehicle model : Renault ZOE EV 2021
-Software version : 283C35202R
-CVE Assignment : CVE-2023-39075
-Summary We analyzed the vulnerabilities in the infotainment system of Renault&amp;rsquo;s ZOE EV vehicle and found a USB memory vulnerability that caused the infotainment to crash.
-[Figure 1]] Vendor Reply E-mail Analysis TBD (No plans to go public yet.)
-Impact This attack could allow an attacker to abnormally shut down the vehicle&amp;rsquo;s infotainment system (resulting in an internal crash).</description>
+      <description>CVE-2023-39075 PoC for vulnerability in Renault Automotive Infortainment System
+Summary This is a proof of concept for CVE-2023-39075, which allows a USB attack on the infotainment system in Renault vehicles. This could allow an attacker to crash the infotainment system.
+Affected Renault ZOE EV 2021 (at versions, 283C35202R ~ 283C35519R) DEMO Copyright Donghyeon Jeong / dhje0ng(at)naver.com</description>
     </item>
     
     <item>
