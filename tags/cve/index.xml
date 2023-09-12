@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>cve on DH.J</title>
-    <link>https://blog.jhyeon.dev/tags/cve/</link>
+    <link>https://blog.dhjeong.kr/tags/cve/</link>
     <description>Recent content in cve on DH.J</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 14 May 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://blog.jhyeon.dev/tags/cve/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 May 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://blog.dhjeong.kr/tags/cve/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Review a CVE-2023-23082</title>
-      <link>https://blog.jhyeon.dev/posts/vuln/202305/cve-2023-23082/</link>
+      <link>https://blog.dhjeong.kr/posts/vuln/202305/cve-2023-23082/</link>
       <pubDate>Sun, 14 May 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://blog.jhyeon.dev/posts/vuln/202305/cve-2023-23082/</guid>
+      <guid>https://blog.dhjeong.kr/posts/vuln/202305/cve-2023-23082/</guid>
       <description>Overview A few months ago I started doing vulnerability analysis research on open source projects and this is a quick review of vulnerabilities for one of them, the Kodi project by the XBMC Foundation.
 The vulnerability was categorized as a heap overflow and a DOS vulnerability and assigned CVE-2023-23082.
 More information can be found at cve.mitre.org.
