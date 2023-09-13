@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on DH.J</title>
-    <link>https://blog.dhjeong.kr/posts/</link>
+    <link>http://blog.dhjeong.kr/posts/</link>
     <description>Recent content in Posts on DH.J</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 16 Aug 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://blog.dhjeong.kr/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Aug 2023 00:00:00 +0900</lastBuildDate><atom:link href="http://blog.dhjeong.kr/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Car Hacking Village at DEFCON31</title>
-      <link>https://blog.dhjeong.kr/posts/automotive/202308/chvctf-dc31/</link>
+      <link>http://blog.dhjeong.kr/posts/automotive/202308/chvctf-dc31/</link>
       <pubDate>Wed, 16 Aug 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://blog.dhjeong.kr/posts/automotive/202308/chvctf-dc31/</guid>
+      <guid>http://blog.dhjeong.kr/posts/automotive/202308/chvctf-dc31/</guid>
       <description>Summary On the 10th, I participated in the Car Hacking Village CTF at the DEFCON hacking conference in Las Vegas as a member of Autocrypt, which consisted of a total of 13 people. We secured a commendable 4th place finish in the competition. Special thanks to @uberwoozle for organizing this event.
 We also had a presentation at this year&amp;rsquo;s Car Hacking Village on &amp;ldquo;AUTOMOTIVE USB FUZZING: HOW TO FUZZING USB IN VEHICLES TO DISCOVER THE REAL-WORLD VULNERABILITIES&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>GM Equinox Automotive Infotainment Vulnerability</title>
-      <link>https://blog.dhjeong.kr/posts/vuln/202307/gm-chevrolet/</link>
+      <link>http://blog.dhjeong.kr/posts/vuln/202307/gm-chevrolet/</link>
       <pubDate>Thu, 20 Jul 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://blog.dhjeong.kr/posts/vuln/202307/gm-chevrolet/</guid>
+      <guid>http://blog.dhjeong.kr/posts/vuln/202307/gm-chevrolet/</guid>
       <description>CVE-2023-39076 PoC for vulnerability in General Motors Automotive Infortainment System
 Summary This is a proof of concept for CVE-2023-39076, which allows a USB attack on the infotainment system in General Motors vehicles. This could allow an attacker to crash the infotainment system.
 Affected GM Chevrolet Equinox 2021 (at version, 2021.03.26 build ver) DEMO Copyright Donghyeon Jeong / dhje0ng(at)naver.com</description>
@@ -30,10 +30,10 @@ Affected GM Chevrolet Equinox 2021 (at version, 2021.03.26 build ver) DEMO Copyr
     
     <item>
       <title>Renault ZOE Automotive Infotainment Vulnerability</title>
-      <link>https://blog.dhjeong.kr/posts/vuln/202307/renault-zoe/</link>
+      <link>http://blog.dhjeong.kr/posts/vuln/202307/renault-zoe/</link>
       <pubDate>Thu, 20 Jul 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://blog.dhjeong.kr/posts/vuln/202307/renault-zoe/</guid>
+      <guid>http://blog.dhjeong.kr/posts/vuln/202307/renault-zoe/</guid>
       <description>CVE-2023-39075 PoC for vulnerability in Renault Automotive Infortainment System
 Summary This is a proof of concept for CVE-2023-39075, which allows a USB attack on the infotainment system in Renault vehicles. This could allow an attacker to crash the infotainment system.
 Affected Renault ZOE EV 2021 (at versions, 283C35202R ~ 283C35519R) DEMO Copyright Donghyeon Jeong / dhje0ng(at)naver.com</description>
@@ -41,10 +41,10 @@ Affected Renault ZOE EV 2021 (at versions, 283C35202R ~ 283C35519R) DEMO Copyrig
     
     <item>
       <title>Volkswagen Jetta Automotive Infotainment Vulnerability</title>
-      <link>https://blog.dhjeong.kr/posts/vuln/202307/volkswagen-jetta/</link>
+      <link>http://blog.dhjeong.kr/posts/vuln/202307/volkswagen-jetta/</link>
       <pubDate>Thu, 20 Jul 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://blog.dhjeong.kr/posts/vuln/202307/volkswagen-jetta/</guid>
+      <guid>http://blog.dhjeong.kr/posts/vuln/202307/volkswagen-jetta/</guid>
       <description>Information Vehicle model : Volkswagen Jetta 2021
 Hardware version : 724
 Software version : 0876
@@ -56,10 +56,10 @@ DEMO Copyright Donghyeon Jeong / dhje0ng(at)naver.</description>
     
     <item>
       <title>Review a CVE-2023-23082</title>
-      <link>https://blog.dhjeong.kr/posts/vuln/202305/cve-2023-23082/</link>
+      <link>http://blog.dhjeong.kr/posts/vuln/202305/cve-2023-23082/</link>
       <pubDate>Sun, 14 May 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://blog.dhjeong.kr/posts/vuln/202305/cve-2023-23082/</guid>
+      <guid>http://blog.dhjeong.kr/posts/vuln/202305/cve-2023-23082/</guid>
       <description>Overview A few months ago I started doing vulnerability analysis research on open source projects and this is a quick review of vulnerabilities for one of them, the Kodi project by the XBMC Foundation.
 The vulnerability was categorized as a heap overflow and a DOS vulnerability and assigned CVE-2023-23082.
 More information can be found at cve.mitre.org.
@@ -68,20 +68,20 @@ https://nvd.nist.gov/vuln/detail/CVE-2023-23082 Vulnerability The vulnerability 
     
     <item>
       <title>Awarded a bounty of $500 for BMW Automotive</title>
-      <link>https://blog.dhjeong.kr/posts/vuln/202303/bmw_automotive/</link>
+      <link>http://blog.dhjeong.kr/posts/vuln/202303/bmw_automotive/</link>
       <pubDate>Wed, 22 Mar 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://blog.dhjeong.kr/posts/vuln/202303/bmw_automotive/</guid>
+      <guid>http://blog.dhjeong.kr/posts/vuln/202303/bmw_automotive/</guid>
       <description>Summary In recent months, we previously conducted a vehicle vulnerability analysis for BMW Automotive. This vulnerability is a service crash vulnerability, which could result in a potential denial of service.
 [사진 1] BMW Automotive Awarded a bounty of 500$ [사진 2] BMW GROUP HALL OF FAME </description>
     </item>
     
     <item>
       <title>AGL (Automotive Grade Linux) Platform</title>
-      <link>https://blog.dhjeong.kr/posts/automotive/202212/agl/</link>
+      <link>http://blog.dhjeong.kr/posts/automotive/202212/agl/</link>
       <pubDate>Sun, 04 Dec 2022 00:00:00 +0900</pubDate>
       
-      <guid>https://blog.dhjeong.kr/posts/automotive/202212/agl/</guid>
+      <guid>http://blog.dhjeong.kr/posts/automotive/202212/agl/</guid>
       <description>Summary [사진 1] AGL Overview AGL (Automotive Grade Linux) OS란?
 https://www.automotivelinux.org/about/members/
 전 세계 차량 OEM 들과 협력하에 개발되고 있는 인포테인먼트 시스템이다.
@@ -94,10 +94,10 @@ IVI 시스템을 쉽게 개발할 수 있도록 하는 목적을 가진다.
     
     <item>
       <title>2022 POWER OF XX 예/본선 대회 운영기</title>
-      <link>https://blog.dhjeong.kr/posts/notes/202211/poxx/</link>
+      <link>http://blog.dhjeong.kr/posts/notes/202211/poxx/</link>
       <pubDate>Sat, 12 Nov 2022 11:36:24 +0900</pubDate>
       
-      <guid>https://blog.dhjeong.kr/posts/notes/202211/poxx/</guid>
+      <guid>http://blog.dhjeong.kr/posts/notes/202211/poxx/</guid>
       <description>Summary 지난 10월 8일 그리고 이틀 전인 11월 10일 두 번에 걸쳐서 2022 POWER OF XX 대회를 운영하였다.
 예/본선 모두 CTF 플랫폼과 문제 인스턴스 등 인프라 전체 관리를 맡았고 약간의 문제(?)를 제외하면 성공적으로 대회를 운영한 것 같다.
 이번에 운영했을 때 인프라를 어떻게 구성했는지를 간단하게 썰로 풀어보려고 한다.
@@ -106,10 +106,10 @@ Server Instance Name Description Spec Main-Server CTFd(v3.5.0) c5.2xlarge(8CPU, 
     
     <item>
       <title>Car Instrument Cluster Simulator</title>
-      <link>https://blog.dhjeong.kr/posts/automotive/202210/icsim_simulator/</link>
+      <link>http://blog.dhjeong.kr/posts/automotive/202210/icsim_simulator/</link>
       <pubDate>Thu, 13 Oct 2022 11:36:24 +0900</pubDate>
       
-      <guid>https://blog.dhjeong.kr/posts/automotive/202210/icsim_simulator/</guid>
+      <guid>http://blog.dhjeong.kr/posts/automotive/202210/icsim_simulator/</guid>
       <description>Summary 최근 자동차 해킹에 대한 소재가 많이 떠오르고 있다. 때문에 자동차 보안에 대해서도 관심을
 가지시는 분들이 많을 것 같다고 생각을 하고 있다.
 이번 글에서는 자동차에 들어가는 주요 통신 프로토콜 중 하나인 CAN 프로토콜이 어떤건지, 그리고
@@ -121,10 +121,10 @@ CAN Protocol Controller Area Network 의 약자로,
     
     <item>
       <title>DEFCON 30th Car Hacking Village 참가 후기 SSUL</title>
-      <link>https://blog.dhjeong.kr/posts/notes/202210/defcon30/</link>
+      <link>http://blog.dhjeong.kr/posts/notes/202210/defcon30/</link>
       <pubDate>Wed, 12 Oct 2022 16:36:20 +0900</pubDate>
       
-      <guid>https://blog.dhjeong.kr/posts/notes/202210/defcon30/</guid>
+      <guid>http://blog.dhjeong.kr/posts/notes/202210/defcon30/</guid>
       <description>Summary 코시국으로 인해 세계 최대 해킹 컨퍼런스인 데프콘(DEFCON) 행사도 몇 년간 온라인으로 진행이 됐었다.
 그!러!나 22년도에는 드디어 오프라인으로 데프콘 행사가 열리게 된다는 소식을 접할 수 있었다.
 마침 우리 회사 팀장님이 DEFCON MAIN TALK 이랑 Car Hacking Village 에 CFP 를 제출했던 것이 Aceept 되셔서
@@ -136,10 +136,10 @@ CAN Protocol Controller Area Network 의 약자로,
     
     <item>
       <title>2021 사이버보안챌린지 자동차 해킹&amp;방어 대회 우승 후기</title>
-      <link>https://blog.dhjeong.kr/posts/notes/202112/csc2021/</link>
+      <link>http://blog.dhjeong.kr/posts/notes/202112/csc2021/</link>
       <pubDate>Sun, 12 Dec 2021 00:00:00 +0900</pubDate>
       
-      <guid>https://blog.dhjeong.kr/posts/notes/202112/csc2021/</guid>
+      <guid>http://blog.dhjeong.kr/posts/notes/202112/csc2021/</guid>
       <description>Summary 이번 하반기에 진행된 사이버보안챌린지 2021 차량 해킹&amp;amp;방어 대회에서,
 회사 소속으로 출전해서 최우수상 을 수상하게 되었다!
 대회 환경이 AGL (Automotive Grade Linux) 라고 하는 차량 인포테인먼트 시스템 이미지를 주고,

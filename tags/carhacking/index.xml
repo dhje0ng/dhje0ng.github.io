@@ -2,27 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>carhacking on DH.J</title>
-    <link>https://blog.dhjeong.kr/tags/carhacking/</link>
+    <link>http://blog.dhjeong.kr/tags/carhacking/</link>
     <description>Recent content in carhacking on DH.J</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 16 Aug 2023 00:00:00 +0900</lastBuildDate><atom:link href="https://blog.dhjeong.kr/tags/carhacking/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 16 Aug 2023 00:00:00 +0900</lastBuildDate><atom:link href="http://blog.dhjeong.kr/tags/carhacking/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Car Hacking Village at DEFCON31</title>
-      <link>https://blog.dhjeong.kr/posts/automotive/202308/chvctf-dc31/</link>
+      <link>http://blog.dhjeong.kr/posts/automotive/202308/chvctf-dc31/</link>
       <pubDate>Wed, 16 Aug 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://blog.dhjeong.kr/posts/automotive/202308/chvctf-dc31/</guid>
+      <guid>http://blog.dhjeong.kr/posts/automotive/202308/chvctf-dc31/</guid>
       <description>Summary On the 10th, I participated in the Car Hacking Village CTF at the DEFCON hacking conference in Las Vegas as a member of Autocrypt, which consisted of a total of 13 people. We secured a commendable 4th place finish in the competition. Special thanks to @uberwoozle for organizing this event.
 We also had a presentation at this year&amp;rsquo;s Car Hacking Village on &amp;ldquo;AUTOMOTIVE USB FUZZING: HOW TO FUZZING USB IN VEHICLES TO DISCOVER THE REAL-WORLD VULNERABILITIES&amp;rdquo;.</description>
     </item>
     
     <item>
       <title>GM Equinox Automotive Infotainment Vulnerability</title>
-      <link>https://blog.dhjeong.kr/posts/vuln/202307/gm-chevrolet/</link>
+      <link>http://blog.dhjeong.kr/posts/vuln/202307/gm-chevrolet/</link>
       <pubDate>Thu, 20 Jul 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://blog.dhjeong.kr/posts/vuln/202307/gm-chevrolet/</guid>
+      <guid>http://blog.dhjeong.kr/posts/vuln/202307/gm-chevrolet/</guid>
       <description>CVE-2023-39076 PoC for vulnerability in General Motors Automotive Infortainment System
 Summary This is a proof of concept for CVE-2023-39076, which allows a USB attack on the infotainment system in General Motors vehicles. This could allow an attacker to crash the infotainment system.
 Affected GM Chevrolet Equinox 2021 (at version, 2021.03.26 build ver) DEMO Copyright Donghyeon Jeong / dhje0ng(at)naver.com</description>
@@ -30,10 +30,10 @@ Affected GM Chevrolet Equinox 2021 (at version, 2021.03.26 build ver) DEMO Copyr
     
     <item>
       <title>Renault ZOE Automotive Infotainment Vulnerability</title>
-      <link>https://blog.dhjeong.kr/posts/vuln/202307/renault-zoe/</link>
+      <link>http://blog.dhjeong.kr/posts/vuln/202307/renault-zoe/</link>
       <pubDate>Thu, 20 Jul 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://blog.dhjeong.kr/posts/vuln/202307/renault-zoe/</guid>
+      <guid>http://blog.dhjeong.kr/posts/vuln/202307/renault-zoe/</guid>
       <description>CVE-2023-39075 PoC for vulnerability in Renault Automotive Infortainment System
 Summary This is a proof of concept for CVE-2023-39075, which allows a USB attack on the infotainment system in Renault vehicles. This could allow an attacker to crash the infotainment system.
 Affected Renault ZOE EV 2021 (at versions, 283C35202R ~ 283C35519R) DEMO Copyright Donghyeon Jeong / dhje0ng(at)naver.com</description>
@@ -41,10 +41,10 @@ Affected Renault ZOE EV 2021 (at versions, 283C35202R ~ 283C35519R) DEMO Copyrig
     
     <item>
       <title>Volkswagen Jetta Automotive Infotainment Vulnerability</title>
-      <link>https://blog.dhjeong.kr/posts/vuln/202307/volkswagen-jetta/</link>
+      <link>http://blog.dhjeong.kr/posts/vuln/202307/volkswagen-jetta/</link>
       <pubDate>Thu, 20 Jul 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://blog.dhjeong.kr/posts/vuln/202307/volkswagen-jetta/</guid>
+      <guid>http://blog.dhjeong.kr/posts/vuln/202307/volkswagen-jetta/</guid>
       <description>Information Vehicle model : Volkswagen Jetta 2021
 Hardware version : 724
 Software version : 0876
@@ -56,10 +56,10 @@ DEMO Copyright Donghyeon Jeong / dhje0ng(at)naver.</description>
     
     <item>
       <title>Awarded a bounty of $500 for BMW Automotive</title>
-      <link>https://blog.dhjeong.kr/posts/vuln/202303/bmw_automotive/</link>
+      <link>http://blog.dhjeong.kr/posts/vuln/202303/bmw_automotive/</link>
       <pubDate>Wed, 22 Mar 2023 00:00:00 +0900</pubDate>
       
-      <guid>https://blog.dhjeong.kr/posts/vuln/202303/bmw_automotive/</guid>
+      <guid>http://blog.dhjeong.kr/posts/vuln/202303/bmw_automotive/</guid>
       <description>Summary In recent months, we previously conducted a vehicle vulnerability analysis for BMW Automotive. This vulnerability is a service crash vulnerability, which could result in a potential denial of service.
 [사진 1] BMW Automotive Awarded a bounty of 500$ [사진 2] BMW GROUP HALL OF FAME </description>
     </item>
