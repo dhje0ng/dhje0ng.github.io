@@ -21,10 +21,10 @@ dhjisgod (9th)
     
     <item>
       <title>Car Hacking Village at DEFCON31</title>
-      <link>http://blog.dhjeong.kr/posts/automotive/202308/chvctf-dc31/</link>
+      <link>http://blog.dhjeong.kr/posts/automotive/2023/08/chvctf-dc31/</link>
       <pubDate>Wed, 16 Aug 2023 00:00:00 +0900</pubDate>
       
-      <guid>http://blog.dhjeong.kr/posts/automotive/202308/chvctf-dc31/</guid>
+      <guid>http://blog.dhjeong.kr/posts/automotive/2023/08/chvctf-dc31/</guid>
       <description>Summary On the 10th, I participated in the Car Hacking Village CTF at the DEFCON hacking conference in Las Vegas as a member of Autocrypt, which consisted of a total of 13 people. We secured a commendable 4th place finish in the competition. Special thanks to @uberwoozle for organizing this event.
 We also had a presentation at this year&amp;rsquo;s Car Hacking Village on &amp;ldquo;AUTOMOTIVE USB FUZZING: HOW TO FUZZING USB IN VEHICLES TO DISCOVER THE REAL-WORLD VULNERABILITIES&amp;rdquo;.</description>
     </item>
@@ -90,10 +90,10 @@ https://nvd.nist.gov/vuln/detail/CVE-2023-23082 Vulnerability The vulnerability 
     
     <item>
       <title>AGL (Automotive Grade Linux) Platform</title>
-      <link>http://blog.dhjeong.kr/posts/automotive/202212/agl/</link>
+      <link>http://blog.dhjeong.kr/posts/automotive/2022/12/agl/</link>
       <pubDate>Sun, 04 Dec 2022 00:00:00 +0900</pubDate>
       
-      <guid>http://blog.dhjeong.kr/posts/automotive/202212/agl/</guid>
+      <guid>http://blog.dhjeong.kr/posts/automotive/2022/12/agl/</guid>
       <description>Summary [사진 1] AGL Overview AGL (Automotive Grade Linux) OS란?
 https://www.automotivelinux.org/about/members/
 전 세계 차량 OEM 들과 협력하에 개발되고 있는 인포테인먼트 시스템이다.
@@ -118,10 +118,10 @@ Server Instance Name Description Spec Main-Server CTFd(v3.5.0) c5.2xlarge(8CPU, 
     
     <item>
       <title>Car Instrument Cluster Simulator</title>
-      <link>http://blog.dhjeong.kr/posts/automotive/202210/icsim_simulator/</link>
+      <link>http://blog.dhjeong.kr/posts/automotive/2022/10/icsim_simulator/</link>
       <pubDate>Thu, 13 Oct 2022 11:36:24 +0900</pubDate>
       
-      <guid>http://blog.dhjeong.kr/posts/automotive/202210/icsim_simulator/</guid>
+      <guid>http://blog.dhjeong.kr/posts/automotive/2022/10/icsim_simulator/</guid>
       <description>Summary 최근 자동차 해킹에 대한 소재가 많이 떠오르고 있다. 때문에 자동차 보안에 대해서도 관심을
 가지시는 분들이 많을 것 같다고 생각을 하고 있다.
 이번 글에서는 자동차에 들어가는 주요 통신 프로토콜 중 하나인 CAN 프로토콜이 어떤건지, 그리고

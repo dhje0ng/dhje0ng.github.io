@@ -9,10 +9,10 @@
     <lastBuildDate>Wed, 16 Aug 2023 00:00:00 +0900</lastBuildDate><atom:link href="http://blog.dhjeong.kr/tags/car-hacking-village/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Car Hacking Village at DEFCON31</title>
-      <link>http://blog.dhjeong.kr/posts/automotive/202308/chvctf-dc31/</link>
+      <link>http://blog.dhjeong.kr/posts/automotive/2023/08/chvctf-dc31/</link>
       <pubDate>Wed, 16 Aug 2023 00:00:00 +0900</pubDate>
       
-      <guid>http://blog.dhjeong.kr/posts/automotive/202308/chvctf-dc31/</guid>
+      <guid>http://blog.dhjeong.kr/posts/automotive/2023/08/chvctf-dc31/</guid>
       <description>Summary On the 10th, I participated in the Car Hacking Village CTF at the DEFCON hacking conference in Las Vegas as a member of Autocrypt, which consisted of a total of 13 people. We secured a commendable 4th place finish in the competition. Special thanks to @uberwoozle for organizing this event.
 We also had a presentation at this year&amp;rsquo;s Car Hacking Village on &amp;ldquo;AUTOMOTIVE USB FUZZING: HOW TO FUZZING USB IN VEHICLES TO DISCOVER THE REAL-WORLD VULNERABILITIES&amp;rdquo;.</description>
     </item>
