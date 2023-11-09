@@ -61,7 +61,7 @@ DEMO Copyright Donghyeon Jeong / dhje0ng(at)naver.</description>
       
       <guid>http://blog.dhjeong.kr/posts/vuln/202303/bmw_automotive/</guid>
       <description>Summary In recent months, we previously conducted a vehicle vulnerability analysis for BMW Automotive. This vulnerability is a service crash vulnerability, which could result in a potential denial of service.
-[사진 1] BMW Automotive Awarded a bounty of 500$ [사진 2] BMW GROUP HALL OF FAME </description>
+[Figure 1] BMW Automotive Awarded a bounty of 500$ [Figure 2] BMW GROUP HALL OF FAME </description>
     </item>
     
   </channel>

@@ -6,7 +6,19 @@
     <description>Recent content in Posts on DH.J</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 16 Aug 2023 00:00:00 +0900</lastBuildDate><atom:link href="http://blog.dhjeong.kr/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Nov 2023 10:10:10 +0900</lastBuildDate><atom:link href="http://blog.dhjeong.kr/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BH CTF - Write up</title>
+      <link>http://blog.dhjeong.kr/posts/ctf/202309/blockharbor/</link>
+      <pubDate>Thu, 09 Nov 2023 10:10:10 +0900</pubDate>
+      
+      <guid>http://blog.dhjeong.kr/posts/ctf/202309/blockharbor/</guid>
+      <description>Summary Blockharbor CTF Season 1
+https://ctf.blockharbor.io
+dhjisgod (9th)
+[Figure 1] BHCTF ScoreBoard Challenges TBD (coming soon) </description>
+    </item>
+    
     <item>
       <title>Car Hacking Village at DEFCON31</title>
       <link>http://blog.dhjeong.kr/posts/automotive/202308/chvctf-dc31/</link>
@@ -73,7 +85,7 @@ https://nvd.nist.gov/vuln/detail/CVE-2023-23082 Vulnerability The vulnerability 
       
       <guid>http://blog.dhjeong.kr/posts/vuln/202303/bmw_automotive/</guid>
       <description>Summary In recent months, we previously conducted a vehicle vulnerability analysis for BMW Automotive. This vulnerability is a service crash vulnerability, which could result in a potential denial of service.
-[사진 1] BMW Automotive Awarded a bounty of 500$ [사진 2] BMW GROUP HALL OF FAME </description>
+[Figure 1] BMW Automotive Awarded a bounty of 500$ [Figure 2] BMW GROUP HALL OF FAME </description>
     </item>
     
     <item>
