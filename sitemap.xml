@@ -3,7 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>http://blog.dhjeong.kr/tags/automotive/</loc>
-    <lastmod>2023-11-09T10:10:10+09:00</lastmod>
+    <lastmod>2023-12-07T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://blog.dhjeong.kr/tags/automotive-security/</loc>
+    <lastmod>2023-12-07T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://blog.dhjeong.kr/tags/carhacking/</loc>
+    <lastmod>2023-12-07T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://blog.dhjeong.kr/tags/carhackingvillage/</loc>
+    <lastmod>2023-12-07T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://blog.dhjeong.kr/tags/cve-2023-39075/</loc>
+    <lastmod>2023-12-07T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://blog.dhjeong.kr/tags/cve-2023-39076/</loc>
+    <lastmod>2023-12-07T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://blog.dhjeong.kr/tags/defcon/</loc>
+    <lastmod>2023-12-07T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://blog.dhjeong.kr/</loc>
+    <lastmod>2023-12-07T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://blog.dhjeong.kr/posts/automotive/2023/12/how-to-fuzzing-realcars/</loc>
+    <lastmod>2023-12-07T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://blog.dhjeong.kr/posts/</loc>
+    <lastmod>2023-12-07T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://blog.dhjeong.kr/tags/syzkaller/</loc>
+    <lastmod>2023-12-07T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://blog.dhjeong.kr/tags/</loc>
+    <lastmod>2023-12-07T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>http://blog.dhjeong.kr/tags/usb-fuzzing/</loc>
+    <lastmod>2023-12-07T00:00:00+09:00</lastmod>
   </url><url>
     <loc>http://blog.dhjeong.kr/posts/ctf/2023/11/blockharbor/</loc>
     <lastmod>2023-11-09T10:10:10+09:00</lastmod>
@@ -14,25 +50,7 @@
     <loc>http://blog.dhjeong.kr/tags/ctf/</loc>
     <lastmod>2023-11-09T10:10:10+09:00</lastmod>
   </url><url>
-    <loc>http://blog.dhjeong.kr/</loc>
-    <lastmod>2023-11-09T10:10:10+09:00</lastmod>
-  </url><url>
-    <loc>http://blog.dhjeong.kr/posts/</loc>
-    <lastmod>2023-11-09T10:10:10+09:00</lastmod>
-  </url><url>
-    <loc>http://blog.dhjeong.kr/tags/</loc>
-    <lastmod>2023-11-09T10:10:10+09:00</lastmod>
-  </url><url>
-    <loc>http://blog.dhjeong.kr/tags/automotive-security/</loc>
-    <lastmod>2023-11-09T00:00:00+09:00</lastmod>
-  </url><url>
     <loc>http://blog.dhjeong.kr/tags/car-hacking-village/</loc>
-    <lastmod>2023-11-09T00:00:00+09:00</lastmod>
-  </url><url>
-    <loc>http://blog.dhjeong.kr/tags/carhacking/</loc>
-    <lastmod>2023-11-09T00:00:00+09:00</lastmod>
-  </url><url>
-    <loc>http://blog.dhjeong.kr/tags/defcon/</loc>
     <lastmod>2023-11-09T00:00:00+09:00</lastmod>
   </url><url>
     <loc>http://blog.dhjeong.kr/tags/defcon31/</loc>
@@ -46,15 +64,6 @@
   </url><url>
     <loc>http://blog.dhjeong.kr/tags/chvctf/</loc>
     <lastmod>2023-08-16T00:00:00+09:00</lastmod>
-  </url><url>
-    <loc>http://blog.dhjeong.kr/posts/vuln/202307/gm-chevrolet/</loc>
-    <lastmod>2023-07-20T00:00:00+09:00</lastmod>
-  </url><url>
-    <loc>http://blog.dhjeong.kr/posts/vuln/202307/renault-zoe/</loc>
-    <lastmod>2023-07-20T00:00:00+09:00</lastmod>
-  </url><url>
-    <loc>http://blog.dhjeong.kr/posts/vuln/202307/volkswagen-jetta/</loc>
-    <lastmod>2023-07-20T00:00:00+09:00</lastmod>
   </url><url>
     <loc>http://blog.dhjeong.kr/tags/cve/</loc>
     <lastmod>2023-05-14T00:00:00+09:00</lastmod>

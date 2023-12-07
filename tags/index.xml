@@ -6,13 +6,85 @@
     <description>Recent content in Tags on DH.J</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 09 Nov 2023 10:10:10 +0900</lastBuildDate><atom:link href="http://blog.dhjeong.kr/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 07 Dec 2023 00:00:00 +0900</lastBuildDate><atom:link href="http://blog.dhjeong.kr/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>automotive</title>
       <link>http://blog.dhjeong.kr/tags/automotive/</link>
-      <pubDate>Thu, 09 Nov 2023 10:10:10 +0900</pubDate>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0900</pubDate>
       
       <guid>http://blog.dhjeong.kr/tags/automotive/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>automotive-security</title>
+      <link>http://blog.dhjeong.kr/tags/automotive-security/</link>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0900</pubDate>
+      
+      <guid>http://blog.dhjeong.kr/tags/automotive-security/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>carhacking</title>
+      <link>http://blog.dhjeong.kr/tags/carhacking/</link>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0900</pubDate>
+      
+      <guid>http://blog.dhjeong.kr/tags/carhacking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>carhackingvillage</title>
+      <link>http://blog.dhjeong.kr/tags/carhackingvillage/</link>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0900</pubDate>
+      
+      <guid>http://blog.dhjeong.kr/tags/carhackingvillage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CVE-2023-39075</title>
+      <link>http://blog.dhjeong.kr/tags/cve-2023-39075/</link>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0900</pubDate>
+      
+      <guid>http://blog.dhjeong.kr/tags/cve-2023-39075/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CVE-2023-39076</title>
+      <link>http://blog.dhjeong.kr/tags/cve-2023-39076/</link>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0900</pubDate>
+      
+      <guid>http://blog.dhjeong.kr/tags/cve-2023-39076/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>defcon</title>
+      <link>http://blog.dhjeong.kr/tags/defcon/</link>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0900</pubDate>
+      
+      <guid>http://blog.dhjeong.kr/tags/defcon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>syzkaller</title>
+      <link>http://blog.dhjeong.kr/tags/syzkaller/</link>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0900</pubDate>
+      
+      <guid>http://blog.dhjeong.kr/tags/syzkaller/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>usb fuzzing</title>
+      <link>http://blog.dhjeong.kr/tags/usb-fuzzing/</link>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0900</pubDate>
+      
+      <guid>http://blog.dhjeong.kr/tags/usb-fuzzing/</guid>
       <description></description>
     </item>
     
@@ -35,38 +107,11 @@
     </item>
     
     <item>
-      <title>automotive-security</title>
-      <link>http://blog.dhjeong.kr/tags/automotive-security/</link>
-      <pubDate>Thu, 09 Nov 2023 00:00:00 +0900</pubDate>
-      
-      <guid>http://blog.dhjeong.kr/tags/automotive-security/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>car hacking village</title>
       <link>http://blog.dhjeong.kr/tags/car-hacking-village/</link>
       <pubDate>Thu, 09 Nov 2023 00:00:00 +0900</pubDate>
       
       <guid>http://blog.dhjeong.kr/tags/car-hacking-village/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>carhacking</title>
-      <link>http://blog.dhjeong.kr/tags/carhacking/</link>
-      <pubDate>Thu, 09 Nov 2023 00:00:00 +0900</pubDate>
-      
-      <guid>http://blog.dhjeong.kr/tags/carhacking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>defcon</title>
-      <link>http://blog.dhjeong.kr/tags/defcon/</link>
-      <pubDate>Thu, 09 Nov 2023 00:00:00 +0900</pubDate>
-      
-      <guid>http://blog.dhjeong.kr/tags/defcon/</guid>
       <description></description>
     </item>
     
