@@ -8,7 +8,7 @@
     <language>en</language>
     <lastBuildDate>Thu, 07 Dec 2023 00:00:00 +0900</lastBuildDate><atom:link href="http://blog.dhjeong.kr/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>How to fuzzing test USB stack in real cars</title>
+      <title>How to fuzzing USB stack in real cars</title>
       <link>http://blog.dhjeong.kr/posts/automotive/2023/12/how-to-fuzzing-realcars/</link>
       <pubDate>Thu, 07 Dec 2023 00:00:00 +0900</pubDate>
       
