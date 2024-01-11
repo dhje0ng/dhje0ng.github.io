@@ -6,48 +6,28 @@
     <description>Recent content in notes on DH.J</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 12 Nov 2022 11:36:24 +0900</lastBuildDate><atom:link href="http://blog.dhjeong.kr/tags/notes/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 12 Nov 2022 11:36:24 +0900</lastBuildDate>
+    <atom:link href="http://blog.dhjeong.kr/tags/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>2022 POWER OF XX 예/본선 대회 운영기</title>
       <link>http://blog.dhjeong.kr/posts/notes/202211/poxx/</link>
       <pubDate>Sat, 12 Nov 2022 11:36:24 +0900</pubDate>
-      
       <guid>http://blog.dhjeong.kr/posts/notes/202211/poxx/</guid>
-      <description>Summary 지난 10월 8일 그리고 이틀 전인 11월 10일 두 번에 걸쳐서 2022 POWER OF XX 대회를 운영하였다.
-예/본선 모두 CTF 플랫폼과 문제 인스턴스 등 인프라 전체 관리를 맡았고 약간의 문제(?)를 제외하면 성공적으로 대회를 운영한 것 같다.
-이번에 운영했을 때 인프라를 어떻게 구성했는지를 간단하게 썰로 풀어보려고 한다.
-Server Instance Name Description Spec Main-Server CTFd(v3.5.0) c5.2xlarge(8CPU, 16RAM, SSD 8GIB) Challenge-Server Ubuntu 22.04 AMD64 c5.4xlarge(16CPU, 32RAM, SSD 32GIB) 우선 서버 인스턴스는 총 2개로 메인 서버 - 문제 서버를 생성해서 사용하였다.</description>
+      <description>Summary 지난 10월 8일 그리고 이틀 전인 11월 10일 두 번에 걸쳐서 2022 POWER OF XX 대회를 운영하였다.&#xA;예/본선 모두 CTF 플랫폼과 문제 인스턴스 등 인프라 전체 관리를 맡았고 약간의 문제(?)를 제외하면 성공적으로 대회를 운영한 것 같다.&#xA;이번에 운영했을 때 인프라를 어떻게 구성했는지를 간단하게 썰로 풀어보려고 한다.&#xA;Server Instance Name Description Spec Main-Server CTFd(v3.5.0) c5.2xlarge(8CPU, 16RAM, SSD 8GIB) Challenge-Server Ubuntu 22.04 AMD64 c5.4xlarge(16CPU, 32RAM, SSD 32GIB) 우선 서버 인스턴스는 총 2개로 메인 서버 - 문제 서버를 생성해서 사용하였다.</description>
     </item>
-    
     <item>
       <title>DEFCON 30th Car Hacking Village 참가 후기 SSUL</title>
       <link>http://blog.dhjeong.kr/posts/notes/202210/defcon30/</link>
       <pubDate>Wed, 12 Oct 2022 16:36:20 +0900</pubDate>
-      
       <guid>http://blog.dhjeong.kr/posts/notes/202210/defcon30/</guid>
-      <description>Summary 코시국으로 인해 세계 최대 해킹 컨퍼런스인 데프콘(DEFCON) 행사도 몇 년간 온라인으로 진행이 됐었다.
-그!러!나 22년도에는 드디어 오프라인으로 데프콘 행사가 열리게 된다는 소식을 접할 수 있었다.
-마침 우리 회사 팀장님이 DEFCON MAIN TALK 이랑 Car Hacking Village 에 CFP 를 제출했던 것이 Aceept 되셔서
-데프콘 행사에 참가할 수 있는 명분이 생겼다. (학회 참가 &amp;amp; 대회 참가 등..)
-그래서 갔다. Las Vegas 를 향해서
-라스베이거스 현지 스트립 거리 도착!
-끼니는 뭘 먹었을까?</description>
+      <description>Summary 코시국으로 인해 세계 최대 해킹 컨퍼런스인 데프콘(DEFCON) 행사도 몇 년간 온라인으로 진행이 됐었다.&#xA;그!러!나 22년도에는 드디어 오프라인으로 데프콘 행사가 열리게 된다는 소식을 접할 수 있었다.&#xA;마침 우리 회사 팀장님이 DEFCON MAIN TALK 이랑 Car Hacking Village 에 CFP 를 제출했던 것이 Aceept 되셔서&#xA;데프콘 행사에 참가할 수 있는 명분이 생겼다. (학회 참가 &amp;amp; 대회 참가 등..)&#xA;그래서 갔다. Las Vegas 를 향해서&#xA;라스베이거스 현지 스트립 거리 도착!&#xA;끼니는 뭘 먹었을까?</description>
     </item>
-    
     <item>
       <title>2021 사이버보안챌린지 자동차 해킹&amp;방어 대회 우승 후기</title>
       <link>http://blog.dhjeong.kr/posts/notes/202112/csc2021/</link>
       <pubDate>Sun, 12 Dec 2021 00:00:00 +0900</pubDate>
-      
       <guid>http://blog.dhjeong.kr/posts/notes/202112/csc2021/</guid>
-      <description>Summary 이번 하반기에 진행된 사이버보안챌린지 2021 차량 해킹&amp;amp;방어 대회에서,
-회사 소속으로 출전해서 최우수상 을 수상하게 되었다!
-대회 환경이 AGL (Automotive Grade Linux) 라고 하는 차량 인포테인먼트 시스템 이미지를 주고,
-그 시스템 안에서 취약점을 분석하고 찾아서 공격하는 것이 공격(예선전) 이였다.
-처음엔 막연하게 Low 단까지 접근해서 라이브러리 취약점도 분석하고
-각 서비스들 Daemon 분석하면서 취약점을 찾았었는데 원하는 결과가 잘 나오지 않았다.
-실제로 라이브러리 RCE 취약점이 존재했지만 해당 시스템 상에서 트리거가 안되서 무용지물 이였다.</description>
+      <description>Summary 이번 하반기에 진행된 사이버보안챌린지 2021 차량 해킹&amp;amp;방어 대회에서,&#xA;회사 소속으로 출전해서 최우수상 을 수상하게 되었다!&#xA;대회 환경이 AGL (Automotive Grade Linux) 라고 하는 차량 인포테인먼트 시스템 이미지를 주고,&#xA;그 시스템 안에서 취약점을 분석하고 찾아서 공격하는 것이 공격(예선전) 이였다.&#xA;처음엔 막연하게 Low 단까지 접근해서 라이브러리 취약점도 분석하고&#xA;각 서비스들 Daemon 분석하면서 취약점을 찾았었는데 원하는 결과가 잘 나오지 않았다.&#xA;실제로 라이브러리 RCE 취약점이 존재했지만 해당 시스템 상에서 트리거가 안되서 무용지물 이였다.</description>
     </item>
-    
   </channel>
 </rss>
