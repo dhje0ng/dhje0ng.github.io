@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>automotive-security on DH.J</title>
-    <link>http://blog.dhjeong.kr/tags/automotive-security/</link>
+    <link>https://blog.dhjeong.kr/tags/automotive-security/</link>
     <description>Recent content in automotive-security on DH.J</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 07 Dec 2023 00:00:00 +0900</lastBuildDate>
-    <atom:link href="http://blog.dhjeong.kr/tags/automotive-security/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.dhjeong.kr/tags/automotive-security/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to fuzzing USB stack in real cars</title>
-      <link>http://blog.dhjeong.kr/posts/automotive/2023/12/how-to-fuzzing-realcars/</link>
+      <link>https://blog.dhjeong.kr/posts/automotive/2023/12/how-to-fuzzing-realcars/</link>
       <pubDate>Thu, 07 Dec 2023 00:00:00 +0900</pubDate>
-      <guid>http://blog.dhjeong.kr/posts/automotive/2023/12/how-to-fuzzing-realcars/</guid>
+      <guid>https://blog.dhjeong.kr/posts/automotive/2023/12/how-to-fuzzing-realcars/</guid>
       <description>Overview PoC for vulnerability in real cars vehicle infotainment system&#xA;The research was presented at the DEFCON31 Car Hacking Village, you can watch additional footage at the link below!&#xA;Video: DEFCON31_CarHackingVillage_Automotive-USB-Fuzzing&#xA;Description This research could lead to a crash of the vehicle infotainment system via USB in produced vehicles.&#xA;It has been tested on some produced vehicles, but we believe it can be tested on any vehicle that supports USB input and could have an impact.</description>
     </item>
     <item>
       <title>My talks at DEFCON31 Car Hacking Village</title>
-      <link>http://blog.dhjeong.kr/posts/automotive/2023/11/chv-dc31-talks/</link>
+      <link>https://blog.dhjeong.kr/posts/automotive/2023/11/chv-dc31-talks/</link>
       <pubDate>Thu, 09 Nov 2023 00:00:00 +0900</pubDate>
-      <guid>http://blog.dhjeong.kr/posts/automotive/2023/11/chv-dc31-talks/</guid>
+      <guid>https://blog.dhjeong.kr/posts/automotive/2023/11/chv-dc31-talks/</guid>
       <description>Summary On 10 August I gave a presentation on &amp;lsquo;Automotive USB Fuzzing&amp;rsquo; at the Car Hacking Village at DEFCON in Las Vegas.&#xA;The above topic is a presentation that describes the process of discovering USB vulnerabilities in real-world vehicles, including the CVE-2022-39075 and CVE-2022-39076 vulnerabilities, and how to effectively perform USB fuzzing in the vehicles we studied.&#xA;See the following links for more information!&#xA;DEFCON31-Automotive_USB_Fuzzing_RealWorld</description>
     </item>
     <item>
       <title>Car Hacking Village at DEFCON31</title>
-      <link>http://blog.dhjeong.kr/posts/automotive/2023/08/chvctf-dc31/</link>
+      <link>https://blog.dhjeong.kr/posts/automotive/2023/08/chvctf-dc31/</link>
       <pubDate>Wed, 16 Aug 2023 00:00:00 +0900</pubDate>
-      <guid>http://blog.dhjeong.kr/posts/automotive/2023/08/chvctf-dc31/</guid>
+      <guid>https://blog.dhjeong.kr/posts/automotive/2023/08/chvctf-dc31/</guid>
       <description>Summary On the 10th, I participated in the Car Hacking Village CTF at the DEFCON hacking conference in Las Vegas as a member of Autocrypt, which consisted of a total of 13 people. We secured a commendable 4th place finish in the competition. Special thanks to @uberwoozle for organizing this event.&#xA;We also had a presentation at this year&amp;rsquo;s Car Hacking Village on &amp;ldquo;AUTOMOTIVE USB FUZZING: HOW TO FUZZING USB IN VEHICLES TO DISCOVER THE REAL-WORLD VULNERABILITIES&amp;rdquo;.</description>
     </item>
     <item>
       <title>Awarded a bounty of $500 for BMW Automotive</title>
-      <link>http://blog.dhjeong.kr/posts/vuln/202303/bmw_automotive/</link>
+      <link>https://blog.dhjeong.kr/posts/vuln/202303/bmw_automotive/</link>
       <pubDate>Wed, 22 Mar 2023 00:00:00 +0900</pubDate>
-      <guid>http://blog.dhjeong.kr/posts/vuln/202303/bmw_automotive/</guid>
+      <guid>https://blog.dhjeong.kr/posts/vuln/202303/bmw_automotive/</guid>
       <description>Summary In recent months, we previously conducted a vehicle vulnerability analysis for BMW Automotive. This vulnerability is a service crash vulnerability, which could result in a potential denial of service.&#xA;[Figure 1] BMW Automotive Awarded a bounty of 500$ [Figure 2] BMW GROUP HALL OF FAME </description>
     </item>
   </channel>

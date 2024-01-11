@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>car hacking village on DH.J</title>
-    <link>http://blog.dhjeong.kr/tags/car-hacking-village/</link>
+    <link>https://blog.dhjeong.kr/tags/car-hacking-village/</link>
     <description>Recent content in car hacking village on DH.J</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 09 Nov 2023 00:00:00 +0900</lastBuildDate>
-    <atom:link href="http://blog.dhjeong.kr/tags/car-hacking-village/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.dhjeong.kr/tags/car-hacking-village/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>My talks at DEFCON31 Car Hacking Village</title>
-      <link>http://blog.dhjeong.kr/posts/automotive/2023/11/chv-dc31-talks/</link>
+      <link>https://blog.dhjeong.kr/posts/automotive/2023/11/chv-dc31-talks/</link>
       <pubDate>Thu, 09 Nov 2023 00:00:00 +0900</pubDate>
-      <guid>http://blog.dhjeong.kr/posts/automotive/2023/11/chv-dc31-talks/</guid>
+      <guid>https://blog.dhjeong.kr/posts/automotive/2023/11/chv-dc31-talks/</guid>
       <description>Summary On 10 August I gave a presentation on &amp;lsquo;Automotive USB Fuzzing&amp;rsquo; at the Car Hacking Village at DEFCON in Las Vegas.&#xA;The above topic is a presentation that describes the process of discovering USB vulnerabilities in real-world vehicles, including the CVE-2022-39075 and CVE-2022-39076 vulnerabilities, and how to effectively perform USB fuzzing in the vehicles we studied.&#xA;See the following links for more information!&#xA;DEFCON31-Automotive_USB_Fuzzing_RealWorld</description>
     </item>
     <item>
       <title>Car Hacking Village at DEFCON31</title>
-      <link>http://blog.dhjeong.kr/posts/automotive/2023/08/chvctf-dc31/</link>
+      <link>https://blog.dhjeong.kr/posts/automotive/2023/08/chvctf-dc31/</link>
       <pubDate>Wed, 16 Aug 2023 00:00:00 +0900</pubDate>
-      <guid>http://blog.dhjeong.kr/posts/automotive/2023/08/chvctf-dc31/</guid>
+      <guid>https://blog.dhjeong.kr/posts/automotive/2023/08/chvctf-dc31/</guid>
       <description>Summary On the 10th, I participated in the Car Hacking Village CTF at the DEFCON hacking conference in Las Vegas as a member of Autocrypt, which consisted of a total of 13 people. We secured a commendable 4th place finish in the competition. Special thanks to @uberwoozle for organizing this event.&#xA;We also had a presentation at this year&amp;rsquo;s Car Hacking Village on &amp;ldquo;AUTOMOTIVE USB FUZZING: HOW TO FUZZING USB IN VEHICLES TO DISCOVER THE REAL-WORLD VULNERABILITIES&amp;rdquo;.</description>
     </item>
   </channel>

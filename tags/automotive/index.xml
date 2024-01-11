@@ -2,59 +2,59 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>automotive on DH.J</title>
-    <link>http://blog.dhjeong.kr/tags/automotive/</link>
+    <link>https://blog.dhjeong.kr/tags/automotive/</link>
     <description>Recent content in automotive on DH.J</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 07 Dec 2023 00:00:00 +0900</lastBuildDate>
-    <atom:link href="http://blog.dhjeong.kr/tags/automotive/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://blog.dhjeong.kr/tags/automotive/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to fuzzing USB stack in real cars</title>
-      <link>http://blog.dhjeong.kr/posts/automotive/2023/12/how-to-fuzzing-realcars/</link>
+      <link>https://blog.dhjeong.kr/posts/automotive/2023/12/how-to-fuzzing-realcars/</link>
       <pubDate>Thu, 07 Dec 2023 00:00:00 +0900</pubDate>
-      <guid>http://blog.dhjeong.kr/posts/automotive/2023/12/how-to-fuzzing-realcars/</guid>
+      <guid>https://blog.dhjeong.kr/posts/automotive/2023/12/how-to-fuzzing-realcars/</guid>
       <description>Overview PoC for vulnerability in real cars vehicle infotainment system&#xA;The research was presented at the DEFCON31 Car Hacking Village, you can watch additional footage at the link below!&#xA;Video: DEFCON31_CarHackingVillage_Automotive-USB-Fuzzing&#xA;Description This research could lead to a crash of the vehicle infotainment system via USB in produced vehicles.&#xA;It has been tested on some produced vehicles, but we believe it can be tested on any vehicle that supports USB input and could have an impact.</description>
     </item>
     <item>
       <title>BH CTF - Write up</title>
-      <link>http://blog.dhjeong.kr/posts/ctf/2023/11/blockharbor/</link>
+      <link>https://blog.dhjeong.kr/posts/ctf/2023/11/blockharbor/</link>
       <pubDate>Thu, 09 Nov 2023 10:10:10 +0900</pubDate>
-      <guid>http://blog.dhjeong.kr/posts/ctf/2023/11/blockharbor/</guid>
+      <guid>https://blog.dhjeong.kr/posts/ctf/2023/11/blockharbor/</guid>
       <description>Summary Blockharbor CTF Season 1&#xA;https://ctf.blockharbor.io&#xA;dhjisgod (9th)&#xA;[Figure 1] BHCTF ScoreBoard Challenges TBD (coming soon) </description>
     </item>
     <item>
       <title>My talks at DEFCON31 Car Hacking Village</title>
-      <link>http://blog.dhjeong.kr/posts/automotive/2023/11/chv-dc31-talks/</link>
+      <link>https://blog.dhjeong.kr/posts/automotive/2023/11/chv-dc31-talks/</link>
       <pubDate>Thu, 09 Nov 2023 00:00:00 +0900</pubDate>
-      <guid>http://blog.dhjeong.kr/posts/automotive/2023/11/chv-dc31-talks/</guid>
+      <guid>https://blog.dhjeong.kr/posts/automotive/2023/11/chv-dc31-talks/</guid>
       <description>Summary On 10 August I gave a presentation on &amp;lsquo;Automotive USB Fuzzing&amp;rsquo; at the Car Hacking Village at DEFCON in Las Vegas.&#xA;The above topic is a presentation that describes the process of discovering USB vulnerabilities in real-world vehicles, including the CVE-2022-39075 and CVE-2022-39076 vulnerabilities, and how to effectively perform USB fuzzing in the vehicles we studied.&#xA;See the following links for more information!&#xA;DEFCON31-Automotive_USB_Fuzzing_RealWorld</description>
     </item>
     <item>
       <title>Car Hacking Village at DEFCON31</title>
-      <link>http://blog.dhjeong.kr/posts/automotive/2023/08/chvctf-dc31/</link>
+      <link>https://blog.dhjeong.kr/posts/automotive/2023/08/chvctf-dc31/</link>
       <pubDate>Wed, 16 Aug 2023 00:00:00 +0900</pubDate>
-      <guid>http://blog.dhjeong.kr/posts/automotive/2023/08/chvctf-dc31/</guid>
+      <guid>https://blog.dhjeong.kr/posts/automotive/2023/08/chvctf-dc31/</guid>
       <description>Summary On the 10th, I participated in the Car Hacking Village CTF at the DEFCON hacking conference in Las Vegas as a member of Autocrypt, which consisted of a total of 13 people. We secured a commendable 4th place finish in the competition. Special thanks to @uberwoozle for organizing this event.&#xA;We also had a presentation at this year&amp;rsquo;s Car Hacking Village on &amp;ldquo;AUTOMOTIVE USB FUZZING: HOW TO FUZZING USB IN VEHICLES TO DISCOVER THE REAL-WORLD VULNERABILITIES&amp;rdquo;.</description>
     </item>
     <item>
       <title>Awarded a bounty of $500 for BMW Automotive</title>
-      <link>http://blog.dhjeong.kr/posts/vuln/202303/bmw_automotive/</link>
+      <link>https://blog.dhjeong.kr/posts/vuln/202303/bmw_automotive/</link>
       <pubDate>Wed, 22 Mar 2023 00:00:00 +0900</pubDate>
-      <guid>http://blog.dhjeong.kr/posts/vuln/202303/bmw_automotive/</guid>
+      <guid>https://blog.dhjeong.kr/posts/vuln/202303/bmw_automotive/</guid>
       <description>Summary In recent months, we previously conducted a vehicle vulnerability analysis for BMW Automotive. This vulnerability is a service crash vulnerability, which could result in a potential denial of service.&#xA;[Figure 1] BMW Automotive Awarded a bounty of 500$ [Figure 2] BMW GROUP HALL OF FAME </description>
     </item>
     <item>
       <title>AGL (Automotive Grade Linux) Platform</title>
-      <link>http://blog.dhjeong.kr/posts/automotive/2022/12/agl/</link>
+      <link>https://blog.dhjeong.kr/posts/automotive/2022/12/agl/</link>
       <pubDate>Sun, 04 Dec 2022 00:00:00 +0900</pubDate>
-      <guid>http://blog.dhjeong.kr/posts/automotive/2022/12/agl/</guid>
+      <guid>https://blog.dhjeong.kr/posts/automotive/2022/12/agl/</guid>
       <description>Summary [사진 1] AGL Overview AGL (Automotive Grade Linux) OS란?&#xA;https://www.automotivelinux.org/about/members/&#xA;전 세계 차량 OEM 들과 협력하에 개발되고 있는 인포테인먼트 시스템이다.&#xA;AGL은 IVI(In Vehicle Infortainment) 시장을 목표로 하고 있다.&#xA;AGL 개발 자체는 오픈소스 프로젝트로 진행되며 AGL 이외에도 대표적으로 GENIVI 라는&#xA;플랫폼도 존재하는데 두 회사 모두 IVI S/W 개발 환경을 제공하여 다른 차량 OEM 회사들이&#xA;IVI 시스템을 쉽게 개발할 수 있도록 하는 목적을 가진다.&#xA;[사진 2] AGL/GENIVI Overview [사진 3] AGL Core AGL OS 에 올라가는 코어 부분의 구성도이다.</description>
     </item>
     <item>
       <title>Car Instrument Cluster Simulator</title>
-      <link>http://blog.dhjeong.kr/posts/automotive/2022/10/icsim_simulator/</link>
+      <link>https://blog.dhjeong.kr/posts/automotive/2022/10/icsim_simulator/</link>
       <pubDate>Thu, 13 Oct 2022 11:36:24 +0900</pubDate>
-      <guid>http://blog.dhjeong.kr/posts/automotive/2022/10/icsim_simulator/</guid>
+      <guid>https://blog.dhjeong.kr/posts/automotive/2022/10/icsim_simulator/</guid>
       <description>Summary 최근 자동차 해킹에 대한 소재가 많이 떠오르고 있다. 때문에 자동차 보안에 대해서도 관심을&#xA;가지시는 분들이 많을 것 같다고 생각을 하고 있다.&#xA;이번 글에서는 자동차에 들어가는 주요 통신 프로토콜 중 하나인 CAN 프로토콜이 어떤건지, 그리고&#xA;자동차의 계기판을 시뮬레이터로 만들어둔 도구를 하나 소개할 것이다.&#xA;(이 도구를 통해서 CAN 통신이 어떻게 이루어지는지를 간단하게 공부해볼 수 있다)&#xA;CAN Protocol Controller Area Network 의 약자로,&#xA;차량 내에서 Host PC 없이 Controller 또는 Device간 통신을 주고 받기 위해 사용하는 자동차 표준 통신 규격이다.</description>
     </item>
   </channel>
