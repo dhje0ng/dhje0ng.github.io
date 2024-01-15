@@ -2,9 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://blog.dhjeong.kr/tags/automotive/</loc>
-    <lastmod>2023-12-07T00:00:00+09:00</lastmod>
-  </url><url>
     <loc>https://blog.dhjeong.kr/tags/automotive-security/</loc>
     <lastmod>2023-12-07T00:00:00+09:00</lastmod>
   </url><url>
@@ -20,7 +17,7 @@
     <loc>https://blog.dhjeong.kr/tags/cve-2023-39076/</loc>
     <lastmod>2023-12-07T00:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://blog.dhjeong.kr/tags/defcon/</loc>
+    <loc>https://blog.dhjeong.kr/tags/defcon31/</loc>
     <lastmod>2023-12-07T00:00:00+09:00</lastmod>
   </url><url>
     <loc>https://blog.dhjeong.kr/</loc>
@@ -38,8 +35,8 @@
     <loc>https://blog.dhjeong.kr/tags/</loc>
     <lastmod>2023-12-07T00:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://blog.dhjeong.kr/tags/usb-fuzzing/</loc>
-    <lastmod>2023-12-07T00:00:00+09:00</lastmod>
+    <loc>https://blog.dhjeong.kr/tags/automotive/</loc>
+    <lastmod>2023-11-09T10:10:10+09:00</lastmod>
   </url><url>
     <loc>https://blog.dhjeong.kr/posts/ctf/2023/11/blockharbor/</loc>
     <lastmod>2023-11-09T10:10:10+09:00</lastmod>
@@ -53,7 +50,7 @@
     <loc>https://blog.dhjeong.kr/tags/car-hacking-village/</loc>
     <lastmod>2023-11-09T00:00:00+09:00</lastmod>
   </url><url>
-    <loc>https://blog.dhjeong.kr/tags/defcon31/</loc>
+    <loc>https://blog.dhjeong.kr/tags/defcon/</loc>
     <lastmod>2023-11-09T00:00:00+09:00</lastmod>
   </url><url>
     <loc>https://blog.dhjeong.kr/posts/automotive/2023/11/chv-dc31-talks/</loc>
@@ -88,6 +85,21 @@
   </url><url>
     <loc>https://blog.dhjeong.kr/posts/notes/202210/defcon30/</loc>
     <lastmod>2022-10-12T16:36:20+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.dhjeong.kr/tags/cve-2019-2525/</loc>
+    <lastmod>2022-01-23T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.dhjeong.kr/tags/cve-2019-2548/</loc>
+    <lastmod>2022-01-23T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.dhjeong.kr/tags/research/</loc>
+    <lastmod>2022-01-23T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.dhjeong.kr/tags/virtualbox/</loc>
+    <lastmod>2022-01-23T00:00:00+09:00</lastmod>
+  </url><url>
+    <loc>https://blog.dhjeong.kr/posts/notes/2024/01/vbox-escape/</loc>
+    <lastmod>2022-01-23T00:00:00+09:00</lastmod>
   </url><url>
     <loc>https://blog.dhjeong.kr/posts/notes/202112/csc2021/</loc>
     <lastmod>2021-12-12T00:00:00+09:00</lastmod>

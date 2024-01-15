@@ -9,13 +9,6 @@
     <lastBuildDate>Thu, 07 Dec 2023 00:00:00 +0900</lastBuildDate>
     <atom:link href="https://blog.dhjeong.kr/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>automotive</title>
-      <link>https://blog.dhjeong.kr/tags/automotive/</link>
-      <pubDate>Thu, 07 Dec 2023 00:00:00 +0900</pubDate>
-      <guid>https://blog.dhjeong.kr/tags/automotive/</guid>
-      <description></description>
-    </item>
-    <item>
       <title>automotive-security</title>
       <link>https://blog.dhjeong.kr/tags/automotive-security/</link>
       <pubDate>Thu, 07 Dec 2023 00:00:00 +0900</pubDate>
@@ -51,10 +44,10 @@
       <description></description>
     </item>
     <item>
-      <title>defcon</title>
-      <link>https://blog.dhjeong.kr/tags/defcon/</link>
+      <title>defcon31</title>
+      <link>https://blog.dhjeong.kr/tags/defcon31/</link>
       <pubDate>Thu, 07 Dec 2023 00:00:00 +0900</pubDate>
-      <guid>https://blog.dhjeong.kr/tags/defcon/</guid>
+      <guid>https://blog.dhjeong.kr/tags/defcon31/</guid>
       <description></description>
     </item>
     <item>
@@ -65,10 +58,10 @@
       <description></description>
     </item>
     <item>
-      <title>usb fuzzing</title>
-      <link>https://blog.dhjeong.kr/tags/usb-fuzzing/</link>
-      <pubDate>Thu, 07 Dec 2023 00:00:00 +0900</pubDate>
-      <guid>https://blog.dhjeong.kr/tags/usb-fuzzing/</guid>
+      <title>automotive</title>
+      <link>https://blog.dhjeong.kr/tags/automotive/</link>
+      <pubDate>Thu, 09 Nov 2023 10:10:10 +0900</pubDate>
+      <guid>https://blog.dhjeong.kr/tags/automotive/</guid>
       <description></description>
     </item>
     <item>
@@ -93,10 +86,10 @@
       <description></description>
     </item>
     <item>
-      <title>defcon31</title>
-      <link>https://blog.dhjeong.kr/tags/defcon31/</link>
+      <title>defcon</title>
+      <link>https://blog.dhjeong.kr/tags/defcon/</link>
       <pubDate>Thu, 09 Nov 2023 00:00:00 +0900</pubDate>
-      <guid>https://blog.dhjeong.kr/tags/defcon31/</guid>
+      <guid>https://blog.dhjeong.kr/tags/defcon/</guid>
       <description></description>
     </item>
     <item>
@@ -118,6 +111,34 @@
       <link>https://blog.dhjeong.kr/tags/notes/</link>
       <pubDate>Sat, 12 Nov 2022 11:36:24 +0900</pubDate>
       <guid>https://blog.dhjeong.kr/tags/notes/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>cve-2019-2525</title>
+      <link>https://blog.dhjeong.kr/tags/cve-2019-2525/</link>
+      <pubDate>Sun, 23 Jan 2022 00:00:00 +0900</pubDate>
+      <guid>https://blog.dhjeong.kr/tags/cve-2019-2525/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>cve-2019-2548</title>
+      <link>https://blog.dhjeong.kr/tags/cve-2019-2548/</link>
+      <pubDate>Sun, 23 Jan 2022 00:00:00 +0900</pubDate>
+      <guid>https://blog.dhjeong.kr/tags/cve-2019-2548/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>research</title>
+      <link>https://blog.dhjeong.kr/tags/research/</link>
+      <pubDate>Sun, 23 Jan 2022 00:00:00 +0900</pubDate>
+      <guid>https://blog.dhjeong.kr/tags/research/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>virtualbox</title>
+      <link>https://blog.dhjeong.kr/tags/virtualbox/</link>
+      <pubDate>Sun, 23 Jan 2022 00:00:00 +0900</pubDate>
+      <guid>https://blog.dhjeong.kr/tags/virtualbox/</guid>
       <description></description>
     </item>
   </channel>

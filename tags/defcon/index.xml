@@ -6,15 +6,8 @@
     <description>Recent content in defcon on DH.J</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 07 Dec 2023 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 09 Nov 2023 00:00:00 +0900</lastBuildDate>
     <atom:link href="https://blog.dhjeong.kr/tags/defcon/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>How to fuzzing USB stack in real cars</title>
-      <link>https://blog.dhjeong.kr/posts/automotive/2023/12/how-to-fuzzing-realcars/</link>
-      <pubDate>Thu, 07 Dec 2023 00:00:00 +0900</pubDate>
-      <guid>https://blog.dhjeong.kr/posts/automotive/2023/12/how-to-fuzzing-realcars/</guid>
-      <description>Overview PoC for vulnerability in real cars vehicle infotainment system&#xA;The research was presented at the DEFCON31 Car Hacking Village, you can watch additional footage at the link below!&#xA;Video: DEFCON31_CarHackingVillage_Automotive-USB-Fuzzing&#xA;Description This research could lead to a crash of the vehicle infotainment system via USB in produced vehicles.&#xA;It has been tested on some produced vehicles, but we believe it can be tested on any vehicle that supports USB input and could have an impact.</description>
-    </item>
     <item>
       <title>My talks at DEFCON31 Car Hacking Village</title>
       <link>https://blog.dhjeong.kr/posts/automotive/2023/11/chv-dc31-talks/</link>

@@ -79,6 +79,13 @@
       <description>Summary 코시국으로 인해 세계 최대 해킹 컨퍼런스인 데프콘(DEFCON) 행사도 몇 년간 온라인으로 진행이 됐었다.&#xA;그!러!나 22년도에는 드디어 오프라인으로 데프콘 행사가 열리게 된다는 소식을 접할 수 있었다.&#xA;마침 우리 회사 팀장님이 DEFCON MAIN TALK 이랑 Car Hacking Village 에 CFP 를 제출했던 것이 Aceept 되셔서&#xA;데프콘 행사에 참가할 수 있는 명분이 생겼다. (학회 참가 &amp;amp; 대회 참가 등..)&#xA;그래서 갔다. Las Vegas 를 향해서&#xA;라스베이거스 현지 스트립 거리 도착!&#xA;끼니는 뭘 먹었을까?</description>
     </item>
     <item>
+      <title>VirtualBox Remote Code Execution Study</title>
+      <link>https://blog.dhjeong.kr/posts/notes/2024/01/vbox-escape/</link>
+      <pubDate>Sun, 23 Jan 2022 00:00:00 +0900</pubDate>
+      <guid>https://blog.dhjeong.kr/posts/notes/2024/01/vbox-escape/</guid>
+      <description>Summary A study of known vulnerabilities against VirtualBox (virtualization software) in 2022 that led to a Remote Code Execution (RCE) attack.&#xA;Although this is a known vulnerability, there hasn&amp;rsquo;t been much published about the details of the specifics of the analysis process,&#xA;so I thought this might be helpful to someone in the future.&#xA;Open the Link - Notion</description>
+    </item>
+    <item>
       <title>2021 사이버보안챌린지 자동차 해킹&amp;방어 대회 우승 후기</title>
       <link>https://blog.dhjeong.kr/posts/notes/202112/csc2021/</link>
       <pubDate>Sun, 12 Dec 2021 00:00:00 +0900</pubDate>
