@@ -6,8 +6,15 @@
     <description>Recent content on DH.J</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 07 Dec 2023 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 02 Feb 2024 00:00:00 +0900</lastBuildDate>
     <atom:link href="https://blog.dhjeong.kr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to Ubertooth BR/EDR Sniff</title>
+      <link>https://blog.dhjeong.kr/posts/notes/2024/02/ubertooth-sniff/</link>
+      <pubDate>Fri, 02 Feb 2024 00:00:00 +0900</pubDate>
+      <guid>https://blog.dhjeong.kr/posts/notes/2024/02/ubertooth-sniff/</guid>
+      <description>Summary I recently tried sniffing bluetooth packets via ubertooth.&#xA;As far as we know, ubertooth has provided sniffing capabilities for Bluetooth low energy (BLE), but in a recent update, firmware was developed to allow sniffing of Bluetooth packets for the Bluetooth Classic (BR/EDR) specification.&#xA;This is included in the release firmware (2020-12-R1), but it is not the default application, so you can build your own firmware and use the and flash it to your ubertooth device.</description>
+    </item>
     <item>
       <title>How to fuzzing USB stack in real cars</title>
       <link>https://blog.dhjeong.kr/posts/automotive/2023/12/how-to-fuzzing-realcars/</link>
@@ -80,9 +87,9 @@
     </item>
     <item>
       <title>VirtualBox Remote Code Execution Study</title>
-      <link>https://blog.dhjeong.kr/posts/notes/2024/01/vbox-escape/</link>
+      <link>https://blog.dhjeong.kr/posts/notes/2022/01/vbox-escape/</link>
       <pubDate>Sun, 23 Jan 2022 00:00:00 +0900</pubDate>
-      <guid>https://blog.dhjeong.kr/posts/notes/2024/01/vbox-escape/</guid>
+      <guid>https://blog.dhjeong.kr/posts/notes/2022/01/vbox-escape/</guid>
       <description>Summary A study of known vulnerabilities against VirtualBox (virtualization software) in 2022 that led to a Remote Code Execution (RCE) attack.&#xA;Although this is a known vulnerability, there hasn&amp;rsquo;t been much published about the details of the specifics of the analysis process,&#xA;so I thought this might be helpful to someone in the future.&#xA;Open the Link - Notion</description>
     </item>
     <item>

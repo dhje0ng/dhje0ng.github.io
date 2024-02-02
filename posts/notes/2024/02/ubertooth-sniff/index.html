@@ -17,27 +17,27 @@
     
 
     
-    <title>2021 사이버보안챌린지 자동차 해킹&amp;방어 대회 우승 후기</title>
-    <meta name="description" content="2021 사이버보안챌린지 자동차 해킹&amp;방어 대회 우승 후기">
-    <meta name="keywords" content='automotive, Penetration Testing, Bug bounty, Hackerone, Autocrypt, Car Hacking Village, DEFCON, Pwn2own, notes'>
+    <title>How to Ubertooth BR/EDR Sniff</title>
+    <meta name="description" content="How to Ubertooth BR/EDR Sniff">
+    <meta name="keywords" content='automotive, Penetration Testing, Bug bounty, Hackerone, Autocrypt, Car Hacking Village, DEFCON, Pwn2own, research, ubertooth&#34;, bluetooth'>
 
-    <meta property="og:url" content="https://blog.dhjeong.kr/posts/notes/202112/csc2021/">
+    <meta property="og:url" content="https://blog.dhjeong.kr/posts/notes/2024/02/ubertooth-sniff/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="2021 사이버보안챌린지 자동차 해킹&amp;방어 대회 우승 후기">
-    <meta property="og:description" content="2021 사이버보안챌린지 자동차 해킹&amp;방어 대회 우승 후기">
+    <meta property="og:title" content="How to Ubertooth BR/EDR Sniff">
+    <meta property="og:description" content="How to Ubertooth BR/EDR Sniff">
     <meta property="og:image" content="https://blog.dhjeong.kr/images/p_new.jpg">
     <meta property="og:image:secure_url" content="https://blog.dhjeong.kr/images/p_new.jpg">
 
     <meta name="naver-site-verification" content="b5fe9dcd513be42a32128df440d36a5c367af7d3" />
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="2021 사이버보안챌린지 자동차 해킹&amp;방어 대회 우승 후기">
-    <meta name="twitter:description" content="2021 사이버보안챌린지 자동차 해킹&amp;방어 대회 우승 후기">
-    <meta property="twitter:domain" content="https://blog.dhjeong.kr/posts/notes/202112/csc2021/">
-    <meta property="twitter:url" content="https://blog.dhjeong.kr/posts/notes/202112/csc2021/">
+    <meta name="twitter:title" content="How to Ubertooth BR/EDR Sniff">
+    <meta name="twitter:description" content="How to Ubertooth BR/EDR Sniff">
+    <meta property="twitter:domain" content="https://blog.dhjeong.kr/posts/notes/2024/02/ubertooth-sniff/">
+    <meta property="twitter:url" content="https://blog.dhjeong.kr/posts/notes/2024/02/ubertooth-sniff/">
     <meta name="twitter:image" content="https://blog.dhjeong.kr/images/p_new.jpg">
 
     
-    <link rel="canonical" href="https://blog.dhjeong.kr/posts/notes/202112/csc2021/" />
+    <link rel="canonical" href="https://blog.dhjeong.kr/posts/notes/2024/02/ubertooth-sniff/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -176,15 +176,19 @@
 <main id="content">
     <div class="post container">
     <div class="post-header-section">
-        <h1>2021 사이버보안챌린지 자동차 해킹&amp;방어 대회 우승 후기</h1>
-        <small role="doc-subtitle">2021 사이버보안챌린지 자동차 해킹&amp;방어 대회 우승 후기</small>
-        <p class="post-date">December 12, 2021
+        <h1>How to Ubertooth BR/EDR Sniff</h1>
+        <small role="doc-subtitle">How to Ubertooth BR/EDR Sniff</small>
+        <p class="post-date">February 2, 2024
         
         </p>
 
         <ul class="post-tags">
         
-            <li class="post-tag"><a href="https://blog.dhjeong.kr/tags/notes">notes</a></li>
+            <li class="post-tag"><a href="https://blog.dhjeong.kr/tags/research">research</a></li>
+        
+            <li class="post-tag"><a href="https://blog.dhjeong.kr/tags/ubertooth">ubertooth&#34;</a></li>
+        
+            <li class="post-tag"><a href="https://blog.dhjeong.kr/tags/bluetooth">bluetooth</a></li>
         
         </ul>
     </div>
@@ -192,32 +196,51 @@
     <div class="post-content">
         <p>
             <h1 id="summary">Summary</h1>
-<p><img src="/images/posts/automotive-security/20211212_secchallenge/result.png" alt="img"></p>
-<p>이번 하반기에 진행된 <code>사이버보안챌린지 2021 차량 해킹&amp;방어</code> 대회에서,</p>
-<p>회사 소속으로 출전해서 <code>최우수상</code> 을 수상하게 되었다!</p>
-<p>대회 환경이 <strong>AGL (Automotive Grade Linux)</strong> 라고 하는 차량 인포테인먼트 시스템 이미지를 주고,</p>
-<p>그 시스템 안에서 취약점을 분석하고 찾아서 공격하는 것이 공격(예선전) 이였다.</p>
-<p>처음엔 막연하게 Low 단까지 접근해서 라이브러리 취약점도 분석하고</p>
-<p>각 서비스들 Daemon 분석하면서 취약점을 찾았었는데 원하는 결과가 잘 나오지 않았다.</p>
-<p>실제로 라이브러리 RCE 취약점이 존재했지만 해당 시스템 상에서 트리거가 안되서 무용지물 이였다.</p>
-<p>뭐 이것저것해서 API 단 취약점을 찾아서 시나리오를 잘 만들어서 예선 결과를 냈는데 왠걸 1등을 했다.</p>
-<p>(물론 저희팀에서 열심히 연구하고 예선 2달가량 AGL만 죽어라 분석했기 때문에 좋은 결과가 나왔을 거라고 생각한다)</p>
-<hr>
-<p>무튼 예선전에서 좋은 결과를 내고 본선 행사장에 가서 방어를 진행했는데 방어 주제가 다른팀에서도,</p>
-<p>예선을 참여했을거고 다른팀에서 한 공격들의 로그를 줄테니 IDS 개발 해서 탐지해라.. 뭐 이런 주제였다.</p>
-<p>머신러닝을 해야하나?? 싶었는데 팀원분들과 상의끝에 <code>case by case</code> 별로 탐지룰을 만들어서 가자! 였다.</p>
-<p>그래서 우리팀에서 한 공격은 물론이고 AGL 에서 동작하는 거의 모든 서비스들에서 공격을 하고 로그를 자체적으로</p>
-<p>수집해서 탐지룰을 개발해서 테스트하고를 반복하면서 최대한 정교하게 탐지할 수 있도록 IDS 개발을 했다.</p>
-<p>그랬더니 본선전에서도 활약을 할 수 있었다. 공격으로는 다른팀과 점수차가 얼마 안나서 불안불안 했는데</p>
-<p>방어에서 무려 20점이상 격차를 내면서 압도적으로 1등을 한 것이다.</p>
-<hr>
-<p>그래서 내심 기분은 좋았다. 회사 들어와서 첫 업무로 대회를 나갔었고 좋은 결과가 나왔기 때문이다.</p>
-<p>무튼 쉽지는 않았지만 은근 신박한 대회라서 재미있었다. 좋은 경험이 되었다.</p>
-<p><a href="https://www.autocrypt.co.kr/news-post/cybersecuritychallenge-2021">https://www.autocrypt.co.kr/news-post/cybersecuritychallenge-2021</a></p>
-<p><a href="https://www.youtube.com/watch?v=E-ZTuWSg-JU">https://www.youtube.com/watch?v=E-ZTuWSg-JU</a></p>
-<p>위 링크는 본선전 대회 당일에 라이브로 촬영된 유튜브 영상이다.</p>
-<p><a href="https://nvd.nist.gov/vuln/detail/CVE-2022-24595">https://nvd.nist.gov/vuln/detail/CVE-2022-24595</a></p>
-<p>위 링크는 대회 종료 이후 주최 측에서 등록한 것으로 보이는 CVE다.. 공공의 CVE&hellip;</p>
+<p>I recently tried sniffing bluetooth packets via ubertooth.</p>
+<p>As far as we know, ubertooth has provided sniffing capabilities for Bluetooth low energy (BLE), but in a recent update, firmware was developed to allow sniffing of Bluetooth packets for the Bluetooth Classic (BR/EDR) specification.</p>
+<p>This is included in the release firmware (2020-12-R1), but it is not the default application, so you can build your own firmware and use the
+and flash it to your ubertooth device.</p>
+<h1 id="build-firmware">Build Firmware</h1>
+<p>Before building the firmware, download the official git repository and follow the steps below.</p>
+<p>This step may require some essential packages to build the ubertooth firmware, which can be found in the documentation below.</p>
+<p><a href="https://ubertooth.readthedocs.io/en/latest/building_from_git.html">https://ubertooth.readthedocs.io/en/latest/building_from_git.html</a></p>
+<pre tabindex="0"><code>$ apt install gcc-arm-none-eabi libnewlib-arm-none-eabi 
+</code></pre><pre tabindex="0"><code>$ https://github.com/greatscottgadgets/ubertooth.git ~/ubertooth
+$ cd ubertooth/firmware/btbr
+$ make
+</code></pre><p>This file is used to flash the firmware on my ubertooth device, and you can perform the flashing by following the steps below.</p>
+<h1 id="flash-firmware">Flash Firmware</h1>
+<p>If the #Build Firmware step completed compilation for your firmware, you should have a <code>btbr.dfu</code> file in your current working location.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/posts/notes/2024/02/ubertooth-sniff/btbr.png" alt="img"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>[Figure 1] btbr.dfu</em></td>
+</tr>
+</tbody>
+</table>
+<p>This <code>btbr.dfu</code> is used to flash the firmware on my ubertooth device, and you can perform the flashing by following the steps below.</p>
+<pre tabindex="0"><code>$ ubertooth-dfu -d btbr.dfu -r
+</code></pre><p>After a few moments, the ubertooth device will enter bootloader mode and go through a few steps to flash the firmware.</p>
+<p>If the firmware was flashed successfully, <code>ubertooth-dfu</code> will exit the detach log for the last time. Afterwards, the ubertooth device with the new firmware flashed will automatically connect.</p>
+<p>Now that my ubertooth device is configured to sniff BR/EDR Bluetooth packets, I can run the tool with the following command.</p>
+<pre tabindex="0"><code>$ ubertooth-btbr
+</code></pre><table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/images/posts/notes/2024/02/ubertooth-sniff/ubertooth-btbr.png" alt="img"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">*[Figure 1] ubertooth-btbr *</td>
+</tr>
+</tbody>
+</table>
 
         </p>
         
@@ -227,20 +250,20 @@
         
             
                 
-
-
-<div class="next-post">
+<div class="prev-post">
     <p>
-        <a href="/posts/notes/2022/01/vbox-escape/">
-            Next:
-            VirtualBox Remote Code Execution Study
-            &#8594;
+        <a href="/posts/automotive/2023/12/how-to-fuzzing-realcars/">
+            &#8592;
+            Previous:
+            How to fuzzing USB stack in real cars
         </a>
     </p>
-        <p class="next-post-date">
-            January 23, 2022
-        </p>
+    <p class="prev-post-date">
+        December 7, 2023
+    </p>
 </div>
+
+
 
 
             
@@ -292,6 +315,8 @@
         <nav id="TableOfContents">
   <ol>
     <li><a href="#summary">Summary</a></li>
+    <li><a href="#build-firmware">Build Firmware</a></li>
+    <li><a href="#flash-firmware">Flash Firmware</a></li>
   </ol>
 </nav>
     </nav>

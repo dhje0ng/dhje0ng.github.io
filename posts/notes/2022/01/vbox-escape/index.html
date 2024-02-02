@@ -17,27 +17,27 @@
     
 
     
-    <title>research</title>
-    <meta name="description" content="Cyber Security Engineer">
-    <meta name="keywords" content='automotive, Penetration Testing, Bug bounty, Hackerone, Autocrypt, Car Hacking Village, DEFCON, Pwn2own'>
+    <title>VirtualBox Remote Code Execution Study</title>
+    <meta name="description" content="VirtualBox Remote Code Execution">
+    <meta name="keywords" content='automotive, Penetration Testing, Bug bounty, Hackerone, Autocrypt, Car Hacking Village, DEFCON, Pwn2own, research, virtualbox&#34;, cve-2019-2525, cve-2019-2548'>
 
-    <meta property="og:url" content="https://blog.dhjeong.kr/tags/research/">
+    <meta property="og:url" content="https://blog.dhjeong.kr/posts/notes/2022/01/vbox-escape/">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="research">
-    <meta property="og:description" content="Cyber Security Engineer">
+    <meta property="og:title" content="VirtualBox Remote Code Execution Study">
+    <meta property="og:description" content="VirtualBox Remote Code Execution">
     <meta property="og:image" content="https://blog.dhjeong.kr/images/p_new.jpg">
     <meta property="og:image:secure_url" content="https://blog.dhjeong.kr/images/p_new.jpg">
 
     <meta name="naver-site-verification" content="b5fe9dcd513be42a32128df440d36a5c367af7d3" />
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="research">
-    <meta name="twitter:description" content="Cyber Security Engineer">
-    <meta property="twitter:domain" content="https://blog.dhjeong.kr/tags/research/">
-    <meta property="twitter:url" content="https://blog.dhjeong.kr/tags/research/">
+    <meta name="twitter:title" content="VirtualBox Remote Code Execution Study">
+    <meta name="twitter:description" content="VirtualBox Remote Code Execution">
+    <meta property="twitter:domain" content="https://blog.dhjeong.kr/posts/notes/2022/01/vbox-escape/">
+    <meta property="twitter:url" content="https://blog.dhjeong.kr/posts/notes/2022/01/vbox-escape/">
     <meta name="twitter:image" content="https://blog.dhjeong.kr/images/p_new.jpg">
 
     
-    <link rel="canonical" href="https://blog.dhjeong.kr/tags/research/" />
+    <link rel="canonical" href="https://blog.dhjeong.kr/posts/notes/2022/01/vbox-escape/" />
 
     
     <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
@@ -174,30 +174,129 @@
     </nav>
 </header>
 <main id="content">
-    <div class="container list-posts">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>VirtualBox Remote Code Execution Study</h1>
+        <small role="doc-subtitle">VirtualBox Remote Code Execution</small>
+        <p class="post-date">January 23, 2022
+        
+        </p>
 
-    <h1 class="list-title">research</h1>
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://blog.dhjeong.kr/tags/research">research</a></li>
+        
+            <li class="post-tag"><a href="https://blog.dhjeong.kr/tags/virtualbox">virtualbox&#34;</a></li>
+        
+            <li class="post-tag"><a href="https://blog.dhjeong.kr/tags/cve-2019-2525">cve-2019-2525</a></li>
+        
+            <li class="post-tag"><a href="https://blog.dhjeong.kr/tags/cve-2019-2548">cve-2019-2548</a></li>
+        
+        </ul>
+    </div>
 
-    
+    <div class="post-content">
+        <p>
+            <h1 id="summary">Summary</h1>
+<p>A study of known vulnerabilities against VirtualBox (virtualization software) in 2022 that led to a Remote Code Execution (RCE) attack.</p>
+<p>Although this is a known vulnerability, there hasn&rsquo;t been much published about the details of the specifics of the analysis process,</p>
+<p>so I thought this might be helpful to someone in the future.</p>
+<p><a href="https://dhjme.notion.site/VirtualBox-RCE-Exploitation-2777038d1cb54a6cb221bffe1c7e32f0?pvs=4">Open the Link - Notion</a></p>
 
-    <h2 class="posts-year">2024</h2><article class="post-title">
-    <a href="https://blog.dhjeong.kr/posts/notes/2024/02/ubertooth-sniff/" class="post-link">How to Ubertooth BR/EDR Sniff</a>
-    <div class="flex-break"></div>
-    <span class="post-date">February 2, 2024</span>
-</article>
+        </p>
+        
+    </div>
 
-    
-
-    <h2 class="posts-year">2022</h2><article class="post-title">
-    <a href="https://blog.dhjeong.kr/posts/notes/2022/01/vbox-escape/" class="post-link">VirtualBox Remote Code Execution Study</a>
-    <div class="flex-break"></div>
-    <span class="post-date">January 23, 2022</span>
-</article>
-
-    
-
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/posts/notes/202112/csc2021/">
+            &#8592;
+            Previous:
+            2021 사이버보안챌린지 자동차 해킹&amp;방어 대회 우승 후기
+        </a>
+    </p>
+    <p class="prev-post-date">
+        December 12, 2021
+    </p>
 </div>
 
+
+
+<div class="next-post">
+    <p>
+        <a href="/posts/notes/202210/defcon30/">
+            Next:
+            DEFCON 30th Car Hacking Village 참가 후기 SSUL
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            October 12, 2022
+        </p>
+</div>
+
+
+            
+        
+    </div>
+
+    
+    
+    <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="topFunction()" title="Go to top">
+        
+        <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+    </svg>
+    
+    <script>
+        let backToTopButton = document.getElementById("btt-button");
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            smoothScrollToTop();
+        }
+
+        function smoothScrollToTop() {
+            const scrollToTop = () => {
+                const c = document.documentElement.scrollTop || document.body.scrollTop;
+                if (c > 0) {
+                    window.requestAnimationFrame(scrollToTop);
+                    window.scrollTo(0, c - c / 8);
+                }
+            };
+            scrollToTop();
+        }
+    </script>
+    
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#summary">Summary</a></li>
+  </ol>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
 
         </main><footer class="footer">
     
