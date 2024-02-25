@@ -6,132 +6,55 @@
     <description>Recent content in Tags on DH.J</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 02 Feb 2024 00:00:00 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 02 Feb 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.dhjeong.kr/tags/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>bluetooth</title>
-      <link>https://blog.dhjeong.kr/tags/bluetooth/</link>
-      <pubDate>Fri, 02 Feb 2024 00:00:00 +0900</pubDate>
-      <guid>https://blog.dhjeong.kr/tags/bluetooth/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>research</title>
-      <link>https://blog.dhjeong.kr/tags/research/</link>
-      <pubDate>Fri, 02 Feb 2024 00:00:00 +0900</pubDate>
-      <guid>https://blog.dhjeong.kr/tags/research/</guid>
-      <description></description>
-    </item>
     <item>
       <title>ubertooth</title>
       <link>https://blog.dhjeong.kr/tags/ubertooth/</link>
-      <pubDate>Fri, 02 Feb 2024 00:00:00 +0900</pubDate>
+      <pubDate>Fri, 02 Feb 2024 00:00:00 +0000</pubDate>
       <guid>https://blog.dhjeong.kr/tags/ubertooth/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>automotive-security</title>
-      <link>https://blog.dhjeong.kr/tags/automotive-security/</link>
-      <pubDate>Thu, 07 Dec 2023 00:00:00 +0900</pubDate>
-      <guid>https://blog.dhjeong.kr/tags/automotive-security/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>carhacking</title>
-      <link>https://blog.dhjeong.kr/tags/carhacking/</link>
-      <pubDate>Thu, 07 Dec 2023 00:00:00 +0900</pubDate>
-      <guid>https://blog.dhjeong.kr/tags/carhacking/</guid>
       <description></description>
     </item>
     <item>
       <title>carhackingvillage</title>
       <link>https://blog.dhjeong.kr/tags/carhackingvillage/</link>
-      <pubDate>Thu, 07 Dec 2023 00:00:00 +0900</pubDate>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://blog.dhjeong.kr/tags/carhackingvillage/</guid>
       <description></description>
     </item>
     <item>
       <title>CVE-2023-39075</title>
       <link>https://blog.dhjeong.kr/tags/cve-2023-39075/</link>
-      <pubDate>Thu, 07 Dec 2023 00:00:00 +0900</pubDate>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://blog.dhjeong.kr/tags/cve-2023-39075/</guid>
       <description></description>
     </item>
     <item>
       <title>CVE-2023-39076</title>
       <link>https://blog.dhjeong.kr/tags/cve-2023-39076/</link>
-      <pubDate>Thu, 07 Dec 2023 00:00:00 +0900</pubDate>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://blog.dhjeong.kr/tags/cve-2023-39076/</guid>
       <description></description>
     </item>
     <item>
       <title>defcon31</title>
       <link>https://blog.dhjeong.kr/tags/defcon31/</link>
-      <pubDate>Thu, 07 Dec 2023 00:00:00 +0900</pubDate>
+      <pubDate>Thu, 07 Dec 2023 00:00:00 +0000</pubDate>
       <guid>https://blog.dhjeong.kr/tags/defcon31/</guid>
       <description></description>
     </item>
     <item>
-      <title>syzkaller</title>
-      <link>https://blog.dhjeong.kr/tags/syzkaller/</link>
-      <pubDate>Thu, 07 Dec 2023 00:00:00 +0900</pubDate>
-      <guid>https://blog.dhjeong.kr/tags/syzkaller/</guid>
+      <title>cve-2023-23082</title>
+      <link>https://blog.dhjeong.kr/tags/cve-2023-23082/</link>
+      <pubDate>Sun, 14 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://blog.dhjeong.kr/tags/cve-2023-23082/</guid>
       <description></description>
     </item>
     <item>
-      <title>automotive</title>
-      <link>https://blog.dhjeong.kr/tags/automotive/</link>
-      <pubDate>Thu, 09 Nov 2023 10:10:10 +0900</pubDate>
-      <guid>https://blog.dhjeong.kr/tags/automotive/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>blockharbor</title>
-      <link>https://blog.dhjeong.kr/tags/blockharbor/</link>
-      <pubDate>Thu, 09 Nov 2023 10:10:10 +0900</pubDate>
-      <guid>https://blog.dhjeong.kr/tags/blockharbor/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>ctf</title>
-      <link>https://blog.dhjeong.kr/tags/ctf/</link>
-      <pubDate>Thu, 09 Nov 2023 10:10:10 +0900</pubDate>
-      <guid>https://blog.dhjeong.kr/tags/ctf/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>cve</title>
-      <link>https://blog.dhjeong.kr/tags/cve/</link>
-      <pubDate>Sun, 14 May 2023 00:00:00 +0900</pubDate>
-      <guid>https://blog.dhjeong.kr/tags/cve/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>notes</title>
-      <link>https://blog.dhjeong.kr/tags/notes/</link>
-      <pubDate>Sat, 12 Nov 2022 11:36:24 +0900</pubDate>
-      <guid>https://blog.dhjeong.kr/tags/notes/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>cve-2019-2525</title>
-      <link>https://blog.dhjeong.kr/tags/cve-2019-2525/</link>
-      <pubDate>Sun, 23 Jan 2022 00:00:00 +0900</pubDate>
-      <guid>https://blog.dhjeong.kr/tags/cve-2019-2525/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>cve-2019-2548</title>
-      <link>https://blog.dhjeong.kr/tags/cve-2019-2548/</link>
-      <pubDate>Sun, 23 Jan 2022 00:00:00 +0900</pubDate>
-      <guid>https://blog.dhjeong.kr/tags/cve-2019-2548/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>virtualbox&#34;</title>
-      <link>https://blog.dhjeong.kr/tags/virtualbox/</link>
-      <pubDate>Sun, 23 Jan 2022 00:00:00 +0900</pubDate>
-      <guid>https://blog.dhjeong.kr/tags/virtualbox/</guid>
+      <title>bugbounty</title>
+      <link>https://blog.dhjeong.kr/tags/bugbounty/</link>
+      <pubDate>Wed, 22 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://blog.dhjeong.kr/tags/bugbounty/</guid>
       <description></description>
     </item>
   </channel>

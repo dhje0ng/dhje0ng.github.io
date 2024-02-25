@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>How to fuzzing USB stack in real cars</title>
+    <meta name="description" content="How to fuzzing USB stack in real cars">
+    <meta name="keywords" content='defcon31, carhackingvillage, CVE-2023-39075, CVE-2023-39076'>
+
+    <meta property="og:url" content="https://blog.dhjeong.kr/posts/2023/12/how-to-fuzzing-realcar-defcon31/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="How to fuzzing USB stack in real cars">
+    <meta property="og:description" content="How to fuzzing USB stack in real cars">
+    <meta property="og:image" content="https://blog.dhjeong.kr/path/to/image.png">
+    <meta property="og:image:secure_url" content="https://blog.dhjeong.kr/path/to/image.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How to fuzzing USB stack in real cars">
+    <meta name="twitter:description" content="How to fuzzing USB stack in real cars">
+    <meta property="twitter:domain" content="https://blog.dhjeong.kr/posts/2023/12/how-to-fuzzing-realcar-defcon31/">
+    <meta property="twitter:url" content="https://blog.dhjeong.kr/posts/2023/12/how-to-fuzzing-realcar-defcon31/">
+    <meta name="twitter:image" content="https://blog.dhjeong.kr/path/to/image.png">
+
+    
+    <link rel="canonical" href="https://blog.dhjeong.kr/posts/2023/12/how-to-fuzzing-realcar-defcon31/" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.d751e63c00e1161a75e60eaf823256097427a013523377fb636f7605271f62a5.js" integrity="sha256-11HmPADhFhp15g6vgjJWCXQnoBNSM3f7Y292BScfYqU="></script>
+
+    
+    
+        <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+      });
+    </script>
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://blog.dhjeong.kr">
+                <img src='/img/bgprofile.jpg' alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://blog.dhjeong.kr">DH.J</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://blog.dhjeong.kr/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://blog.dhjeong.kr/about/"><span data-feather='user'></span> About Me </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://blog.dhjeong.kr/posts/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://blog.dhjeong.kr/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://blog.dhjeong.kr/index.xml"><span data-feather='rss'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://blog.dhjeong.kr/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://blog.dhjeong.kr/about/"><span data-feather='user'></span> About Me </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://blog.dhjeong.kr/posts/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://blog.dhjeong.kr/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://blog.dhjeong.kr/index.xml"><span data-feather='rss'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>How to fuzzing USB stack in real cars</h1>
+        <small role="doc-subtitle">How to fuzzing USB stack in real cars</small>
+        <p class="post-date">December 7, 2023
+        
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://blog.dhjeong.kr/tags/defcon31">defcon31</a></li>
+        
+            <li class="post-tag"><a href="https://blog.dhjeong.kr/tags/carhackingvillage">carhackingvillage</a></li>
+        
+            <li class="post-tag"><a href="https://blog.dhjeong.kr/tags/cve-2023-39075">CVE-2023-39075</a></li>
+        
+            <li class="post-tag"><a href="https://blog.dhjeong.kr/tags/cve-2023-39076">CVE-2023-39076</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h1 id="overview">Overview</h1>
+<p>PoC for vulnerability in real cars vehicle infotainment system</p>
+<p>The research was presented at the DEFCON31 Car Hacking Village, you can watch additional footage at the link below!</p>
+<p><a href="https://media.defcon.org/DEF%20CON%2031/DEF%20CON%2031%20villages/DEF%20CON%2031%20-%20Car%20Hacking%20Village%20-%20Automotive%20USB%20Fuzzing%20-%20Euntae%20Jang%2C%20Donghyeon%20Jeong%2C%20Jonghyuk%20Song.mp4">Video: DEFCON31_CarHackingVillage_Automotive-USB-Fuzzing</a></p>
+<h2 id="description">Description</h2>
+<p>This research could lead to a crash of the vehicle infotainment system via USB in produced vehicles.</p>
+<p>It has been tested on some produced vehicles, but we believe it can be tested on any vehicle that supports USB input and
+could have an impact.</p>
+<p>First, we used the <code>syzkaller</code> tool, a well-known fuzzing tool.</p>
+<p>The <code>syzkaller</code> fuzzing tool supports fuzzing tests against Linux subsystem. In addition to fuzzing the Linux subsystem, this fuzzing tool also provides the ability to fuzz the USB stack.</p>
+<p>In the article below, we describe how to do USB-based fuzzing with syzkaller.
+<a href="https://github.com/google/syzkaller/blob/master/docs/linux/external_fuzzing_usb.md">https://github.com/google/syzkaller/blob/master/docs/linux/external_fuzzing_usb.md</a></p>
+<p>Next, we prepared the following steps to build a fuzzing environment with the <code>syzkaller</code> fuzzing tool</p>
+<ol>
+<li>Choose hardware</li>
+<li>Set up a fuzzing test environment</li>
+<li>Run fuzzing test!</li>
+</ol>
+<h3 id="choose-hardware">Choose hardware</h3>
+<p>Whilst the documentation above recommends well known hardware tools such as <code>Facedancer21</code> that can be
+programmed and emulated for USB devices,</p>
+<p>hardware is not readliy available, so we used the <code>Raspberry PI</code>, a hardware that supports the &lsquo;USB OTG&rsquo; feature
+through testing on other hardware devices.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/img/posts/2023/12/how-to-fuzzing-realcar-defcon31/raspberrypi.jpg" alt="img"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>[Figure 1] Raspberry PI</em></td>
+</tr>
+</tbody>
+</table>
+<p>The <code>Raspberry PI</code> hardware above includes USB OTG functionally on a port that supplies 5V power,
+so it can be connected using a USB-C cable</p>
+<h3 id="set-up-a-fuzzing-test-environment">Set up a fuzzing test environment</h3>
+<p>To build the fuzzing environment, we used the official documentation of the <code>syzkaller</code> tool mentioned above.
+An additional tool called <code>raw-gadget</code> was used here.</p>
+<p><code>raw-gadget</code> is a module for implementing a low-level interface to the Linux USB gadget subsystem, which can be
+used to emulate physical or virtual USB devices.</p>
+<h3 id="run-fuzzing">Run fuzzing!</h3>
+<p>Next, we&rsquo;ll describe the general configuration of the fuzzing environment we&rsquo;ve built,
+before going into the steps to start fuzzing.</p>
+<p>The diagram below shows how the <code>syzkaller</code> fuzzer works on the <code>Raspberry Pi</code> hardware,
+and the fuzzer is based on the input from the reproduction code.</p>
+<p>These inputs are sent by <code>syzkaller</code> to the Target ECU (USB port)</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/img/posts/2023/12/how-to-fuzzing-realcar-defcon31/fuzzer_overview.png" alt="img"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>[Figure 2] Fuzzing Overview</em></td>
+</tr>
+</tbody>
+</table>
+<p>The reproduction code used here is to reproduce the vulnerabilities of 300+ known USB stacks in <code>syzkaller</code>,
+The data was collected from the link below.</p>
+<p><a href="https://syzkaller.appspot.com/upstream?manager=ci2-upstream-usb">https://syzkaller.appspot.com/upstream?manager=ci2-upstream-usb</a></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/img/posts/2023/12/how-to-fuzzing-realcar-defcon31/syzbot-reproduction.png" alt="img"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>[Figure 3] Syzbot Reprodution</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="vehicle-affected">Vehicle Affected</h2>
+<ul>
+<li>
+<p>GM Chevrolet Equinox 2021 (at version, 2021.03.26 build ver)
+<a href="https://nvd.nist.gov/vuln/detail/CVE-2023-39076">https://nvd.nist.gov/vuln/detail/CVE-2023-39076</a></p>
+</li>
+<li>
+<p>Renault ZOE EV 2021 (at versions, 283C35202R ~ 283C35519R)
+<a href="https://nvd.nist.gov/vuln/detail/CVE-2023-39075">https://nvd.nist.gov/vuln/detail/CVE-2023-39075</a></p>
+</li>
+<li>
+<p>Volkswagen Jetta 2021 (Hardware 724, Software 0876)</p>
+</li>
+</ul>
+<h2 id="tools">Tools</h2>
+<pre tabindex="0"><code>raw-gadget: https://github.com/xairy/raw-gadget
+syzbot: https://syzkaller.appspot.com/upstream
+</code></pre><h2 id="demo-video">Demo Video</h2>
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/3o7cBowLRnI" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/3DtczOsNzbU" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/ii8wuOZrHpk" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+<h2 id="references">References</h2>
+<ul>
+<li><a href="https://github.com/google/syzkaller">https://github.com/google/syzkaller</a></li>
+<li><a href="https://github.com/xairy/raw-gadget">https://github.com/xairy/raw-gadget</a></li>
+</ul>
+<h2 id="copyright">Copyright</h2>
+<ul>
+<li>Updated. Thu Dec 7, 2023</li>
+<li>Author. Donghyeon Jeong</li>
+<li>Contact. dhje0ng(at)naver.com</li>
+</ul>
+
+        </p>
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/posts/2023/08/ctf-talks-defcon31/">
+            &#8592;
+            Previous:
+            My talks and CTF Participation at DEFCON31 Car Hacking Village
+        </a>
+    </p>
+    <p class="prev-post-date">
+        August 16, 2023
+    </p>
+</div>
+
+
+
+<div class="next-post">
+    <p>
+        <a href="/posts/2024/02/ubertooth-bt-sniff/">
+            Next:
+            How to Ubertooth BR/EDR Sniff
+            &#8594;
+        </a>
+    </p>
+        <p class="next-post-date">
+            February 2, 2024
+        </p>
+</div>
+
+
+            
+        
+    </div>
+
+    
+    
+    <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="topFunction()" title="Go to top">
+        
+        <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+    </svg>
+    <script>
+        let backToTopButton = document.getElementById("btt-button");
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            smoothScrollToTop();
+        }
+
+        function smoothScrollToTop() {
+            const scrollToTop = () => {
+                const c = document.documentElement.scrollTop || document.body.scrollTop;
+                if (c > 0) {
+                    window.requestAnimationFrame(scrollToTop);
+                    window.scrollTo(0, c - c / 8);
+                }
+            };
+            scrollToTop();
+        }
+    </script>
+    
+    
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview">Overview</a>
+      <ul>
+        <li><a href="#description">Description</a>
+          <ul>
+            <li><a href="#choose-hardware">Choose hardware</a></li>
+            <li><a href="#set-up-a-fuzzing-test-environment">Set up a fuzzing test environment</a></li>
+            <li><a href="#run-fuzzing">Run fuzzing!</a></li>
+          </ul>
+        </li>
+        <li><a href="#vehicle-affected">Vehicle Affected</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#demo-video">Demo Video</a></li>
+        <li><a href="#references">References</a></li>
+        <li><a href="#copyright">Copyright</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+    <span>&copy; 2024 DONGHYEON JEONG</span>
+    
+    <span>
+        Made with &#10084;&#65039; using <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>
