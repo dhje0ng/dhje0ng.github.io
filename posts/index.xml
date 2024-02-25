@@ -43,5 +43,12 @@
       <guid>https://blog.dhjeong.kr/posts/2023/03/bmw-bugbounty/</guid>
       <description>Overview In recent months, we previously conducted a vehicle vulnerability analysis for BMW Automotive. This vulnerability is a service crash vulnerability, which could result in a potential denial of service.&#xA;[Figure 1] BMW Automotive Awarded a bounty of 500$ [Figure 2] BMW GROUP HALL OF FAME </description>
     </item>
+    <item>
+      <title>CTF Participation at DEFCON30 Car Hacking Village</title>
+      <link>https://blog.dhjeong.kr/posts/2022/08/ctf-defcon30/</link>
+      <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://blog.dhjeong.kr/posts/2022/08/ctf-defcon30/</guid>
+      <description>Overview On the 12th, I participated in the Car Hacking Village CTF at the DEFCON hacking conference in Las Vegas as a member of Autocrypt, which consisted of a total of 7 people. We secured a commendable 5th place finish in the competition. Special thanks to @uberwoozle for organizing this event.&#xA;The competition featured several automotive-related hacking challenges, including car simulators, analysing vehicle firmware, obtaining ECU information, and Bluetooth hacking.</description>
+    </item>
   </channel>
 </rss>

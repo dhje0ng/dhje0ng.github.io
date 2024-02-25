@@ -22,5 +22,12 @@
       <guid>https://blog.dhjeong.kr/posts/2023/08/ctf-talks-defcon31/</guid>
       <description>CTF On the 10th, I participated in the Car Hacking Village CTF at the DEFCON hacking conference in Las Vegas as a member of Autocrypt, which consisted of a total of 13 people. We secured a commendable 4th place finish in the competition. Special thanks to @uberwoozle for organizing this event.&#xA;[Figure 1] CHV31 CTF Final Scoreboard Talks On 10 August I gave a presentation on &amp;lsquo;Automotive USB Fuzzing&amp;rsquo; at the Car Hacking Village at DEFCON in Las Vegas.</description>
     </item>
+    <item>
+      <title>CTF Participation at DEFCON30 Car Hacking Village</title>
+      <link>https://blog.dhjeong.kr/posts/2022/08/ctf-defcon30/</link>
+      <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://blog.dhjeong.kr/posts/2022/08/ctf-defcon30/</guid>
+      <description>Overview On the 12th, I participated in the Car Hacking Village CTF at the DEFCON hacking conference in Las Vegas as a member of Autocrypt, which consisted of a total of 7 people. We secured a commendable 5th place finish in the competition. Special thanks to @uberwoozle for organizing this event.&#xA;The competition featured several automotive-related hacking challenges, including car simulators, analysing vehicle firmware, obtaining ECU information, and Bluetooth hacking.</description>
+    </item>
   </channel>
 </rss>

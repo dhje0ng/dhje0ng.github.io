@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>defcon30 on DH.J</title>
+    <link>https://blog.dhjeong.kr/tags/defcon30/</link>
+    <description>Recent content in defcon30 on DH.J</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 16 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://blog.dhjeong.kr/tags/defcon30/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CTF Participation at DEFCON30 Car Hacking Village</title>
+      <link>https://blog.dhjeong.kr/posts/2022/08/ctf-defcon30/</link>
+      <pubDate>Tue, 16 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://blog.dhjeong.kr/posts/2022/08/ctf-defcon30/</guid>
+      <description>Overview On the 12th, I participated in the Car Hacking Village CTF at the DEFCON hacking conference in Las Vegas as a member of Autocrypt, which consisted of a total of 7 people. We secured a commendable 5th place finish in the competition. Special thanks to @uberwoozle for organizing this event.&#xA;The competition featured several automotive-related hacking challenges, including car simulators, analysing vehicle firmware, obtaining ECU information, and Bluetooth hacking.</description>
+    </item>
+  </channel>
+</rss>
