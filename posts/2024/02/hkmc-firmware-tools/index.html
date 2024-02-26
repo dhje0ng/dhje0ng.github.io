@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        :root {
+            --accent-color: #FF4D4D;
+        }
+    </style>
+
+    
+    
+    
+    
+    
+    
+
+    
+    <title>How to HKMC Gen5W Firmware Decryption?</title>
+    <meta name="description" content="How to HKMC Gen5W Firmware Decryption?">
+    <meta name="keywords" content='gen5w, hkmc, hkmcavn-tools'>
+
+    <meta property="og:url" content="https://blog.dhjeong.kr/posts/2024/02/hkmc-firmware-tools/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="How to HKMC Gen5W Firmware Decryption?">
+    <meta property="og:description" content="How to HKMC Gen5W Firmware Decryption?">
+    <meta property="og:image" content="https://blog.dhjeong.kr/path/to/image.png">
+    <meta property="og:image:secure_url" content="https://blog.dhjeong.kr/path/to/image.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="How to HKMC Gen5W Firmware Decryption?">
+    <meta name="twitter:description" content="How to HKMC Gen5W Firmware Decryption?">
+    <meta property="twitter:domain" content="https://blog.dhjeong.kr/posts/2024/02/hkmc-firmware-tools/">
+    <meta property="twitter:url" content="https://blog.dhjeong.kr/posts/2024/02/hkmc-firmware-tools/">
+    <meta name="twitter:image" content="https://blog.dhjeong.kr/path/to/image.png">
+
+    
+    <link rel="canonical" href="https://blog.dhjeong.kr/posts/2024/02/hkmc-firmware-tools/" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/normalize.min.css" media="print">
+
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.min.css">
+
+    
+    <link id="dark-theme" rel="stylesheet" href="/css/dark.min.css">
+
+    
+    <script src="/js/bundle.min.d751e63c00e1161a75e60eaf823256097427a013523377fb636f7605271f62a5.js" integrity=""></script>
+
+    
+    
+        <!-- KaTeX -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.js" integrity="sha384-X/XCfMm41VSsqRNQgDerQczD69XqmjOOOwYQvr/uuC+j4OPoNhVgjdGFwhvN02Ja" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+            {left: '$$', right: '$$', display: true},
+            {left: '$', right: '$', display: false},
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+      });
+    </script>
+  
+    
+</head>
+<body>
+        <script type="text/javascript">
+            
+            setThemeByUserPref();
+        </script><header class="header">
+    <nav class="header-nav">
+
+        
+        <div class="avatar">
+            <a href="https://blog.dhjeong.kr">
+                <img src='/img/bgprofile.jpg' alt="avatar" />
+            </a>
+        </div>
+        
+
+        <div class="nav-title">
+            <a class="nav-brand" href="https://blog.dhjeong.kr">DH.J</a>
+        </div>
+
+        <div class="nav-links">
+            
+            <div class="nav-link">
+                <a href="https://blog.dhjeong.kr/"><span data-feather='home'></span> Home </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://blog.dhjeong.kr/about/"><span data-feather='user'></span> About Me </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://blog.dhjeong.kr/posts/"><span data-feather='book'></span> Posts </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://blog.dhjeong.kr/tags/"><span data-feather='tag'></span> Tags </a>
+            </div>
+            
+            <div class="nav-link">
+                <a href="https://blog.dhjeong.kr/index.xml"><span data-feather='rss'></span>  </a>
+            </div>
+            
+
+            <span class="nav-icons-divider"></span>
+            <div class="nav-link dark-theme-toggle">
+                <span id="dark-theme-toggle-screen-reader-target" class="sr-only"></span>
+                <a>
+                    <span id="theme-toggle-icon" data-feather="moon"></span>
+                </a>
+            </div>
+
+            <div class="nav-link" id="hamburger-menu-toggle">
+                <span id="hamburger-menu-toggle-screen-reader-target" class="sr-only">menu</span>
+                <a>
+                    <span data-feather="menu"></span>
+                </a>
+            </div>
+
+            
+            <ul class="nav-hamburger-list visibility-hidden">
+                
+                <li class="nav-item">
+                    <a href="https://blog.dhjeong.kr/"><span data-feather='home'></span> Home </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://blog.dhjeong.kr/about/"><span data-feather='user'></span> About Me </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://blog.dhjeong.kr/posts/"><span data-feather='book'></span> Posts </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://blog.dhjeong.kr/tags/"><span data-feather='tag'></span> Tags </a>
+                </li>
+                
+                <li class="nav-item">
+                    <a href="https://blog.dhjeong.kr/index.xml"><span data-feather='rss'></span>  </a>
+                </li>
+                
+                <li class="nav-item dark-theme-toggle">
+                    <span id="dark-theme-toggle-screen-reader-target" class="sr-only">theme</span>
+                    <a>
+                        <span id="theme-toggle-icon" data-feather="moon"></span>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+</header>
+<main id="content">
+    <div class="post container">
+    <div class="post-header-section">
+        <h1>How to HKMC Gen5W Firmware Decryption?</h1>
+        <small role="doc-subtitle">How to HKMC Gen5W Firmware Decryption?</small>
+        <p class="post-date">February 26, 2024
+        
+        </p>
+
+        <ul class="post-tags">
+        
+            <li class="post-tag"><a href="https://blog.dhjeong.kr/tags/gen5w">gen5w</a></li>
+        
+            <li class="post-tag"><a href="https://blog.dhjeong.kr/tags/hkmc">hkmc</a></li>
+        
+            <li class="post-tag"><a href="https://blog.dhjeong.kr/tags/hkmcavn-tools">hkmcavn-tools</a></li>
+        
+        </ul>
+    </div>
+
+    <div class="post-content">
+        <p>
+            <h1 id="overview">Overview</h1>
+<p>Last year, a tool was released that allowed users to extract HKMC(Hyundai KIA Motors Group) Gen5W firmware.</p>
+<p><a href="https://github.com/galaxy4public/hkmcavn-tools">hkmcavn-tools</a> (@galaxy4public)</p>
+<p>This tool is made to work with the firmware of Head Unit products designed by LGE.</p>
+<h2 id="available-target">Available Target</h2>
+<ul>
+<li>
+<p>(AU) 2022-23 Sportage</p>
+</li>
+<li>
+<p>(AU) 2021-23 IONIQ5</p>
+</li>
+<li>
+<p>&hellip;</p>
+</li>
+</ul>
+<h2 id="download-navigation-updater">Download Navigation Updater</h2>
+<ul>
+<li>Download the33333 Navigation Updater from Hyundai Motors Group below link.
+<ul>
+<li><a href="https://update.hyundai.com/KR/KO/updateGuide/01">Download Navigation Updater</a></li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/img/posts/2024/02/hkmc-firmware-tools/1.png" alt="img"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>[Figure 1] Download Navigation updater</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="settings-for-navigation-updater">Settings for Navigation Updater</h2>
+<p>By selecting the <code>Hyundai</code> or <code>KIA</code> brand from the main screen and entering a non-member login, you can view the settings screen below.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/img/posts/2024/02/hkmc-firmware-tools/2.png" alt="img"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>[Figure 2] Settings for Navigation updater</em></td>
+</tr>
+</tbody>
+</table>
+<p>Go back to the screen and select the type of car and the year that you would like to download.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/img/posts/2024/02/hkmc-firmware-tools/3.png" alt="img"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>[Figure 3] Settings for Vehicle Model</em></td>
+</tr>
+</tbody>
+</table>
+<p>Select <code>OK</code> on the previous screen to advance to the next screen, where you can specify the path to download the firmware file.</p>
+<p>This path can be set by you and can be any path that identify your location.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/img/posts/2024/02/hkmc-firmware-tools/4.png" alt="img"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>[Figure 4] Settings for Download Location</em></td>
+</tr>
+</tbody>
+</table>
+<p>Once the path is selected, a <code>/Nau</code> directory is created and the selected firmware is downloaded into the directory.</p>
+<p>The download time is approximately 1-3 minutes, but may vary depending on the network speed in your country.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/img/posts/2024/02/hkmc-firmware-tools/5.png" alt="img"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>[Figure 5] Downloading Firmware</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="firmware-identification">Firmware Identification</h2>
+<p>When the firmware download is complete, a directory called <code>Nau</code> will be created in the path you specify, and within that directory will be a subdirectory</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/img/posts/2024/02/hkmc-firmware-tools/6.png" alt="img"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>[Figure 6] Downloaded Firmware</em></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/img/posts/2024/02/hkmc-firmware-tools/7.png" alt="img"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>[Figure 7] Downloaded Firmware</em></td>
+</tr>
+</tbody>
+</table>
+<p>To verify that this firmware is encrypted, we used the <code>binwalk</code> tool and specified the file <code>HU/firmware/update.tar.gz</code></p>
+<p>The <code>binwalk</code> tool allows you to try entropy analysis and file system extraction, and the entropy analysis shows that it has a high entropy. so we can assume that this file is encrypted or compressed in some way.</p>
+<p>Also, since it cannot be extracted normally via file system extraction, we know that the downloaded firmware file is encrypted.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/img/posts/2024/02/hkmc-firmware-tools/8.png" alt="img"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>[Figure 8] update.tar.gz</em></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/img/posts/2024/02/hkmc-firmware-tools/9.png" alt="img"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>[Figure 9] Analysis File Entropy</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="decryption--extraction">Decryption &amp; Extraction</h2>
+<p>This chapter targets the HKMC vehicle head unit developed by LGE. It uses the <code>hkmcavn-tools</code> decryption tool.</p>
+<h3 id="code-analysis-1">Code Analysis [1]</h3>
+<p>Decryption functions are called in this order</p>
+<p>perform_test → update_progress → read_in_chunks → process_block</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>metadata <span style="color:#f92672">=</span> perform_test(file)   <span style="color:#75715e"># this extracts and populates IV</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">if</span> isinstance(metadata, int) <span style="color:#f92672">and</span> metadata <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>:
+</span></span><span style="display:flex;"><span>	    print(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\r</span><span style="color:#e6db74">{</span>file<span style="color:#e6db74">}</span><span style="color:#e6db74"> is either unencrypted or damaged (use -v -t to see the details)&#39;</span>)
+</span></span><span style="display:flex;"><span>	    <span style="color:#66d9ef">return</span>
+</span></span><span style="display:flex;"><span>file_size <span style="color:#f92672">=</span> metadata[<span style="color:#e6db74">&#39;size&#39;</span>]
+</span></span><span style="display:flex;"><span>iv <span style="color:#f92672">=</span> bytes<span style="color:#f92672">.</span>fromhex(metadata[<span style="color:#e6db74">&#39;iv&#39;</span>])
+</span></span><span style="display:flex;"><span>param <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;&#39;</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># perform_test()</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">This function reads binary data from the specified file and calculates the file size and metadata area.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">We specify a particular index in the metadata area to ensure that it is in the correct metadata format and then call the calculate_iv() function to calculate the IV data.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">We also add the calculated IV data and the data contained after index 36 in the metadata area to the check_code variable, and then use the SHA-256 function to generate
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">a 256 bit digest of the message.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">perform_test</span>(file):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">global</span> IV
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">global</span> PADDING
+</span></span><span style="display:flex;"><span>    result <span style="color:#f92672">=</span> <span style="color:#ae81ff">0xFF</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">with</span> open(file, <span style="color:#e6db74">&#39;rb&#39;</span>) <span style="color:#66d9ef">as</span> f:
+</span></span><span style="display:flex;"><span>        f<span style="color:#f92672">.</span>seek(<span style="color:#ae81ff">0</span>, os<span style="color:#f92672">.</span>SEEK_END)
+</span></span><span style="display:flex;"><span>        file_size <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>tell()
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> file_size <span style="color:#f92672">&lt;=</span> META_SIZE:
+</span></span><span style="display:flex;"><span>            print_v(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">{</span>file<span style="color:#e6db74">}</span><span style="color:#e6db74">: file is too small to be encrypted&#39;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0x01</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>        f<span style="color:#f92672">.</span>seek(file_size <span style="color:#f92672">-</span> META_SIZE, os<span style="color:#f92672">.</span>SEEK_SET)
+</span></span><span style="display:flex;"><span>        metadata <span style="color:#f92672">=</span> f<span style="color:#f92672">.</span>read(META_SIZE)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> metadata:
+</span></span><span style="display:flex;"><span>            print_v(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">{</span>file<span style="color:#e6db74">}</span><span style="color:#e6db74">: failed to read metadata from the file&#39;</span>)
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0x20</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> metadata[:<span style="color:#ae81ff">2</span>] <span style="color:#f92672">!=</span> <span style="color:#e6db74">b</span><span style="color:#e6db74">&#39;TE&#39;</span>:
+</span></span><span style="display:flex;"><span>        print_v(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">{</span>file<span style="color:#e6db74">}</span><span style="color:#e6db74">: metadata signature was not found&#39;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0x2</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> metadata[<span style="color:#ae81ff">2</span>] <span style="color:#f92672">in</span> [ <span style="color:#ae81ff">50</span>, <span style="color:#ae81ff">82</span> ]:
+</span></span><span style="display:flex;"><span>        print_v(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">{</span>file<span style="color:#e6db74">}</span><span style="color:#e6db74">: unknown version of metadata&#39;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0x4</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> metadata[<span style="color:#ae81ff">2</span>] <span style="color:#f92672">==</span> <span style="color:#ae81ff">82</span>:
+</span></span><span style="display:flex;"><span>        print_v(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">{</span>file<span style="color:#e6db74">}</span><span style="color:#e6db74">: unsupported version of metadata&#39;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0x8</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    IV <span style="color:#f92672">=</span> calculate_iv(file, file_size <span style="color:#f92672">-</span> META_SIZE)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    check_code <span style="color:#f92672">=</span> SHA256<span style="color:#f92672">.</span>new()
+</span></span><span style="display:flex;"><span>    check_code<span style="color:#f92672">.</span>update(bytes<span style="color:#f92672">.</span>fromhex(IV))
+</span></span><span style="display:flex;"><span>    check_code<span style="color:#f92672">.</span>update(metadata[<span style="color:#ae81ff">36</span>:])
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> metadata[<span style="color:#ae81ff">4</span>:<span style="color:#ae81ff">36</span>] <span style="color:#f92672">!=</span> check_code<span style="color:#f92672">.</span>digest():
+</span></span><span style="display:flex;"><span>        print_v(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;</span><span style="color:#e6db74">{</span>file<span style="color:#e6db74">}</span><span style="color:#e6db74">: metadata integrity check failed&#39;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0x10</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    PADDING<span style="color:#f92672">=</span>metadata[<span style="color:#ae81ff">36</span>:<span style="color:#ae81ff">52</span>]             <span style="color:#75715e"># let&#39;s save embedded padding vector</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    result <span style="color:#f92672">=</span> {}
+</span></span><span style="display:flex;"><span>    result[<span style="color:#e6db74">&#39;file&#39;</span>] <span style="color:#f92672">=</span> file
+</span></span><span style="display:flex;"><span>    result[<span style="color:#e6db74">&#39;size&#39;</span>] <span style="color:#f92672">=</span> file_size <span style="color:#f92672">-</span> META_SIZE
+</span></span><span style="display:flex;"><span>    result[<span style="color:#e6db74">&#39;padding&#39;</span>] <span style="color:#f92672">=</span> metadata[<span style="color:#ae81ff">36</span>:<span style="color:#ae81ff">52</span>]
+</span></span><span style="display:flex;"><span>    result[<span style="color:#e6db74">&#39;iv&#39;</span>] <span style="color:#f92672">=</span> IV
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> result
+</span></span></code></pre></div><h3 id="code-analysis-2">Code Analysis [2]</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># update_progress()</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">This function was presumably created to simply check the current progress.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">update_progress</span>(file, size, block):
+</span></span><span style="display:flex;"><span>    count <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> size <span style="color:#f92672">&gt;</span> count <span style="color:#f92672">*</span> block:
+</span></span><span style="display:flex;"><span>        count <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>        percent <span style="color:#f92672">=</span> (count <span style="color:#f92672">*</span> block <span style="color:#f92672">*</span> <span style="color:#ae81ff">100</span>) <span style="color:#f92672">/</span> size
+</span></span><span style="display:flex;"><span>        <span style="color:#75715e"># out block is bigger than actual data read</span>
+</span></span><span style="display:flex;"><span>        percent <span style="color:#f92672">=</span> min(percent, <span style="color:#ae81ff">100.0</span>)
+</span></span><span style="display:flex;"><span>        print_v(<span style="color:#e6db74">f</span><span style="color:#e6db74">&#39;</span><span style="color:#ae81ff">\r</span><span style="color:#e6db74">{</span>file<span style="color:#e6db74">}</span><span style="color:#e6db74"> .. </span><span style="color:#e6db74">{</span>percent<span style="color:#e6db74">:</span><span style="color:#e6db74">3.0f</span><span style="color:#e6db74">}</span><span style="color:#e6db74">%&#39;</span>, end<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;&#39;</span>)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">yield</span> percent
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">yield</span> <span style="color:#ae81ff">100</span>   <span style="color:#75715e"># this assures that we never run out of data for the progress</span>
+</span></span></code></pre></div><h3 id="code-analysis-3">Code Analysis [3]</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># read_in_chunks()</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Reads and returns a chunk of the specified file object, chunk_size (default: 4*1024).
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">read_in_chunks</span>(file_object, chunk_size<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span><span style="color:#f92672">*</span><span style="color:#ae81ff">1024</span>, limit <span style="color:#f92672">=</span> <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
+</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;&#34;&#34;Lazy function (generator) to read a file piece by piece.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">    Default chunk size: 1MB.&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>    ptr <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">while</span> <span style="color:#66d9ef">True</span>:
+</span></span><span style="display:flex;"><span>        data <span style="color:#f92672">=</span> file_object<span style="color:#f92672">.</span>read(chunk_size)
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> data:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">#print(f&#39;end of file, read {ptr} chunks of {chunk_size} with limit set to {limit}&#39;)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>        ptr <span style="color:#f92672">=</span> ptr <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> limit <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">and</span> len(data) <span style="color:#f92672">&gt;</span> limit <span style="color:#f92672">-</span> (ptr<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">*</span>chunk_size:
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">#print_v(&#39;processing truncated block&#39;)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">#print(f&#39;read {ptr-1} chunks of {chunk_size} + {len(data)} with limit set to {limit}&#39;)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#75715e">#print(f&#39;giving out {limit - (ptr-1)*chunk_size}&#39;)</span>
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">yield</span> data[:limit <span style="color:#f92672">-</span> (ptr<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">*</span>chunk_size]
+</span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">break</span>
+</span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">yield</span> data
+</span></span></code></pre></div><h3 id="code-analysis-4">Code Analysis [4]</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># process_block()</span>
+</span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">Here we write the decrypted firmware file to the specified path using the process_block() function.
+</span></span></span><span style="display:flex;"><span><span style="color:#e6db74">&#34;&#34;&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">1</span>: file_out<span style="color:#f92672">.</span>write(process_block(mode, block, cipher, param))
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">2</span>: <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">process_block</span>(mode, block, cipher, param):
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> mode(block, cipher, param)
+</span></span></code></pre></div><h2 id="decrypted-firmware">Decrypted Firmware</h2>
+<p>After unpacking the linux file system image, called mango_rootfs we can see the structure of the Linux file system(ext4), which shows that the decryption of the firmware has gone well.</p>
+<p>You should now be able to do a reverse engineering analysis of the decrypted firmware.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"><img src="/img/posts/2024/02/hkmc-firmware-tools/10.png" alt="img"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"><em>[Figure 10] Decrypted HKMC Firmware</em></td>
+</tr>
+</tbody>
+</table>
+<h2 id="to-do">To do</h2>
+<ol>
+<li>
+<p>Analyse the firmware structure.</p>
+</li>
+<li>
+<p>Emulation/Re-hosting the firmware to analyse unknown vulnerabilities.</p>
+</li>
+</ol>
+
+        </p>
+        
+    </div>
+
+    <div class="prev-next">
+        
+            
+                
+<div class="prev-post">
+    <p>
+        <a href="/posts/2024/02/ubertooth-bt-sniff/">
+            &#8592;
+            Previous:
+            How to Ubertooth BR/EDR Sniff
+        </a>
+    </p>
+    <p class="prev-post-date">
+        February 2, 2024
+    </p>
+</div>
+
+
+
+
+            
+        
+    </div>
+
+    
+    
+    <svg id="btt-button" class="arrow-logo" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512" onclick="topFunction()" title="Go to top">
+        
+        <path d="M177 159.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 255.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 329.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1z"/>
+    </svg>
+    <script>
+        let backToTopButton = document.getElementById("btt-button");
+
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                backToTopButton.style.display = "block";
+            } else {
+                backToTopButton.style.display = "none";
+            }
+        }
+
+        function topFunction() {
+            smoothScrollToTop();
+        }
+
+        function smoothScrollToTop() {
+            const scrollToTop = () => {
+                const c = document.documentElement.scrollTop || document.body.scrollTop;
+                if (c > 0) {
+                    window.requestAnimationFrame(scrollToTop);
+                    window.scrollTo(0, c - c / 8);
+                }
+            };
+            scrollToTop();
+        }
+    </script>
+    
+    
+</div>
+
+<aside class="post-toc">
+    <nav id="toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#overview">Overview</a>
+      <ul>
+        <li><a href="#available-target">Available Target</a></li>
+        <li><a href="#download-navigation-updater">Download Navigation Updater</a></li>
+        <li><a href="#settings-for-navigation-updater">Settings for Navigation Updater</a></li>
+        <li><a href="#firmware-identification">Firmware Identification</a></li>
+        <li><a href="#decryption--extraction">Decryption &amp; Extraction</a>
+          <ul>
+            <li><a href="#code-analysis-1">Code Analysis [1]</a></li>
+            <li><a href="#code-analysis-2">Code Analysis [2]</a></li>
+            <li><a href="#code-analysis-3">Code Analysis [3]</a></li>
+            <li><a href="#code-analysis-4">Code Analysis [4]</a></li>
+          </ul>
+        </li>
+        <li><a href="#decrypted-firmware">Decrypted Firmware</a></li>
+        <li><a href="#to-do">To do</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </nav>
+</aside>
+
+
+
+    
+
+        </main><footer class="footer">
+    
+    
+
+    
+    <span>&copy; 2024 DONGHYEON JEONG</span>
+    
+    <span>
+        Build with &#10084;&#65039; using <a target="_blank" href="https://github.com/golang/go">Go</a> | <a target="_blank" href="https://github.com/526avijitgupta/gokarna">Gokarna</a>
+    </span>
+</footer>
+</body>
+</html>

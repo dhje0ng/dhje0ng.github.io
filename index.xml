@@ -6,8 +6,15 @@
     <description>Recent content on DH.J</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 02 Feb 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Feb 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://blog.dhjeong.kr/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How to HKMC Gen5W Firmware Decryption?</title>
+      <link>https://blog.dhjeong.kr/posts/2024/02/hkmc-firmware-tools/</link>
+      <pubDate>Mon, 26 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://blog.dhjeong.kr/posts/2024/02/hkmc-firmware-tools/</guid>
+      <description>Overview Last year, a tool was released that allowed users to extract HKMC(Hyundai KIA Motors Group) Gen5W firmware.&#xA;hkmcavn-tools (@galaxy4public)&#xA;This tool is made to work with the firmware of Head Unit products designed by LGE.&#xA;Available Target (AU) 2022-23 Sportage&#xA;(AU) 2021-23 IONIQ5&#xA;&amp;hellip;&#xA;Download Navigation Updater Download the33333 Navigation Updater from Hyundai Motors Group below link. Download Navigation Updater [Figure 1] Download Navigation updater Settings for Navigation Updater By selecting the Hyundai or KIA brand from the main screen and entering a non-member login, you can view the settings screen below.</description>
+    </item>
     <item>
       <title>How to Ubertooth BR/EDR Sniff</title>
       <link>https://blog.dhjeong.kr/posts/2024/02/ubertooth-bt-sniff/</link>
